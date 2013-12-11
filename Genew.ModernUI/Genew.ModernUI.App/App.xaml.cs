@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Genew.ModernUI
+namespace Genew.ModernUI.App
 {
     /// <summary>
     /// Interaction logic for App.xaml

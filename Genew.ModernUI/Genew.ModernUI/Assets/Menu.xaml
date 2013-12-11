@@ -1,0 +1,26 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style x:Key="{x:Type Menu}"
+           TargetType="{x:Type Menu}">
+        <Setter Property="FontFamily"
+                Value="{DynamicResource DefaultFontFamily}" />
+        <Setter Property="FontSize"
+                Value="{DynamicResource DefaultFontSize}" />
+        <Setter Property="TextOptions.TextFormattingMode"
+                Value="Display" />
+        <Setter Property="Background"
+                Value="{DynamicResource WindowBackground}" />
+        <Setter Property="Foreground"
+                Value="{DynamicResource ItemText}" />
+        <Setter Property="BorderBrush"
+                Value="{DynamicResource WindowBorderActive}" />
+        <Setter Property="Grid.IsSharedSizeScope"
+                Value="true" />
+        <Setter Property="ScrollViewer.PanningMode"
+                Value="Both" />
+        <Setter Property="Stylus.IsFlicksEnabled"
+                Value="False" />
+    </Style>
+
+</ResourceDictionary>

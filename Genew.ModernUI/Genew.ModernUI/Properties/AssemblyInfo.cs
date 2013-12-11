@@ -1,18 +1,25 @@
 ﻿using System.Reflection;
-using System.Resources;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Windows;
+using System.Windows.Markup;
+using System.Resources;
+using System;
+
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Genew.ModernUI")]
-[assembly: AssemblyDescription("")]
+#if NET4
+[assembly: AssemblyDescription("Genew Modern UI for WPF 4")]
+#else
+[assembly: AssemblyDescription("Genew Modern UI for WPF 4.5")]
+#endif
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Genew")]
 [assembly: AssemblyProduct("Genew.ModernUI")]
-[assembly: AssemblyCopyright("Copyright ©  2013")]
+[assembly: AssemblyCopyright("Copyright © Genew 2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,6 +27,7 @@ using System.Windows;
 // to COM components.  If you need to access a type in this assembly from 
 // COM, set the ComVisible attribute to true on that type.
 [assembly: ComVisible(false)]
+[assembly: CLSCompliant(true)]
 
 //In order to begin building localizable applications, set 
 //<UICulture>CultureYouAreCodingWith</UICulture> in your .csproj file
@@ -28,8 +36,7 @@ using System.Windows;
 //the NeutralResourceLanguage attribute below.  Update the "en-US" in
 //the line below to match the UICulture setting in the project file.
 
-//[assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)]
-
+[assembly: NeutralResourcesLanguage("zh-cn")]
 
 [assembly: ThemeInfo(
     ResourceDictionaryLocation.None, //where theme specific resource dictionaries are located
@@ -40,6 +47,13 @@ using System.Windows;
     // app, or any theme specific resource dictionaries)
 )]
 
+[assembly: XmlnsDefinition("http://genew.com.cn/ModernUI", "Genew.ModernUI.Presentation")]
+[assembly: XmlnsDefinition("http://genew.com.cn/ModernUI", "Genew.ModernUI.Windows")]
+[assembly: XmlnsDefinition("http://genew.com.cn/ModernUI", "Genew.ModernUI.Windows.Controls")]
+[assembly: XmlnsDefinition("http://genew.com.cn/ModernUI", "Genew.ModernUI.Windows.Converters")]
+[assembly: XmlnsDefinition("http://genew.com.cn/ModernUI", "Genew.ModernUI.Windows.Navigation")]
+[assembly: XmlnsDefinition("http://genew.com.cn/ModernUI", "Genew.ModernUI.Behaviors")]
+[assembly: XmlnsPrefix("http://genew.com.cn/ModernUI", "mui")]
 
 // Version information for an assembly consists of the following four values:
 //

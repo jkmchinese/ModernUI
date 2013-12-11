@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Genew.ModernUI
+namespace Genew.ModernUI.App.Pages
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for LayoutList.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class LayoutList : UserControl
     {
-        public MainWindow()
+        public LayoutList()
         {
             InitializeComponent();
         }

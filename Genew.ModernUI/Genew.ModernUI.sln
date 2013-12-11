@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Genew.ModernUI", "Genew.ModernUI\Genew.ModernUI.csproj", "{BC0F28D7-A920-420B-B2E7-8062F2FFD1F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Genew.ModernUI.App", "Genew.ModernUI.App\Genew.ModernUI.App.csproj", "{BE476D34-0A22-4771-B38A-8914F45E8E9B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{BC0F28D7-A920-420B-B2E7-8062F2FFD1F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC0F28D7-A920-420B-B2E7-8062F2FFD1F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC0F28D7-A920-420B-B2E7-8062F2FFD1F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE476D34-0A22-4771-B38A-8914F45E8E9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE476D34-0A22-4771-B38A-8914F45E8E9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE476D34-0A22-4771-B38A-8914F45E8E9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE476D34-0A22-4771-B38A-8914F45E8E9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
