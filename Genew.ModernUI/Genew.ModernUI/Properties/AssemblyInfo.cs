@@ -50,6 +50,7 @@ using System;
 [assembly: XmlnsDefinition("http://genew.com.cn/ModernUI", "Genew.ModernUI.Presentation")]
 [assembly: XmlnsDefinition("http://genew.com.cn/ModernUI", "Genew.ModernUI.Windows")]
 [assembly: XmlnsDefinition("http://genew.com.cn/ModernUI", "Genew.ModernUI.Windows.Controls")]
+[assembly: XmlnsDefinition("http://genew.com.cn/ModernUI", "Genew.ModernUI.ExtendedToolkit")]
 [assembly: XmlnsDefinition("http://genew.com.cn/ModernUI", "Genew.ModernUI.Windows.Converters")]
 [assembly: XmlnsDefinition("http://genew.com.cn/ModernUI", "Genew.ModernUI.Windows.Navigation")]
 [assembly: XmlnsDefinition("http://genew.com.cn/ModernUI", "Genew.ModernUI.Behaviors")]

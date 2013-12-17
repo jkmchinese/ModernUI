@@ -4,6 +4,7 @@
                     xmlns:shell="http://schemas.microsoft.com/winfx/2006/xaml/presentation/shell">
 
     <ResourceDictionary.MergedDictionaries>
+        <!--ModernUI-->
         <ResourceDictionary Source="/Genew.ModernUI;component/Themes/BBCodeBlock.xaml" />
         <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ModernButton.xaml" />
         <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ModernDialog.xaml" />
@@ -12,6 +13,8 @@
         <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ModernTab.xaml" />
         <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ModernWindow.xaml" />
         <ResourceDictionary Source="/Genew.ModernUI;component/Themes/TransitioningContentControl.xaml" />
-    </ResourceDictionary.MergedDictionaries>
 
+        <!--ExtendedToolkit-->
+        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/BusyIndicator.xaml" />
+    </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

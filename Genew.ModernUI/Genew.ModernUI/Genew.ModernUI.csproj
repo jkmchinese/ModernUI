@@ -64,6 +64,9 @@
     <Compile Include="Behaviors\ScrollStateBehavior.cs" />
     <Compile Include="Behaviors\TextBoxDefaultStringBehavior.cs" />
     <Compile Include="Behaviors\TextSelectAllBehavior.cs" />
+    <Compile Include="ExtendedToolkit\BusyIndicator\BusyIndicator.cs" />
+    <Compile Include="ExtendedToolkit\BusyIndicator\VisualStates.BusyIndicator.cs" />
+    <Compile Include="ExtendedToolkit\VisualStates.cs" />
     <Compile Include="UIHelper\ExtensionMethod.cs" />
     <Compile Include="UIHelper\ModernUIHelper.cs" />
     <Compile Include="Presentation\AppearanceManager.cs" />
@@ -259,6 +262,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Themes\ExtendedToolkit\BusyIndicator.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Themes\Generic.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -292,6 +299,7 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
