@@ -71,11 +71,31 @@
     <Compile Include="ExtendedToolkit\ButtonSpinner\SpinEventArgs.cs" />
     <Compile Include="ExtendedToolkit\ButtonSpinner\Spinner.cs" />
     <Compile Include="ExtendedToolkit\ButtonSpinner\ValidSpinDirections.cs" />
+    <Compile Include="ExtendedToolkit\Core\Converters\BorderThicknessToStrokeThicknessConverter.cs" />
+    <Compile Include="ExtendedToolkit\Core\Converters\CalculatorMemoryToVisibilityConverter.cs" />
+    <Compile Include="ExtendedToolkit\Core\Converters\ColorBlendConverter.cs" />
+    <Compile Include="ExtendedToolkit\Core\Converters\ColorToSolidColorBrushConverter.cs" />
+    <Compile Include="ExtendedToolkit\Core\Converters\InverseBoolConverter.cs" />
+    <Compile Include="ExtendedToolkit\Core\Converters\ObjectTypeToNameConverter.cs" />
+    <Compile Include="ExtendedToolkit\Core\Converters\RoundedValueConverter.cs" />
+    <Compile Include="ExtendedToolkit\Core\Converters\SolidColorBrushToColorConverter.cs" />
+    <Compile Include="ExtendedToolkit\Core\Converters\TimeFormatToDateTimeFormatConverter.cs" />
+    <Compile Include="ExtendedToolkit\Core\Converters\VisibilityToBoolConverter.cs" />
+    <Compile Include="ExtendedToolkit\Core\Converters\WindowContentBorderMarginConverter.cs" />
+    <Compile Include="ExtendedToolkit\Core\Converters\WindowControlBackgroundConverter.cs" />
+    <Compile Include="ExtendedToolkit\Core\ErrorMessages.cs" />
     <Compile Include="ExtendedToolkit\Core\Input\InputValidationErrorEventArgs.cs" />
     <Compile Include="ExtendedToolkit\Core\Input\IValidateInput.cs" />
     <Compile Include="ExtendedToolkit\Core\Primitives\InputBase.cs" />
     <Compile Include="ExtendedToolkit\Core\Primitives\MouseWheelActiveTriggerEnum.cs" />
     <Compile Include="ExtendedToolkit\Core\Primitives\UpDownBase.cs" />
+    <Compile Include="ExtendedToolkit\Core\Utilities\KeyboardUtilities.cs" />
+    <Compile Include="ExtendedToolkit\DateTimePicker\DateTimePicker.cs" />
+    <Compile Include="ExtendedToolkit\DateTimeUpDown\DateTimeFormat.cs" />
+    <Compile Include="ExtendedToolkit\DateTimeUpDown\DateTimeInfo.cs" />
+    <Compile Include="ExtendedToolkit\DateTimeUpDown\DateTimeParser.cs" />
+    <Compile Include="ExtendedToolkit\DateTimeUpDown\DateTimePart.cs" />
+    <Compile Include="ExtendedToolkit\DateTimeUpDown\DateTimeUpDown.cs" />
     <Compile Include="ExtendedToolkit\NumericUpDown\AllowedSpecialValuesEnum.cs" />
     <Compile Include="ExtendedToolkit\NumericUpDown\ByteUpDown.cs" />
     <Compile Include="ExtendedToolkit\NumericUpDown\CommonNumericUpDown.cs" />
@@ -90,7 +110,11 @@
     <Compile Include="ExtendedToolkit\NumericUpDown\UIntegerUpDown.cs" />
     <Compile Include="ExtendedToolkit\NumericUpDown\ULongUpDown.cs" />
     <Compile Include="ExtendedToolkit\NumericUpDown\UShortUpDown.cs" />
+    <Compile Include="ExtendedToolkit\TimePicker\TimeFormat.cs" />
+    <Compile Include="ExtendedToolkit\TimePicker\TimeItem.cs" />
+    <Compile Include="ExtendedToolkit\TimePicker\TimePicker.cs" />
     <Compile Include="ExtendedToolkit\VisualStates.cs" />
+    <Compile Include="ExtendedToolkit\WatermarkTextBox\WatermarkTextBox.cs" />
     <Compile Include="UIHelper\ExtensionMethod.cs" />
     <Compile Include="UIHelper\ModernUIHelper.cs" />
     <Compile Include="Presentation\AppearanceManager.cs" />
@@ -159,6 +183,9 @@
     <Compile Include="Windows\Navigation\NavigationFailedEventArgs.cs" />
     <Compile Include="Windows\Navigation\NavigationHelper.cs" />
     <Compile Include="Windows\Navigation\NavigationType.cs" />
+    <EmbeddedResource Include="ExtendedToolkit\Core\ErrorMessages.resx">
+      <DependentUpon>ErrorMessages.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -250,6 +277,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Assets\PathGeometrys.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Assets\ProgressBar.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -287,6 +318,26 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Themes\ExtendedToolkit\BusyIndicator.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\ExtendedToolkit\ButtonSpinner.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\ExtendedToolkit\WatermarkTextBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\ExtendedToolkit\TimePicker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\ExtendedToolkit\DateTimeUpDown.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\ExtendedToolkit\NumericUpDown.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

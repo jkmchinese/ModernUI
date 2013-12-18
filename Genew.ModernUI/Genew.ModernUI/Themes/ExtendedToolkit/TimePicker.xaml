@@ -1,0 +1,126 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:extendedToolkit="clr-namespace:Genew.ModernUI.ExtendedToolkit"
+                    xmlns:converters="clr-namespace:Genew.ModernUI.ExtendedToolkit.Converters">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary>
+            <PathGeometry x:Key="UpArrowData">M 0,3 C0,3 0,4 0,4 0,4 3,4 3,4 3,4 3,3 3,3 3,3 4,3 4,3 4,3 4,4 4,4 4,4 7,4 7,4 7,4 7,3 7,3 7,3 6,3 6,3 6,3 6,2 6,2 6,2 5,2 5,2 5,2 5,1 5,1 5,1 4,1 4,1 4,1 4,0 4,0 4,0 3,0 3,0 3,0 3,1 3,1 3,1 2,1 2,1 2,1 2,2 2,2 2,2 1,2 1,2 1,2 1,3 1,3 1,3 0,3 0,3 z</PathGeometry>
+            <PathGeometry x:Key="DownArrowData">M 0,1 C0,1 0,0 0,0 0,0 3,0 3,0 3,0 3,1 3,1 3,1 4,1 4,1 4,1 4,0 4,0 4,0 7,0 7,0 7,0 7,1 7,1 7,1 6,1 6,1 6,1 6,2 6,2 6,2 5,2 5,2 5,2 5,3 5,3 5,3 4,3 4,3 4,3 4,4 4,4 4,4 3,4 3,4 3,4 3,3 3,3 3,3 2,3 2,3 2,3 2,2 2,2 2,2 1,2 1,2 1,2 1,1 1,1 1,1 0,1 0,1 z</PathGeometry>
+        </ResourceDictionary>
+    </ResourceDictionary.MergedDictionaries>
+
+    <converters:InverseBoolConverter x:Key="InverseBoolConverter" />
+    <converters:TimeFormatToDateTimeFormatConverter x:Key="TimeFormatToDateTimeFormatConverter" />
+
+    <DataTemplate x:Key="DefaultWatermarkTemplate">
+        <ContentControl Content="{Binding}"
+                        Foreground="{DynamicResource ButtonText}"
+                        Focusable="False"
+                        Margin="0,0,3,0" />
+    </DataTemplate>
+
+    <Style x:Key="TimePickerToggleButtonStyle"
+           TargetType="ToggleButton">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ToggleButton">
+                    <Grid SnapsToDevicePixels="True"
+                          Background="{DynamicResource ButtonBackground}"
+                          Margin="1">
+                        <Grid HorizontalAlignment="Center"
+                              VerticalAlignment="Center"
+                              Margin="4 0 2 0">
+                            <Path x:Name="Arrow"
+                                  Width="10"
+                                  Height="6"
+                                  Data="{StaticResource DownArrowData}"
+                                  Fill="{DynamicResource ButtonText}" />
+                        </Grid>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsEnabled"
+                                 Value="False">
+                            <Setter Property="Fill"
+                                    TargetName="Arrow"
+                                    Value="{DynamicResource ButtonTextDisabled}" />
+                        </Trigger>
+                        <Trigger Property="IsChecked"
+                                 Value="True">
+                            <Setter Property="Data"
+                                    TargetName="Arrow"
+                                    Value="{StaticResource UpArrowData}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type extendedToolkit:TimePicker}"
+           x:Key="StyleModernTimePicker">
+        <Setter Property="WatermarkTemplate"
+                Value="{StaticResource DefaultWatermarkTemplate}" />
+        <Setter Property="IsTabStop"
+                Value="False" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type extendedToolkit:TimePicker}">
+                    <Border>
+                        <Grid>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <extendedToolkit:DateTimeUpDown x:Name="PART_TimeUpDown"
+                                                                Style="{DynamicResource StyleModernDateTimeUpDown}"
+                                                                BorderThickness="1,1,0,1"
+                                                                Background="{TemplateBinding Background}"
+                                                                Foreground="{TemplateBinding Foreground}"
+                                                                ContextMenu="{TemplateBinding ContextMenu}"
+                                                                AllowSpin="{TemplateBinding AllowSpin}"
+                                                                TabIndex="{TemplateBinding TabIndex}"
+                                                                Format="{TemplateBinding Format, Converter={StaticResource TimeFormatToDateTimeFormatConverter}}"
+                                                                FormatString="{TemplateBinding FormatString}"
+                                                                ShowButtonSpinner="{TemplateBinding ShowButtonSpinner}"
+                                                                Value="{Binding Value, RelativeSource={RelativeSource TemplatedParent}}"
+                                                                Watermark="{TemplateBinding Watermark}"
+                                                                WatermarkTemplate="{TemplateBinding WatermarkTemplate}"
+                                                                TextAlignment="{TemplateBinding TextAlignment}" />
+                                <ToggleButton x:Name="_timePickerToggleButton"
+                                              Grid.Column="1"
+                                              Focusable="False"
+                                              IsChecked="{Binding IsOpen, RelativeSource={RelativeSource TemplatedParent}}"
+                                              Style="{StaticResource TimePickerToggleButtonStyle}"
+                                              IsHitTestVisible="{Binding IsOpen, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource InverseBoolConverter}}" />
+                            </Grid>
+                            <Popup x:Name="PART_Popup"
+                                   IsOpen="{Binding IsChecked, ElementName=_timePickerToggleButton}"
+                                   StaysOpen="False">
+                                <Border BorderThickness="1"
+                                        Background="{DynamicResource PopupBackground}">
+                                    <Grid>
+                                        <ListBox x:Name="PART_TimeListItems"
+                                                 BorderThickness="0"
+                                                 Width="{Binding ElementName=PART_TimeUpDown, Path=ActualWidth}"
+                                                 Height="130"
+                                                 DisplayMemberPath="Display" />
+                                    </Grid>
+                                </Border>
+                            </Popup>
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsFocused"
+                                 Value="True">
+                            <Setter TargetName="PART_TimeUpDown"
+                                    Property="FocusManager.FocusedElement"
+                                    Value="{Binding ElementName=PART_TimeUpDown}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
