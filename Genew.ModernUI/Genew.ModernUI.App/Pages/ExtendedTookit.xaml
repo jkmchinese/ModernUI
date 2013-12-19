@@ -14,23 +14,44 @@
                            Style="{StaticResource Heading1}"
                            Margin="0,0,0,8" />
                 <StackPanel HorizontalAlignment="Left">
+
+                    <TextBlock Text="DateTimePicker:"
+                               Margin="0,0,0,8" />
                     <mui:DateTimePicker Format="RFC1123"
-                                        Watermark="请选择日期和时间"
+                                        Watermark="选择日期和时间"
                                         TimeFormat="LongTime"
-                                        TimeWatermark="请选择时间"
+                                        TimeWatermark="选择时间"
                                         AutoCloseCalendar="False"
-                                        MinWidth="160"></mui:DateTimePicker>
+                                        MinWidth="300"></mui:DateTimePicker>
+                    <mui:DateTimePicker Format="RFC1123"
+                                        Watermark="选择日期和时间"
+                                        TimeFormat="LongTime"
+                                        TimeWatermark="选择时间"
+                                        AutoCloseCalendar="False"
+                                        MinWidth="300"
+                                        IsEnabled="False"></mui:DateTimePicker>
+
+                    <TextBlock Text="DateTimeUpDown:"
+                               Margin="0,0,0,8" />
                     <mui:DateTimeUpDown Format="ShortTime"
                                         Value="9:00"
-                                        Margin="5"
-                                        HorizontalAlignment="Left"
-                                        Watermark="Enter Time" 
-                                        MinWidth="120"/>
-                    <TextBlock Text="Test"></TextBlock>
-                    <mui:TimePicker VerticalAlignment="Top"
-                                    Format="LongTime"
-                                    Watermark="请选择时间" 
-                                    MinWidth="130"/>
+                                        Watermark="选择时间"
+                                        MinWidth="150" />
+                    <mui:DateTimeUpDown Format="ShortTime"
+                                        Value="9:00"
+                                        Watermark="选择时间"
+                                        MinWidth="150"
+                                        IsEnabled="False"/>
+
+                    <TextBlock Text="TimePicker:"
+                               Margin="0,0,0,8"></TextBlock>
+                    <mui:TimePicker Format="LongTime"
+                                    Watermark="选择时间"
+                                    MinWidth="150" />
+                    <mui:TimePicker Format="LongTime"
+                                    Watermark="选择时间"
+                                    MinWidth="150" 
+                                    IsEnabled="False"/>
                 </StackPanel>
             </StackPanel>
         </ScrollViewer>

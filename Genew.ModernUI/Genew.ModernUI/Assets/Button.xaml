@@ -183,7 +183,14 @@
 
     <Style x:Key="{x:Type ToggleButton}"
            BasedOn="{StaticResource BaseButtonStyle}"
-           TargetType="{x:Type ToggleButton}" />
+           TargetType="{x:Type ToggleButton}">
+        <Style.Triggers>
+            <Trigger Property="IsChecked" Value="True">
+                <Setter Property="Background"
+                        Value="{DynamicResource Accent}"></Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
 
     <Style x:Key="{x:Type RepeatButton}"
            BasedOn="{StaticResource BaseButtonStyle}"

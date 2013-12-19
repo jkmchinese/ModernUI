@@ -16,13 +16,13 @@
     <Style x:Key="StyleNumericUpDown"
            TargetType="{x:Type primitives:InputBase}">
         <Setter Property="Background"
-                Value="{DynamicResource PopupBackground}" />
+                Value="{DynamicResource InputBackground}" />
         <Setter Property="BorderBrush"
-                Value="{DynamicResource ModernButtonBorder}" />
+                Value="{DynamicResource InputBorder}" />
         <Setter Property="BorderThickness"
                 Value="1" />
         <Setter Property="Foreground"
-                Value="{DynamicResource ButtonText}" />
+                Value="{DynamicResource InputText}" />
         <Setter Property="HorizontalContentAlignment"
                 Value="Right" />
         <Setter Property="IsTabStop"
