@@ -8,7 +8,7 @@
 
     <DataTemplate x:Key="DefaultWatermarkTemplate">
         <ContentControl Content="{Binding}"
-                        Foreground="{DynamicResource ButtonText}"
+                        Foreground="{DynamicResource InputTextDisabled}"
                         Focusable="False"
                         Margin="0,0,3,0" />
     </DataTemplate>
@@ -85,9 +85,88 @@
         </Setter>
     </Style>
 
-    <!--整数样式-->
-    <Style  x:Key="StyleIntegerUpDown"
-            TargetType="{x:Type extendedToolkit:IntegerUpDown}"
-            BasedOn="{StaticResource StyleNumericUpDown}" />
-    
+    <!-- =============================================================================== -->
+    <!-- DecimalUpDown                                                                   -->
+    <!-- =============================================================================== -->
+    <Style TargetType="{x:Type extendedToolkit:DecimalUpDown}"
+           BasedOn="{StaticResource StyleNumericUpDown}" />
+
+    <!-- =============================================================================== -->
+    <!-- DoubleUpDown                                                                    -->
+    <!-- =============================================================================== -->
+    <Style TargetType="{x:Type extendedToolkit:DoubleUpDown}"
+           BasedOn="{StaticResource StyleNumericUpDown}" />
+
+    <!-- =============================================================================== -->
+    <!-- IntegerUpDown                                                                   -->
+    <!-- =============================================================================== -->
+    <Style TargetType="{x:Type extendedToolkit:IntegerUpDown}"
+           BasedOn="{StaticResource StyleNumericUpDown}" />
+
+    <!-- =============================================================================== -->
+    <!-- ShortUpDown                                                                     -->
+    <!-- =============================================================================== -->
+    <Style TargetType="{x:Type extendedToolkit:ShortUpDown}"
+           BasedOn="{StaticResource StyleNumericUpDown}" />
+
+    <!-- =============================================================================== -->
+    <!-- LongUpDown                                                                      -->
+    <!-- =============================================================================== -->
+    <Style TargetType="{x:Type extendedToolkit:LongUpDown}"
+           BasedOn="{StaticResource StyleNumericUpDown}" />
+
+    <!-- =============================================================================== -->
+    <!-- ByteUpDown                                                                      -->
+    <!-- =============================================================================== -->
+    <Style TargetType="{x:Type extendedToolkit:ByteUpDown}"
+           BasedOn="{StaticResource StyleNumericUpDown}" />
+
+    <!-- =============================================================================== -->
+    <!-- SingleUpDown                                                                    -->
+    <!-- =============================================================================== -->
+    <Style TargetType="{x:Type extendedToolkit:SingleUpDown}"
+           BasedOn="{StaticResource StyleNumericUpDown}" />
+
+    <!-- =============================================================================== -->
+    <!-- Style for all internal derived types of StyleNumericUpDown must have a               -->
+    <!-- ComponentResourceKey key to allow external theme to redefine the default style  -->
+    <!-- (ex. Office2007 theme)                                                          -->
+    <!-- =============================================================================== -->
+
+    <!-- =============================================================================== -->
+    <!-- SByteUpDown                                                                     -->
+    <!-- =============================================================================== -->
+    <Style x:Key="{ComponentResourceKey 
+                  TypeInTargetAssembly={x:Type primitives:InputBase}, 
+                  ResourceId=SByteUpDown}"
+           TargetType="{x:Type primitives:InputBase}"
+           BasedOn="{StaticResource StyleNumericUpDown}" />
+
+    <!-- =============================================================================== -->
+    <!-- UIntegerUpDown                                                                  -->
+    <!-- =============================================================================== -->
+    <Style x:Key="{ComponentResourceKey 
+                  TypeInTargetAssembly={x:Type primitives:InputBase}, 
+                  ResourceId=UIntegerUpDown}"
+           TargetType="{x:Type primitives:InputBase}"
+           BasedOn="{StaticResource StyleNumericUpDown}" />
+
+    <!-- =============================================================================== -->
+    <!-- ULongUpDown                                                                     -->
+    <!-- =============================================================================== -->
+    <Style x:Key="{ComponentResourceKey 
+                  TypeInTargetAssembly={x:Type primitives:InputBase}, 
+                  ResourceId=ULongUpDown}"
+           TargetType="{x:Type primitives:InputBase}"
+           BasedOn="{StaticResource StyleNumericUpDown}" />
+
+    <!-- =============================================================================== -->
+    <!-- UShortUpDown                                                                    -->
+    <!-- =============================================================================== -->
+    <Style x:Key="{ComponentResourceKey 
+                  TypeInTargetAssembly={x:Type primitives:InputBase}, 
+                  ResourceId=UShortUpDown}"
+           TargetType="{x:Type primitives:InputBase}"
+           BasedOn="{StaticResource StyleNumericUpDown}" />
+
 </ResourceDictionary>

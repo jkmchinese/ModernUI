@@ -16,5 +16,11 @@
 
         <!--ExtendedToolkit-->
         <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/BusyIndicator.xaml" />
+        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/ButtonSpinner.xaml" />
+        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/DateTimePicker.xaml" />
+        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/DateTimeUpDown.xaml" />
+        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/NumericUpDown.xaml" />
+        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/TimePicker.xaml" />
+        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/WatermarkTextBox.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

@@ -15,7 +15,7 @@
 
     <DataTemplate x:Key="DefaultWatermarkTemplate">
         <ContentControl Content="{Binding}"
-                        Foreground="{DynamicResource ButtonText}"
+                        Foreground="{DynamicResource InputTextDisabled}"
                         Focusable="False"
                         Margin="0,0,3,0" />
     </DataTemplate>
@@ -57,8 +57,7 @@
         </Setter>
     </Style>
 
-    <Style TargetType="{x:Type extendedToolkit:TimePicker}"
-           x:Key="StyleModernTimePicker">
+    <Style TargetType="{x:Type extendedToolkit:TimePicker}">
         <Setter Property="WatermarkTemplate"
                 Value="{StaticResource DefaultWatermarkTemplate}" />
         <Setter Property="IsTabStop"
@@ -74,7 +73,6 @@
                                     <ColumnDefinition Width="Auto" />
                                 </Grid.ColumnDefinitions>
                                 <extendedToolkit:DateTimeUpDown x:Name="PART_TimeUpDown"
-                                                                Style="{DynamicResource StyleModernDateTimeUpDown}"
                                                                 BorderThickness="1,1,0,1"
                                                                 Background="{TemplateBinding Background}"
                                                                 Foreground="{TemplateBinding Foreground}"

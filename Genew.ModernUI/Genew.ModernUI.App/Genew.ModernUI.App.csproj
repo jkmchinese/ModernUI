@@ -54,6 +54,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Pages\ExtendedTookit.xaml.cs">
+      <DependentUpon>ExtendedTookit.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SampleDisabledCommand.cs" />
     <Compile Include="SampleFormViewModel.cs" />
     <Compile Include="SampleMsgBoxCommand.cs" />
@@ -320,6 +323,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Pages\ControlsStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\ExtendedTookit.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

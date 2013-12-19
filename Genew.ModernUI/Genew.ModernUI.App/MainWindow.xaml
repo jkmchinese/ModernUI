@@ -20,6 +20,8 @@
             <mui:LinkGroup.Links>
                 <mui:Link DisplayName="Introduction"
                           Source="/Pages/Introduction.xaml" />
+                <mui:Link DisplayName="ExtendedTookit"
+                          Source="/Pages/ExtendedTookit.xaml" />
             </mui:LinkGroup.Links>
         </mui:LinkGroup>
         <mui:LinkGroup DisplayName="Layout">
