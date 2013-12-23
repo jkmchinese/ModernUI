@@ -95,11 +95,22 @@
                                       DefaultValue="10"
                                       Value="{Binding Path='Value', ElementName=DoubleUpDown}"
                                       Margin="0 1"></mui:DoubleUpDown>
+                    
+                    <TextBlock Text="ColorPicker:"
+                               Margin="0,0,0,8"></TextBlock>
+                    <mui:ColorPicker VerticalAlignment="Top"
+                                     HorizontalAlignment="Stretch" 
+                                     ShowAdvancedButton="True"
+                                     ShowRecentColors="True"
+                                     ShowStandardColors="True"
+                                     DisplayColorAndName="True"/>
 
                     <TextBlock Text="ColorCanvas:"
                                Margin="0,0,0,8"></TextBlock>
                     <mui:ColorCanvas VerticalAlignment="Top"
                                      HorizontalAlignment="Stretch" />
+
+
                 </StackPanel>
             </StackPanel>
         </ScrollViewer>

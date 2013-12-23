@@ -3,6 +3,10 @@
                     xmlns:extendedToolkit="clr-namespace:Genew.ModernUI.ExtendedToolkit"
                     xmlns:converters="clr-namespace:Genew.ModernUI.ExtendedToolkit.Converters">
 
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/Common/TransparentBrush.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
     <converters:ColorToSolidColorBrushConverter x:Key="ColorToSolidColorBrushConverter" />
     <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
 
@@ -175,7 +179,7 @@
                                 <Border BorderThickness="1"
                                         BorderBrush="{DynamicResource InputBorder}"
                                         ClipToBounds="True"
-                                        Background="{DynamicResource InputBackground}">
+                                        Background="{StaticResource TransparentBrush}">
                                     <Canvas x:Name="PART_ColorShadingCanvas"
                                             Width="200"
                                             Height="100"
@@ -237,7 +241,7 @@
                                             <ColumnDefinition Width="*" />
                                             <ColumnDefinition Width="*" />
                                         </Grid.ColumnDefinitions>
-                                        <Border Background="{DynamicResource InputBackground}"
+                                        <Border Background="{StaticResource TransparentBrush}"
                                                 Height="22"
                                                 Margin="2,0,2,0"
                                                 BorderThickness="1"
@@ -333,7 +337,7 @@
                                             Value="{Binding B, RelativeSource={RelativeSource TemplatedParent}}"
                                             VerticalAlignment="Center" />
                                     <TextBox Grid.Row="2"
-                                             Grid.Column="1"
+                                             Grid.Column="2"
                                              Text="{Binding Value, ElementName=PART_BSlider}"
                                              VerticalAlignment="Center" />
 
@@ -353,7 +357,7 @@
                                             VerticalAlignment="Center"
                                             Visibility="{Binding Path=UsingAlphaChannel, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource BooleanToVisibilityConverter}}" />
                                     <TextBox Grid.Row="3"
-                                             Grid.Column="1"
+                                             Grid.Column="2"
                                              Text="{Binding Value, ElementName=PART_OpacitySlider}"
                                              VerticalAlignment="Center"
                                              Visibility="{Binding Path=UsingAlphaChannel, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource BooleanToVisibilityConverter}}" />

@@ -73,6 +73,8 @@
     <Compile Include="ExtendedToolkit\ButtonSpinner\ValidSpinDirections.cs" />
     <Compile Include="ExtendedToolkit\ColorCanvas\ColorCanvas.cs" />
     <Compile Include="ExtendedToolkit\ColorCanvas\ColorSpectrumSlider.cs" />
+    <Compile Include="ExtendedToolkit\ColorPicker\ColorItem.cs" />
+    <Compile Include="ExtendedToolkit\ColorPicker\ColorPicker.cs" />
     <Compile Include="ExtendedToolkit\Core\Converters\BorderThicknessToStrokeThicknessConverter.cs" />
     <Compile Include="ExtendedToolkit\Core\Converters\CalculatorMemoryToVisibilityConverter.cs" />
     <Compile Include="ExtendedToolkit\Core\Converters\ColorBlendConverter.cs" />
@@ -329,6 +331,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Themes\ExtendedToolkit\Common\ColorPickerToggleButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\ExtendedToolkit\Common\TransparentBrush.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Themes\ExtendedToolkit\Common\TimePickerToggleButton.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -338,6 +348,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Themes\ExtendedToolkit\ColorCanvas.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\ExtendedToolkit\ColorPicker.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

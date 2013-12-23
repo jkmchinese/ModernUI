@@ -137,6 +137,8 @@
 
     <SolidColorBrush x:Key="PopupBackground"
                      Color="#ffffff" />
+    <SolidColorBrush x:Key="PopupBorder"
+                     Color="#cccccc" />
 
     <SolidColorBrush x:Key="ProgressBackground"
                      Color="#dddddd" />

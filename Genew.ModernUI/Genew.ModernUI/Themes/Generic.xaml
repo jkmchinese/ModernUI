@@ -23,5 +23,6 @@
         <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/TimePicker.xaml" />
         <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/WatermarkTextBox.xaml" />
         <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/ColorCanvas.xaml" />
+        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/ColorPicker.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
