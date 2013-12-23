@@ -14,7 +14,6 @@
                            Style="{StaticResource Heading1}"
                            Margin="0,0,0,8" />
                 <StackPanel HorizontalAlignment="Left">
-
                     <TextBlock Text="DateTimePicker:"
                                Margin="0,0,0,8" />
                     <mui:DateTimePicker Format="RFC1123"
@@ -22,36 +21,85 @@
                                         TimeFormat="LongTime"
                                         TimeWatermark="选择时间"
                                         AutoCloseCalendar="False"
-                                        MinWidth="300"></mui:DateTimePicker>
+                                        MinWidth="300"
+                                        Margin="0 1"></mui:DateTimePicker>
                     <mui:DateTimePicker Format="RFC1123"
                                         Watermark="选择日期和时间"
                                         TimeFormat="LongTime"
                                         TimeWatermark="选择时间"
                                         AutoCloseCalendar="False"
                                         MinWidth="300"
-                                        IsEnabled="False"></mui:DateTimePicker>
+                                        IsEnabled="False"
+                                        Margin="0 1"></mui:DateTimePicker>
 
                     <TextBlock Text="DateTimeUpDown:"
                                Margin="0,0,0,8" />
                     <mui:DateTimeUpDown Format="ShortTime"
                                         Value="9:00"
                                         Watermark="选择时间"
-                                        MinWidth="150" />
+                                        MinWidth="150"
+                                        Margin="0 1" />
                     <mui:DateTimeUpDown Format="ShortTime"
                                         Value="9:00"
                                         Watermark="选择时间"
                                         MinWidth="150"
-                                        IsEnabled="False"/>
+                                        IsEnabled="False"
+                                        Margin="0 1" />
 
                     <TextBlock Text="TimePicker:"
                                Margin="0,0,0,8"></TextBlock>
                     <mui:TimePicker Format="LongTime"
                                     Watermark="选择时间"
-                                    MinWidth="150" />
+                                    MinWidth="150"
+                                    Margin="0 1" />
                     <mui:TimePicker Format="LongTime"
                                     Watermark="选择时间"
-                                    MinWidth="150" 
-                                    IsEnabled="False"/>
+                                    MinWidth="150"
+                                    IsEnabled="False"
+                                    Margin="0 1" />
+
+                    <TextBlock Text="NumericUpDown:"
+                               Margin="0,0,0,8"></TextBlock>
+                    <mui:DoubleUpDown x:Name="DoubleUpDown"
+                                      MinWidth="150"
+                                      AllowInputSpecialValues="Any"
+                                      ClipValueToMinMax="False"
+                                      ShowButtonSpinner="True"
+                                      AllowSpin="True"
+                                      IsReadOnly="False"
+                                      MouseWheelActiveOnFocus="True"
+                                      CultureInfo="zh-CN"
+                                      FormatString="C2"
+                                      Increment="0.5"
+                                      Maximum="100"
+                                      Minimum="0"
+                                      ParsingNumberStyle="Any"
+                                      Watermark="Enter Text"
+                                      DefaultValue="10"
+                                      Value="25"
+                                      Margin="0 1"></mui:DoubleUpDown>
+                    <mui:DoubleUpDown MinWidth="150"
+                                      AllowInputSpecialValues="Any"
+                                      ClipValueToMinMax="False"
+                                      ShowButtonSpinner="True"
+                                      AllowSpin="True"
+                                      IsReadOnly="True"
+                                      MouseWheelActiveOnFocus="True"
+                                      CultureInfo="zh-CN"
+                                      FormatString="C2"
+                                      Increment="0.5"
+                                      Maximum="100"
+                                      Minimum="0"
+                                      ParsingNumberStyle="Any"
+                                      Watermark="Enter Text"
+                                      DefaultValue="10"
+                                      Value="{Binding Path='Value', ElementName=DoubleUpDown}"
+                                      Margin="0 1"></mui:DoubleUpDown>
+
+                    <TextBlock Text="ColorCanvas:"
+                               Margin="0,0,0,8"></TextBlock>
+                    <mui:ColorCanvas VerticalAlignment="Top"
+                                     HorizontalAlignment="Stretch" />
                 </StackPanel>
             </StackPanel>
         </ScrollViewer>

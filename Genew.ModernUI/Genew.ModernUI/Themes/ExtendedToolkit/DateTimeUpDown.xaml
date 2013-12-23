@@ -18,8 +18,6 @@
                 Value="{DynamicResource InputText}" />
         <Setter Property="BorderThickness"
                 Value="1" />
-        <Setter Property="Margin"
-                Value="0 1"></Setter>
         <Setter Property="HorizontalContentAlignment"
                 Value="Right" />
         <Setter Property="TextAlignment"

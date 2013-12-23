@@ -71,6 +71,8 @@
     <Compile Include="ExtendedToolkit\ButtonSpinner\SpinEventArgs.cs" />
     <Compile Include="ExtendedToolkit\ButtonSpinner\Spinner.cs" />
     <Compile Include="ExtendedToolkit\ButtonSpinner\ValidSpinDirections.cs" />
+    <Compile Include="ExtendedToolkit\ColorCanvas\ColorCanvas.cs" />
+    <Compile Include="ExtendedToolkit\ColorCanvas\ColorSpectrumSlider.cs" />
     <Compile Include="ExtendedToolkit\Core\Converters\BorderThicknessToStrokeThicknessConverter.cs" />
     <Compile Include="ExtendedToolkit\Core\Converters\CalculatorMemoryToVisibilityConverter.cs" />
     <Compile Include="ExtendedToolkit\Core\Converters\ColorBlendConverter.cs" />
@@ -86,6 +88,7 @@
     <Compile Include="ExtendedToolkit\Core\ErrorMessages.cs" />
     <Compile Include="ExtendedToolkit\Core\Input\InputValidationErrorEventArgs.cs" />
     <Compile Include="ExtendedToolkit\Core\Input\IValidateInput.cs" />
+    <Compile Include="ExtendedToolkit\Core\Primitives\HsvColor.cs" />
     <Compile Include="ExtendedToolkit\Core\Primitives\InputBase.cs" />
     <Compile Include="ExtendedToolkit\Core\Primitives\MouseWheelActiveTriggerEnum.cs" />
     <Compile Include="ExtendedToolkit\Core\Primitives\UpDownBase.cs" />
@@ -113,6 +116,7 @@
     <Compile Include="ExtendedToolkit\TimePicker\TimeFormat.cs" />
     <Compile Include="ExtendedToolkit\TimePicker\TimeItem.cs" />
     <Compile Include="ExtendedToolkit\TimePicker\TimePicker.cs" />
+    <Compile Include="ExtendedToolkit\Core\Utilities\ColorUtilities.cs" />
     <Compile Include="ExtendedToolkit\VisualStates.cs" />
     <Compile Include="ExtendedToolkit\WatermarkTextBox\WatermarkTextBox.cs" />
     <Compile Include="UIHelper\ExtensionMethod.cs" />
@@ -330,6 +334,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Themes\ExtendedToolkit\DateTimePicker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\ExtendedToolkit\ColorCanvas.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
