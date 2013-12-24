@@ -14,14 +14,14 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Genew.ModernUI.Windows.Controls;
 
-namespace Genew.ModernUI.App.Pages
+namespace Genew.ModernUI.App.ExtendedToolkitContent
 {
     /// <summary>
-    /// Interaction logic for Introduction.xaml
+    /// Interaction logic for SampleOne.xaml
     /// </summary>
-    public partial class ExtendedTookit : UserControl
+    public partial class SampleTwo : UserControl
     {
-        public ExtendedTookit()
+        public SampleTwo()
         {
             InitializeComponent();
         }

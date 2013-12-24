@@ -57,6 +57,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ExtendedToolkitContent\SampleTwo.xaml.cs">
+      <DependentUpon>SampleTwo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ExtendedToolkitContent\SampleOne.xaml.cs">
+      <DependentUpon>SampleOne.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ExtendedTookit.xaml.cs">
       <DependentUpon>ExtendedTookit.xaml</DependentUpon>
     </Compile>
@@ -231,6 +237,14 @@
     <Page Include="Content\SettingsAppearance.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ExtendedToolkitContent\SampleTwo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ExtendedToolkitContent\SampleOne.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

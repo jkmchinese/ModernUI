@@ -27,5 +27,6 @@
         <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/ColorPicker.xaml" />
         <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/DropDownButton.xaml" />
         <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/SplitButton.xaml" />
+        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/AutoSelectTextBox.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

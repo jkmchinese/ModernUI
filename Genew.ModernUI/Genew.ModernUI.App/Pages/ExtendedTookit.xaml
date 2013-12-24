@@ -3,140 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:mui="http://genew.com.cn/ModernUI"
+             xmlns:extendedToolkitContent="clr-namespace:Genew.ModernUI.App.ExtendedToolkitContent"
              mc:Ignorable="d"
              d:DesignHeight="300"
              d:DesignWidth="300">
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
-            <StackPanel>
-                <TextBlock Text="ExtendedTookit FOR WPF"
-                           Style="{StaticResource Heading1}"
-                           Margin="0,0,0,8" />
-                <StackPanel HorizontalAlignment="Left">
-                    <TextBlock Text="DateTimePicker:"
-                               Margin="0,0,0,8" />
-                    <mui:DateTimePicker Format="RFC1123"
-                                        Watermark="选择日期和时间"
-                                        TimeFormat="LongTime"
-                                        TimeWatermark="选择时间"
-                                        AutoCloseCalendar="False"
-                                        MinWidth="300"
-                                        Margin="0 1"></mui:DateTimePicker>
-                    <mui:DateTimePicker Format="RFC1123"
-                                        Watermark="选择日期和时间"
-                                        TimeFormat="LongTime"
-                                        TimeWatermark="选择时间"
-                                        AutoCloseCalendar="False"
-                                        MinWidth="300"
-                                        IsEnabled="False"
-                                        Margin="0 1"></mui:DateTimePicker>
-
-                    <TextBlock Text="DateTimeUpDown:"
-                               Margin="0,0,0,8" />
-                    <mui:DateTimeUpDown Format="ShortTime"
-                                        Value="9:00"
-                                        Watermark="选择时间"
-                                        MinWidth="150"
-                                        Margin="0 1" />
-                    <mui:DateTimeUpDown Format="ShortTime"
-                                        Value="9:00"
-                                        Watermark="选择时间"
-                                        MinWidth="150"
-                                        IsEnabled="False"
-                                        Margin="0 1" />
-
-                    <TextBlock Text="TimePicker:"
-                               Margin="0,0,0,8"></TextBlock>
-                    <mui:TimePicker Format="LongTime"
-                                    Watermark="选择时间"
-                                    MinWidth="150"
-                                    Margin="0 1" />
-                    <mui:TimePicker Format="LongTime"
-                                    Watermark="选择时间"
-                                    MinWidth="150"
-                                    IsEnabled="False"
-                                    Margin="0 1" />
-
-                    <TextBlock Text="NumericUpDown:"
-                               Margin="0,0,0,8"></TextBlock>
-                    <mui:DoubleUpDown x:Name="DoubleUpDown"
-                                      MinWidth="150"
-                                      AllowInputSpecialValues="Any"
-                                      ClipValueToMinMax="False"
-                                      ShowButtonSpinner="True"
-                                      AllowSpin="True"
-                                      IsReadOnly="False"
-                                      MouseWheelActiveOnFocus="True"
-                                      CultureInfo="zh-CN"
-                                      FormatString="C2"
-                                      Increment="0.5"
-                                      Maximum="100"
-                                      Minimum="0"
-                                      ParsingNumberStyle="Any"
-                                      Watermark="Enter Text"
-                                      DefaultValue="10"
-                                      Value="25"
-                                      Margin="0 1"></mui:DoubleUpDown>
-                    <mui:DoubleUpDown MinWidth="150"
-                                      AllowInputSpecialValues="Any"
-                                      ClipValueToMinMax="False"
-                                      ShowButtonSpinner="True"
-                                      AllowSpin="True"
-                                      IsReadOnly="True"
-                                      MouseWheelActiveOnFocus="True"
-                                      CultureInfo="zh-CN"
-                                      FormatString="C2"
-                                      Increment="0.5"
-                                      Maximum="100"
-                                      Minimum="0"
-                                      ParsingNumberStyle="Any"
-                                      Watermark="Enter Text"
-                                      DefaultValue="10"
-                                      Value="{Binding Path='Value', ElementName=DoubleUpDown}"
-                                      Margin="0 1"></mui:DoubleUpDown>
-
-                    <TextBlock Text="ColorPicker:"
-                               Margin="0,0,0,8"></TextBlock>
-                    <mui:ColorPicker VerticalAlignment="Top"
-                                     HorizontalAlignment="Stretch"
-                                     ShowAdvancedButton="True"
-                                     ShowRecentColors="True"
-                                     ShowStandardColors="True"
-                                     DisplayColorAndName="True" />
-                    <Grid Visibility="Collapsed">
-                        <TextBlock Text="ColorCanvas:"
-                                   Margin="0,0,0,8"></TextBlock>
-                        <mui:ColorCanvas VerticalAlignment="Top"
-                                         HorizontalAlignment="Stretch" />
-                    </Grid>
-
-                    <TextBlock Text="DropDownButton:"
-                               Margin="0,0,0,8"></TextBlock>
-                    <mui:DropDownButton VerticalAlignment="Top"
-                                        HorizontalAlignment="Stretch"
-                                        Content="Click"
-                                        MinWidth="150"
-                                        Margin="0 1">
-                        <mui:DropDownButton.DropDownContent>
-                            <mui:ColorCanvas VerticalAlignment="Top"
-                                             HorizontalAlignment="Stretch" />
-                        </mui:DropDownButton.DropDownContent>
-                    </mui:DropDownButton>
-                    <mui:DropDownButton VerticalAlignment="Top"
-                                        HorizontalAlignment="Stretch"
-                                        Content="Click"
-                                        MinWidth="150"
-                                        IsEnabled="False"
-                                        Margin="0 1">
-                        <mui:DropDownButton.DropDownContent>
-                            <mui:ColorCanvas VerticalAlignment="Top"
-                                             HorizontalAlignment="Stretch" />
-                        </mui:DropDownButton.DropDownContent>
-                    </mui:DropDownButton>
-
-                </StackPanel>
-            </StackPanel>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <extendedToolkitContent:SampleOne  Grid.Column="0" />
+                <extendedToolkitContent:SampleTwo  Grid.Column="1" />
+            </Grid>
         </ScrollViewer>
     </Grid>
 </UserControl>

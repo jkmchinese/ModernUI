@@ -2,34 +2,13 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:converters="clr-namespace:Genew.ModernUI.ExtendedToolkit.Converters"
                     xmlns:extendedToolkit="clr-namespace:Genew.ModernUI.ExtendedToolkit">
-
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary>
+            <PathGeometry x:Key="DownArrowData">M 0,1 C0,1 0,0 0,0 0,0 3,0 3,0 3,0 3,1 3,1 3,1 4,1 4,1 4,1 4,0 4,0 4,0 7,0 7,0 7,0 7,1 7,1 7,1 6,1 6,1 6,1 6,2 6,2 6,2 5,2 5,2 5,2 5,3 5,3 5,3 4,3 4,3 4,3 4,4 4,4 4,4 3,4 3,4 3,4 3,3 3,3 3,3 2,3 2,3 2,3 2,2 2,2 2,2 1,2 1,2 1,2 1,1 1,1 1,1 0,1 0,1 z</PathGeometry>
+        </ResourceDictionary>
+    </ResourceDictionary.MergedDictionaries>
+    
     <converters:InverseBoolConverter x:Key="InverseBoolConverter" />
-
-    <LinearGradientBrush x:Key="ColorPickerDarkBorderBrush"
-                         EndPoint="0.5,1"
-                         StartPoint="0.5,0">
-        <GradientStop Color="#FFA3AEB9"
-                      Offset="0" />
-        <GradientStop Color="#FF8399A9"
-                      Offset="0.375" />
-        <GradientStop Color="#FF718597"
-                      Offset="0.375" />
-        <GradientStop Color="#FF617584"
-                      Offset="1" />
-    </LinearGradientBrush>
-
-    <LinearGradientBrush x:Key="PopupBackgroundBrush"
-                         StartPoint="0,0"
-                         EndPoint="0,1">
-        <LinearGradientBrush.GradientStops>
-            <GradientStopCollection>
-                <GradientStop Offset="0"
-                              Color="#FFffffff" />
-                <GradientStop Offset="1"
-                              Color="#FFE8EBED" />
-            </GradientStopCollection>
-        </LinearGradientBrush.GradientStops>
-    </LinearGradientBrush>
 
     <!-- =============================================================================== -->
     <!-- SplitButton                                                                     -->
@@ -59,7 +38,8 @@
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="*" />
-                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="1" />
+                                    <ColumnDefinition Width="18" />
                                 </Grid.ColumnDefinitions>
                                 <Button x:Name="PART_ActionButton"
                                         Margin="0"
@@ -73,8 +53,7 @@
                                     </Button.Template>
                                     <Grid>
                                         <extendedToolkit:ButtonChrome x:Name="ActionButtonChrome"
-                                                                      BorderThickness="1,1,0,1"
-                                                                      CornerRadius="2.75, 0, 0, 2.75"
+                                                                      BorderThickness="1 1 0 1"
                                                                       RenderEnabled="{TemplateBinding IsEnabled}"
                                                                       RenderMouseOver="{Binding IsMouseOver, ElementName=PART_ActionButton}"
                                                                       RenderPressed="{Binding IsPressed, ElementName=PART_ActionButton}">
@@ -88,9 +67,11 @@
                                         </extendedToolkit:ButtonChrome>
                                     </Grid>
                                 </Button>
+                                <GridSplitter Grid.Column="1"
+                                              ResizeDirection="Columns"
+                                              IsEnabled="False"></GridSplitter>
                                 <ToggleButton x:Name="PART_ToggleButton"
-                                              Margin="1 0 0 0"
-                                              Grid.Column="1"
+                                              Grid.Column="2"
                                               IsTabStop="False"
                                               IsChecked="{Binding IsOpen, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay}"
                                               IsHitTestVisible="{Binding IsOpen, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource InverseBoolConverter}}">
@@ -111,9 +92,10 @@
                                                   HorizontalAlignment="Center"
                                                   VerticalAlignment="Center">
                                                 <Path x:Name="Arrow"
-                                                      Width="7"
-                                                      Height="4"
-                                                      Data="M 0,1 C0,1 0,0 0,0 0,0 3,0 3,0 3,0 3,1 3,1 3,1 4,1 4,1 4,1 4,0 4,0 4,0 7,0 7,0 7,0 7,1 7,1 7,1 6,1 6,1 6,1 6,2 6,2 6,2 5,2 5,2 5,2 5,3 5,3 5,3 4,3 4,3 4,3 4,4 4,4 4,4 3,4 3,4 3,4 3,3 3,3 3,3 2,3 2,3 2,3 2,2 2,2 2,2 1,2 1,2 1,2 1,1 1,1 1,1 0,1 0,1 z"
+                                                      Width="10"
+                                                      Height="6"
+                                                      Stretch="UniformToFill"
+                                                      Data="{StaticResource DownArrowData}"
                                                       Fill="{DynamicResource ButtonText}" />
                                             </Grid>
                                         </extendedToolkit:ButtonChrome>
@@ -123,8 +105,6 @@
                         </extendedToolkit:ButtonChrome>
 
                         <Popup x:Name="PART_Popup"
-                               HorizontalOffset="1"
-                               VerticalOffset="1"
                                AllowsTransparency="True"
                                StaysOpen="False"
                                Placement="Bottom"

@@ -64,6 +64,9 @@
     <Compile Include="Behaviors\ScrollStateBehavior.cs" />
     <Compile Include="Behaviors\TextBoxDefaultStringBehavior.cs" />
     <Compile Include="Behaviors\TextSelectAllBehavior.cs" />
+    <Compile Include="ExtendedToolkit\AutoSelectTextBox\AutoSelectBehaviorEnum.cs" />
+    <Compile Include="ExtendedToolkit\AutoSelectTextBox\AutoSelectTextBox.cs" />
+    <Compile Include="ExtendedToolkit\AutoSelectTextBox\QueryMoveFocusEventArgs.cs" />
     <Compile Include="ExtendedToolkit\BusyIndicator\BusyIndicator.cs" />
     <Compile Include="ExtendedToolkit\BusyIndicator\VisualStates.BusyIndicator.cs" />
     <Compile Include="ExtendedToolkit\ButtonSpinner\ButtonSpinner.cs" />
@@ -335,6 +338,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Themes\ExtendedToolkit\Common\ColorPickerToggleButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\ExtendedToolkit\AutoSelectTextBox.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

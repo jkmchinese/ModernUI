@@ -1,0 +1,104 @@
+﻿<UserControl x:Class="Genew.ModernUI.App.ExtendedToolkitContent.SampleTwo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mui="http://genew.com.cn/ModernUI"
+             mc:Ignorable="d"
+             d:DesignHeight="300"
+             d:DesignWidth="300">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="SampleTwo"
+                       Style="{StaticResource Heading1}"
+                       Margin="0,0,0,8" />
+            <StackPanel HorizontalAlignment="Left">
+                <StackPanel.Resources>
+                    <Style TargetType="{x:Type mui:AutoSelectTextBox}">
+                        <Setter Property="Margin"
+                                Value="3" />
+                        <Setter Property="AutoSelectBehavior"
+                                Value="{Binding SelectedItem, ElementName=AutoSelectBehavior}" />
+                        <Setter Property="AutoMoveFocus"
+                                Value="{Binding IsChecked, ElementName=AutoMoveFocus}" />
+                    </Style>
+                </StackPanel.Resources>
+                <TextBlock Text="AutoSelectTextBox:" />
+                <Grid Margin="0 1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Orientation="Horizontal"
+                                Grid.Column="0">
+                        <TextBlock Text="AutoSelectBehavior: "
+                                   VerticalAlignment="Center" />
+                        <ComboBox x:Name="AutoSelectBehavior"
+                                  SelectedIndex="1"
+                                  Width="100"
+                                  VerticalAlignment="Center">
+                            <x:StaticExtension Member="mui:AutoSelectBehavior.Never" />
+                            <x:StaticExtension Member="mui:AutoSelectBehavior.OnFocus" />
+                        </ComboBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal"
+                                Grid.Column="1"
+                                Margin="10,0,0,0">
+                        <TextBlock Text="AutoMoveFocus:  "
+                                   VerticalAlignment="Center" />
+                        <CheckBox x:Name="AutoMoveFocus"
+                                  IsChecked="True"
+                                  VerticalAlignment="Center" />
+                    </StackPanel>
+                </Grid>
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Left"
+                            Margin="0 1">
+                    <TextBlock Text="("
+                               VerticalAlignment="Center" />
+                    <mui:AutoSelectTextBox MaxLength="3"
+                                           Width="38"
+                                           Text="555" />
+                    <TextBlock Text=")"
+                               VerticalAlignment="Center" />
+                    <mui:AutoSelectTextBox MaxLength="3"
+                                           Width="38"
+                                           Text="555" />
+                    <TextBlock Text="-"
+                               VerticalAlignment="Center" />
+                    <mui:AutoSelectTextBox MaxLength="4"
+                                           Width="48"
+                                           Text="5555" />
+                </StackPanel>
+                <StackPanel Orientation="Vertical"
+                            HorizontalAlignment="Left"
+                            Margin="0 1">
+                    <StackPanel Orientation="Horizontal">
+                        <mui:AutoSelectTextBox Text="Text1"
+                                               Width="100" />
+                        <mui:AutoSelectTextBox Text="Text2"
+                                               Width="100" />
+                        <mui:AutoSelectTextBox Text="Text3"
+                                               Width="100" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <mui:AutoSelectTextBox Text="Text4"
+                                               Width="100" />
+                        <mui:AutoSelectTextBox Text="Text5"
+                                               Width="100" />
+                        <mui:AutoSelectTextBox Text="Text6"
+                                               Width="100" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <mui:AutoSelectTextBox Text="Text7"
+                                               Width="100" />
+                        <mui:AutoSelectTextBox Text="Text8"
+                                               Width="100" />
+                        <mui:AutoSelectTextBox Text="Text9"
+                                               Width="100" />
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -14,16 +14,21 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Genew.ModernUI.Windows.Controls;
 
-namespace Genew.ModernUI.App.Pages
+namespace Genew.ModernUI.App.ExtendedToolkitContent
 {
     /// <summary>
-    /// Interaction logic for Introduction.xaml
+    /// Interaction logic for SampleOne.xaml
     /// </summary>
-    public partial class ExtendedTookit : UserControl
+    public partial class SampleOne : UserControl
     {
-        public ExtendedTookit()
+        public SampleOne()
         {
             InitializeComponent();
+        }
+
+        private void SplitButton_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            ModernDialog.ShowMessage("Thanks for clicking me!", "SplitButton Click", MessageBoxButton.OK);
         }
     }
 }

@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:extendedToolkit="clr-namespace:Genew.ModernUI.ExtendedToolkit">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/Genew.ModernUI;component/Assets/TextBox.xaml"></ResourceDictionary>
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style TargetType="{x:Type extendedToolkit:AutoSelectTextBox}"
+           BasedOn="{StaticResource {x:Type TextBox}}">
+    </Style>
+
+</ResourceDictionary>

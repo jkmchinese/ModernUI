@@ -9,6 +9,7 @@
 
 using System.Collections.Generic;
 using System.Windows;
+using System.Windows.Controls.Primitives;
 using System.Windows.Media;
 
 namespace Genew.ModernUI.UIHelper
@@ -92,6 +93,60 @@ namespace Genew.ModernUI.UIHelper
             }
             return null;
         }
+
+        /// <summary>
+        /// 获取依赖对象的父元素(对Popup支持)
+        /// </summary>
+        /// <param name="element"></param>
+        /// <param name="recurseIntoPopup"></param>
+        /// <returns></returns>
+        private static DependencyObject GetParent(DependencyObject element, bool recurseIntoPopup)
+        {
+            if (recurseIntoPopup)
+            {
+                // Case 126732 : To correctly detect parent of a popup we must do that exception case
+                var popup = element as Popup;
+
+                if ((popup != null) && (popup.PlacementTarget != null))
+                    return popup.PlacementTarget;
+            }
+
+            var visual = element as Visual;
+            DependencyObject parent = (visual == null) ? null : VisualTreeHelper.GetParent(visual);
+
+            if (parent == null)
+            {
+                // No Visual parent. Check in the logical tree.
+                var fe = element as FrameworkElement;
+
+                if (fe != null)
+                {
+                    parent = fe.Parent;
+
+                    if (parent == null)
+                    {
+                        parent = fe.TemplatedParent;
+                    }
+                }
+                else
+                {
+                    var fce = element as FrameworkContentElement;
+
+                    if (fce != null)
+                    {
+                        parent = fce.Parent;
+
+                        if (parent == null)
+                        {
+                            parent = fce.TemplatedParent;
+                        }
+                    }
+                }
+            }
+
+            return parent;
+        }
+
         #endregion
 
         #region Public Methods
@@ -122,7 +177,7 @@ namespace Genew.ModernUI.UIHelper
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="element"></param>
-        /// <returns></returns>//created by xiapengcheng at 2013-6-18 19:56:55
+        /// <returns></returns>
         public static IEnumerable<T> FindAllChilds<T>(this DependencyObject element) where T : DependencyObject
         {
             IList<T> children = new List<T>();
@@ -179,6 +234,39 @@ namespace Genew.ModernUI.UIHelper
                     return true;
                 }
             }
+            return false;
+        }
+
+        /// <summary>
+        /// Returns true if the specified element is a child of parent somewhere in the visual 
+        /// tree. This method will work for Visual, FrameworkElement and FrameworkContentElement.
+        /// </summary>
+        /// <param name="element">子元素</param>
+        /// <param name="parent">父元素</param>
+        /// <returns></returns>
+        public static bool IsDescendantOf(DependencyObject element, DependencyObject parent)
+        {
+            return IsDescendantOf(element, parent, true);
+        }
+
+        /// <summary>
+        /// Returns true if the specified element is a child of parent somewhere in the visual 
+        /// tree. This method will work for Visual, FrameworkElement and FrameworkContentElement.
+        /// </summary>
+        /// <param name="element">子元素</param>
+        /// <param name="parent">父元素</param>
+        /// <param name="recurseIntoPopup"></param>
+        /// <returns></returns>
+        public static bool IsDescendantOf(DependencyObject element, DependencyObject parent, bool recurseIntoPopup)
+        {
+            while (element != null)
+            {
+                if (Equals(element, parent))
+                    return true;
+
+                element = GetParent(element, recurseIntoPopup);
+            }
+
             return false;
         }
         #endregion
