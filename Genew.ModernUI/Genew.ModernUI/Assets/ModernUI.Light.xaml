@@ -135,6 +135,32 @@
     <SolidColorBrush x:Key="ModernButtonTextDisabled"
                      Color="#a1a1a1" />
 
+    <SolidColorBrush x:Key="ButtonChromeBorder"
+                     Color="#cccccc" />
+    <SolidColorBrush x:Key="ButtonChromeBorderHover"
+                     Color="#cccccc" />
+    <SolidColorBrush x:Key="ButtonChromeBorderPressed"
+                     Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="ButtonChromeBorderDisabled"
+                     Color="#aaaaaa" />
+    <SolidColorBrush x:Key="ButtonChromeInnerBorder"
+                     Color="#AAcccccc" />
+    <SolidColorBrush x:Key="ButtonChromeInnerBorderHover"
+                     Color="#AAcccccc" />
+    <SolidColorBrush x:Key="ButtonChromeInnerBorderPressed"
+                     Opacity=".8"
+                     Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="ButtonChromeInnerBorderDisabled"
+                     Color="#aaaaaa" />
+    <SolidColorBrush x:Key="ButtonChromeBackground"
+                     Color="#ffffff" />
+    <SolidColorBrush x:Key="ButtonChromeBackgroundHover"
+                     Color="#dddddd" />
+    <SolidColorBrush x:Key="ButtonChromeBackgroundPressed"
+                     Color="{DynamicResource AccentColor}" />
+    <SolidColorBrush x:Key="ButtonChromeBackgroundDisabled"
+                     Color="#aaaaaa" />
+
     <SolidColorBrush x:Key="PopupBackground"
                      Color="#ffffff" />
     <SolidColorBrush x:Key="PopupBorder"

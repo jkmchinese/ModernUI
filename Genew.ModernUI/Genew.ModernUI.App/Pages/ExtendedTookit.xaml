@@ -95,21 +95,45 @@
                                       DefaultValue="10"
                                       Value="{Binding Path='Value', ElementName=DoubleUpDown}"
                                       Margin="0 1"></mui:DoubleUpDown>
-                    
+
                     <TextBlock Text="ColorPicker:"
                                Margin="0,0,0,8"></TextBlock>
                     <mui:ColorPicker VerticalAlignment="Top"
-                                     HorizontalAlignment="Stretch" 
+                                     HorizontalAlignment="Stretch"
                                      ShowAdvancedButton="True"
                                      ShowRecentColors="True"
                                      ShowStandardColors="True"
-                                     DisplayColorAndName="True"/>
+                                     DisplayColorAndName="True" />
+                    <Grid Visibility="Collapsed">
+                        <TextBlock Text="ColorCanvas:"
+                                   Margin="0,0,0,8"></TextBlock>
+                        <mui:ColorCanvas VerticalAlignment="Top"
+                                         HorizontalAlignment="Stretch" />
+                    </Grid>
 
-                    <TextBlock Text="ColorCanvas:"
+                    <TextBlock Text="DropDownButton:"
                                Margin="0,0,0,8"></TextBlock>
-                    <mui:ColorCanvas VerticalAlignment="Top"
-                                     HorizontalAlignment="Stretch" />
-
+                    <mui:DropDownButton VerticalAlignment="Top"
+                                        HorizontalAlignment="Stretch"
+                                        Content="Click"
+                                        MinWidth="150"
+                                        Margin="0 1">
+                        <mui:DropDownButton.DropDownContent>
+                            <mui:ColorCanvas VerticalAlignment="Top"
+                                             HorizontalAlignment="Stretch" />
+                        </mui:DropDownButton.DropDownContent>
+                    </mui:DropDownButton>
+                    <mui:DropDownButton VerticalAlignment="Top"
+                                        HorizontalAlignment="Stretch"
+                                        Content="Click"
+                                        MinWidth="150"
+                                        IsEnabled="False"
+                                        Margin="0 1">
+                        <mui:DropDownButton.DropDownContent>
+                            <mui:ColorCanvas VerticalAlignment="Top"
+                                             HorizontalAlignment="Stretch" />
+                        </mui:DropDownButton.DropDownContent>
+                    </mui:DropDownButton>
 
                 </StackPanel>
             </StackPanel>
