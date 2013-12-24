@@ -117,6 +117,7 @@
     <Compile Include="ExtendedToolkit\NumericUpDown\UIntegerUpDown.cs" />
     <Compile Include="ExtendedToolkit\NumericUpDown\ULongUpDown.cs" />
     <Compile Include="ExtendedToolkit\NumericUpDown\UShortUpDown.cs" />
+    <Compile Include="ExtendedToolkit\SplitButton\SplitButton.cs" />
     <Compile Include="ExtendedToolkit\TimePicker\TimeFormat.cs" />
     <Compile Include="ExtendedToolkit\TimePicker\TimeItem.cs" />
     <Compile Include="ExtendedToolkit\TimePicker\TimePicker.cs" />
@@ -362,6 +363,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Themes\ExtendedToolkit\ButtonChrome.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\ExtendedToolkit\SplitButton.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
