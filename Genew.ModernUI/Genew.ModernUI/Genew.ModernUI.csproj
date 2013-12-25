@@ -114,6 +114,7 @@
     <Compile Include="ExtendedToolkit\MaskedTextBox\InsertKeyModeEnum.cs" />
     <Compile Include="ExtendedToolkit\MaskedTextBox\MaskedTextBox.cs" />
     <Compile Include="ExtendedToolkit\MaskedTextBox\MaskFormatEnum.cs" />
+    <Compile Include="ExtendedToolkit\MultiLineTextEditor\MultiLineTextEditor.cs" />
     <Compile Include="ExtendedToolkit\NumericUpDown\AllowedSpecialValuesEnum.cs" />
     <Compile Include="ExtendedToolkit\NumericUpDown\ByteUpDown.cs" />
     <Compile Include="ExtendedToolkit\NumericUpDown\CommonNumericUpDown.cs" />
@@ -350,6 +351,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Themes\ExtendedToolkit\AutoSelectTextBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\ExtendedToolkit\MultiLineTextEditor.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

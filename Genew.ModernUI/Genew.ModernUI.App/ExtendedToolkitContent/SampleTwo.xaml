@@ -169,6 +169,18 @@
                                           Watermark="Enter Text"
                                           SelectAllOnGotFocus="{Binding IsChecked, ElementName=SelectAll}" />
                 </StackPanel>
+
+
+                <TextBlock Text="MultiLineTextEditor:"
+                           Margin="0 11 0 1"
+                           Style="{StaticResource StyleTitleTbk}" />
+                <StackPanel>
+                    <mui:MultiLineTextEditor TextWrapping="Wrap"
+                                             Text="MultiLineTextEditor Demo"
+                                             Content="{Binding Text, RelativeSource={RelativeSource Self}}"
+                                             Width="150"
+                                             Height="24" />
+                </StackPanel>
             </StackPanel>
         </StackPanel>
     </Grid>
