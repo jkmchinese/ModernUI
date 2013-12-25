@@ -58,7 +58,7 @@
                                                                ShowButtonSpinner="{TemplateBinding ShowButtonSpinner}">
                                     <extendedToolkit:WatermarkTextBox x:Name="PART_TextBox"
                                                                       BorderThickness="0"
-                                                                      Background="Transparent"
+                                                                      Background="{TemplateBinding Background}"
                                                                       FontFamily="{TemplateBinding FontFamily}"
                                                                       FontSize="{TemplateBinding FontSize}"
                                                                       FontStretch="{TemplateBinding FontStretch}"
@@ -69,7 +69,7 @@
                                                                       IsReadOnly="{Binding IsReadOnly, RelativeSource={RelativeSource TemplatedParent}}"
                                                                       MinWidth="20"
                                                                       AcceptsReturn="False"
-                                                                      Padding="0"
+                                                                      Padding="{TemplateBinding Padding}"
                                                                       TextAlignment="{TemplateBinding TextAlignment}"
                                                                       TextWrapping="NoWrap"
                                                                       Text="{Binding Text, RelativeSource={RelativeSource TemplatedParent}}"

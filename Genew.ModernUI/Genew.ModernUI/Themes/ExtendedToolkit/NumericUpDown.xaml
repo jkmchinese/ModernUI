@@ -37,7 +37,6 @@
             <Setter.Value>
                 <ControlTemplate TargetType="Control">
                     <extendedToolkit:ButtonSpinner x:Name="PART_Spinner"
-                                                   Style="{DynamicResource StyleModernButtonSpinner}"
                                                    IsTabStop="False"
                                                    Background="{TemplateBinding Background}"
                                                    BorderThickness="{TemplateBinding BorderThickness}"

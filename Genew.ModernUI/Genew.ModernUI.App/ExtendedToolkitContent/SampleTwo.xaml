@@ -8,6 +8,13 @@
              mc:Ignorable="d"
              d:DesignHeight="300"
              d:DesignWidth="300">
+    <UserControl.Resources>
+        <Style TargetType="TextBlock"
+               x:Key="StyleTitleTbk">
+            <Setter Property="Foreground"
+                    Value="{DynamicResource Accent}"></Setter>
+        </Style>
+    </UserControl.Resources>
     <Grid>
         <StackPanel>
             <TextBlock Text="SampleTwo"
@@ -24,7 +31,8 @@
                                 Value="{Binding IsChecked, ElementName=AutoMoveFocus}" />
                     </Style>
                 </StackPanel.Resources>
-                <TextBlock Text="AutoSelectTextBox:" />
+                <TextBlock Text="AutoSelectTextBox:"
+                           Style="{StaticResource StyleTitleTbk}" />
                 <Grid Margin="0 1">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto" />
@@ -100,14 +108,16 @@
                     </StackPanel>
                 </StackPanel>
 
-                <TextBlock Text="AutoSelectTextBox:"
-                           Margin="0 3 0 1" />
-                <TextBlock Text="Option:" />
-                <Border Margin="4 1"
+                <TextBlock Text="MaskedTextBox:"
+                           Margin="0 8 0 1"
+                           Style="{StaticResource StyleTitleTbk}" />
+                <TextBlock Text="Option:"
+                           FontStyle="Italic" />
+                <Border Margin="8 1 4 1"
                         BorderThickness="1"
                         CornerRadius="1"
                         BorderBrush="{DynamicResource ButtonBorder}">
-                    <StackPanel>
+                    <StackPanel Margin="2">
                         <StackPanel Orientation="Horizontal">
                             <TextBlock Text="Include literals:"
                                        VerticalAlignment="Center"
@@ -140,14 +150,16 @@
                     </StackPanel>
                 </Border>
                 <StackPanel>
-                    <TextBlock Text="Usage:" />
+                    <TextBlock Text="Usage:"
+                               FontStyle="Italic" />
                     <mui:MaskedTextBox x:Name="MaskedTextBox"
-                                       Mask="(000) 000-0000"
+                                       Mask="(000)000-0000"
                                        ValueDataType="{x:Type sys:String}" />
                 </StackPanel>
 
                 <TextBlock Text="WatermarkTextBox:"
-                           Margin="0 5 0 1" />
+                           Margin="0 11 0 1"
+                           Style="{StaticResource StyleTitleTbk}" />
                 <StackPanel>
                     <CheckBox x:Name="SelectAll"
                               Content="SelectAllOnGotFocus"

@@ -7,13 +7,21 @@
              mc:Ignorable="d"
              d:DesignHeight="300"
              d:DesignWidth="300">
+    <UserControl.Resources>
+        <Style TargetType="TextBlock"
+               x:Key="StyleTitleTbk">
+            <Setter Property="Foreground"
+                    Value="{DynamicResource Accent}"></Setter>
+        </Style>
+    </UserControl.Resources>
     <Grid>
         <StackPanel>
             <TextBlock Text="SampleOne"
                        Style="{StaticResource Heading1}"
                        Margin="0,0,0,8" />
             <StackPanel HorizontalAlignment="Left">
-                <TextBlock Text="DateTimePicker:" />
+                <TextBlock Text="DateTimePicker:"
+                           Style="{StaticResource StyleTitleTbk}" />
                 <mui:DateTimePicker Format="RFC1123"
                                     Watermark="选择日期和时间"
                                     TimeFormat="LongTime"
@@ -31,7 +39,8 @@
                                     Margin="0 1"></mui:DateTimePicker>
 
                 <TextBlock Text="DateTimeUpDown:"
-                           Margin="0,8,0,0" />
+                           Margin="0,8,0,0"
+                           Style="{StaticResource StyleTitleTbk}" />
                 <mui:DateTimeUpDown Format="ShortTime"
                                     Value="9:00"
                                     Watermark="选择时间"
@@ -45,7 +54,8 @@
                                     Margin="0 1" />
 
                 <TextBlock Text="TimePicker:"
-                           Margin="0,8,0,0"></TextBlock>
+                           Margin="0,8,0,0"
+                           Style="{StaticResource StyleTitleTbk}"></TextBlock>
                 <mui:TimePicker Format="LongTime"
                                 Watermark="选择时间"
                                 MinWidth="150"
@@ -57,7 +67,8 @@
                                 Margin="0 1" />
 
                 <TextBlock Text="NumericUpDown:"
-                           Margin="0,8,0,0"></TextBlock>
+                           Margin="0,8,0,0"
+                           Style="{StaticResource StyleTitleTbk}"></TextBlock>
                 <mui:DoubleUpDown x:Name="DoubleUpDown"
                                   MinWidth="150"
                                   AllowInputSpecialValues="Any"
@@ -95,7 +106,8 @@
                                   Margin="0 1"></mui:DoubleUpDown>
 
                 <TextBlock Text="ColorPicker:"
-                           Margin="0,0,0,8"></TextBlock>
+                           Margin="0,0,0,8"
+                           Style="{StaticResource StyleTitleTbk}"></TextBlock>
                 <mui:ColorPicker VerticalAlignment="Top"
                                  HorizontalAlignment="Stretch"
                                  ShowAdvancedButton="True"
@@ -110,7 +122,8 @@
                 </Grid>
 
                 <TextBlock Text="DropDownButton:"
-                           Margin="0,8,0,0"></TextBlock>
+                           Margin="0,8,0,0"
+                           Style="{StaticResource StyleTitleTbk}"></TextBlock>
                 <mui:DropDownButton VerticalAlignment="Top"
                                     HorizontalAlignment="Stretch"
                                     Content="Click Me"
@@ -134,7 +147,8 @@
                 </mui:DropDownButton>
 
                 <TextBlock Text="SplitButton:"
-                           Margin="0,8,0,0"></TextBlock>
+                           Margin="0,8,0,0"
+                           Style="{StaticResource StyleTitleTbk}"></TextBlock>
                 <mui:SplitButton VerticalAlignment="Top"
                                  HorizontalAlignment="Stretch"
                                  Content="Click Me"

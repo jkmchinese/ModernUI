@@ -2,6 +2,10 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:extendedToolkit="clr-namespace:Genew.ModernUI.ExtendedToolkit">
 
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/Genew.ModernUI;component/Assets/TextBox.xaml"></ResourceDictionary>
+    </ResourceDictionary.MergedDictionaries>
+
     <DataTemplate x:Key="DefaultWatermarkTemplate">
         <ContentControl Content="{Binding}"
                         Foreground="{DynamicResource InputTextDisabled}"
@@ -9,19 +13,9 @@
     </DataTemplate>
 
     <Style TargetType="{x:Type extendedToolkit:WatermarkTextBox}"
-           BasedOn="{StaticResource {x:Type TextBoxBase}}">
-        <Setter Property="BorderThickness"
-                Value="1" />
+           BasedOn="{StaticResource {x:Type TextBox}}">
         <Setter Property="Padding"
                 Value="3" />
-        <Setter Property="AllowDrop"
-                Value="true" />
-        <Setter Property="FocusVisualStyle"
-                Value="{x:Null}" />
-        <Setter Property="ScrollViewer.PanningMode"
-                Value="VerticalFirst" />
-        <Setter Property="Stylus.IsFlicksEnabled"
-                Value="False" />
         <Setter Property="WatermarkTemplate"
                 Value="{StaticResource DefaultWatermarkTemplate}" />
         <Setter Property="Template">

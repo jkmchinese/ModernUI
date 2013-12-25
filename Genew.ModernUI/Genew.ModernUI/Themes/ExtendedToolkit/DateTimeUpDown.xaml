@@ -30,38 +30,39 @@
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type extendedToolkit:DateTimeUpDown}">
                     <extendedToolkit:ButtonSpinner x:Name="PART_Spinner"
-                                         IsTabStop="False"
-                                         Background="{TemplateBinding Background}"
-                                         BorderBrush="{TemplateBinding BorderBrush}"
-                                         BorderThickness="{TemplateBinding BorderThickness}"
-                                         AllowSpin="{TemplateBinding AllowSpin}"
-                                         ShowButtonSpinner="{TemplateBinding ShowButtonSpinner}">
+                                                   IsTabStop="False"
+                                                   Background="{TemplateBinding Background}"
+                                                   BorderBrush="{TemplateBinding BorderBrush}"
+                                                   BorderThickness="{TemplateBinding BorderThickness}"
+                                                   AllowSpin="{TemplateBinding AllowSpin}"
+                                                   ShowButtonSpinner="{TemplateBinding ShowButtonSpinner}">
                         <extendedToolkit:WatermarkTextBox x:Name="PART_TextBox"
-                                                BorderThickness="0"
-                                                Background="Transparent"
-                                                ContextMenu="{TemplateBinding ContextMenu}"
-                                                FontFamily="{TemplateBinding FontFamily}"
-                                                FontSize="{TemplateBinding FontSize}"
-                                                FontStretch="{TemplateBinding FontStretch}"
-                                                FontStyle="{TemplateBinding FontStyle}"
-                                                FontWeight="{TemplateBinding FontWeight}"
-                                                Foreground="{TemplateBinding Foreground}"
-                                                HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                                IsReadOnly="{Binding IsReadOnly, RelativeSource={RelativeSource TemplatedParent}}"
-                                                MinWidth="20"
-                                                AcceptsReturn="False"
-                                                Padding="{TemplateBinding Padding}"
-                                                TextAlignment="{TemplateBinding TextAlignment}"
-                                                TextWrapping="NoWrap"
-                                                TabIndex="{TemplateBinding TabIndex}"
-                                                Text="{Binding Text, RelativeSource={RelativeSource TemplatedParent}}"
-                                                Watermark="{TemplateBinding Watermark}"
-                                                WatermarkTemplate="{TemplateBinding WatermarkTemplate}" />
+                                                          BorderThickness="0"
+                                                          Background="{TemplateBinding Background}"
+                                                          ContextMenu="{TemplateBinding ContextMenu}"
+                                                          FontFamily="{TemplateBinding FontFamily}"
+                                                          FontSize="{TemplateBinding FontSize}"
+                                                          FontStretch="{TemplateBinding FontStretch}"
+                                                          FontStyle="{TemplateBinding FontStyle}"
+                                                          FontWeight="{TemplateBinding FontWeight}"
+                                                          Foreground="{TemplateBinding Foreground}"
+                                                          HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                          IsReadOnly="{Binding IsReadOnly, RelativeSource={RelativeSource TemplatedParent}}"
+                                                          MinWidth="20"
+                                                          AcceptsReturn="False"
+                                                          Padding="{TemplateBinding Padding}"
+                                                          TextAlignment="{TemplateBinding TextAlignment}"
+                                                          TextWrapping="NoWrap"
+                                                          TabIndex="{TemplateBinding TabIndex}"
+                                                          Text="{Binding Text, RelativeSource={RelativeSource TemplatedParent}}"
+                                                          Watermark="{TemplateBinding Watermark}"
+                                                          WatermarkTemplate="{TemplateBinding WatermarkTemplate}" />
                     </extendedToolkit:ButtonSpinner>
                     <ControlTemplate.Triggers>
-                        <Trigger Property="IsEnabled" Value="False">
+                        <Trigger Property="IsEnabled"
+                                 Value="False">
                             <Setter  Property="Foreground"
-                                     Value="{DynamicResource InputTextDisabled}"/>
+                                     Value="{DynamicResource InputTextDisabled}" />
                         </Trigger>
                         <Trigger Property="IsFocused"
                                  Value="True">
