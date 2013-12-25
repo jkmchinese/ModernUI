@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mui="http://genew.com.cn/ModernUI"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
              mc:Ignorable="d"
              d:DesignHeight="300"
              d:DesignWidth="300">
@@ -97,6 +98,64 @@
                         <mui:AutoSelectTextBox Text="Text9"
                                                Width="100" />
                     </StackPanel>
+                </StackPanel>
+
+                <TextBlock Text="AutoSelectTextBox:"
+                           Margin="0 3 0 1" />
+                <TextBlock Text="Option:" />
+                <Border Margin="4 1"
+                        BorderThickness="1"
+                        CornerRadius="1"
+                        BorderBrush="{DynamicResource ButtonBorder}">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Include literals:"
+                                       VerticalAlignment="Center"
+                                       Margin="2 0" />
+                            <CheckBox x:Name="Literals"
+                                      VerticalAlignment="Center"
+                                      Margin="5"
+                                      IsChecked="{Binding IncludeLiteralsInValue, ElementName=MaskedTextBox, Mode=TwoWay}" />
+                            <TextBlock Text="Include prompt:"
+                                       VerticalAlignment="Center"
+                                       Margin="2 0" />
+                            <CheckBox x:Name="Prompt"
+                                      VerticalAlignment="Center"
+                                      Margin="5"
+                                      IsChecked="{Binding IncludePromptInValue, ElementName=MaskedTextBox, Mode=TwoWay}" />
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBlock Text="Mask:" />
+                            <TextBox x:Name="Mask"
+                                     Text="{Binding Mask, ElementName=MaskedTextBox, ValidatesOnExceptions=True}" />
+
+                            <TextBlock Text="Value:" />
+                            <TextBox x:Name="Value"
+                                     Text="{Binding Value, ElementName=MaskedTextBox, ValidatesOnExceptions=True}" />
+
+                            <TextBlock Text="Text:" />
+                            <TextBox x:Name="Text"
+                                     Text="{Binding Text, ElementName=MaskedTextBox, ValidatesOnExceptions=True}" />
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+                <StackPanel>
+                    <TextBlock Text="Usage:" />
+                    <mui:MaskedTextBox x:Name="MaskedTextBox"
+                                       Mask="(000) 000-0000"
+                                       ValueDataType="{x:Type sys:String}" />
+                </StackPanel>
+
+                <TextBlock Text="WatermarkTextBox:"
+                           Margin="0 5 0 1" />
+                <StackPanel>
+                    <CheckBox x:Name="SelectAll"
+                              Content="SelectAllOnGotFocus"
+                              ToolTip="Selects all text in the WatermarkTextBox when it receives focus."
+                              Margin="0 1" />
+                    <mui:WatermarkTextBox MinWidth="150"
+                                          Watermark="Enter Text"
+                                          SelectAllOnGotFocus="{Binding IsChecked, ElementName=SelectAll}" />
                 </StackPanel>
             </StackPanel>
         </StackPanel>

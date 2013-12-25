@@ -94,10 +94,14 @@
     <Compile Include="ExtendedToolkit\Core\ErrorMessages.cs" />
     <Compile Include="ExtendedToolkit\Core\Input\InputValidationErrorEventArgs.cs" />
     <Compile Include="ExtendedToolkit\Core\Input\IValidateInput.cs" />
+    <Compile Include="ExtendedToolkit\Core\Primitives\CachedTextInfo.cs" />
     <Compile Include="ExtendedToolkit\Core\Primitives\HsvColor.cs" />
     <Compile Include="ExtendedToolkit\Core\Primitives\InputBase.cs" />
     <Compile Include="ExtendedToolkit\Core\Primitives\MouseWheelActiveTriggerEnum.cs" />
     <Compile Include="ExtendedToolkit\Core\Primitives\UpDownBase.cs" />
+    <Compile Include="ExtendedToolkit\Core\Primitives\ValueRangeTextBox.cs" />
+    <Compile Include="ExtendedToolkit\Core\QueryTextFromValueEventArgs.cs" />
+    <Compile Include="ExtendedToolkit\Core\QueryValueFromTextEventArgs.cs" />
     <Compile Include="ExtendedToolkit\Core\Utilities\KeyboardUtilities.cs" />
     <Compile Include="ExtendedToolkit\DateTimePicker\DateTimePicker.cs" />
     <Compile Include="ExtendedToolkit\DateTimeUpDown\DateTimeFormat.cs" />
@@ -106,6 +110,10 @@
     <Compile Include="ExtendedToolkit\DateTimeUpDown\DateTimePart.cs" />
     <Compile Include="ExtendedToolkit\DateTimeUpDown\DateTimeUpDown.cs" />
     <Compile Include="ExtendedToolkit\DropDownButton\DropDownButton.cs" />
+    <Compile Include="ExtendedToolkit\MaskedTextBox\AutoCompletingMaskEventArgs.cs" />
+    <Compile Include="ExtendedToolkit\MaskedTextBox\InsertKeyModeEnum.cs" />
+    <Compile Include="ExtendedToolkit\MaskedTextBox\MaskedTextBox.cs" />
+    <Compile Include="ExtendedToolkit\MaskedTextBox\MaskFormatEnum.cs" />
     <Compile Include="ExtendedToolkit\NumericUpDown\AllowedSpecialValuesEnum.cs" />
     <Compile Include="ExtendedToolkit\NumericUpDown\ByteUpDown.cs" />
     <Compile Include="ExtendedToolkit\NumericUpDown\CommonNumericUpDown.cs" />
@@ -342,6 +350,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Themes\ExtendedToolkit\AutoSelectTextBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\ExtendedToolkit\MaskedTextBox.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
