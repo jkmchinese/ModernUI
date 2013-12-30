@@ -57,11 +57,20 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ExtendedToolkitContent\CheckListView.xaml.cs">
+      <DependentUpon>CheckListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ExtendedToolkitContent\SampleThree.xaml.cs">
+      <DependentUpon>SampleThree.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ExtendedToolkitContent\SampleTwo.xaml.cs">
       <DependentUpon>SampleTwo.xaml</DependentUpon>
     </Compile>
     <Compile Include="ExtendedToolkitContent\SampleOne.xaml.cs">
       <DependentUpon>SampleOne.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ExtendedTookitTwo.xaml.cs">
+      <DependentUpon>ExtendedTookitTwo.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\ExtendedTookit.xaml.cs">
       <DependentUpon>ExtendedTookit.xaml</DependentUpon>
@@ -238,6 +247,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="ExtendedToolkitContent\CheckListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ExtendedToolkitContent\SampleThree.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="ExtendedToolkitContent\SampleTwo.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -340,6 +357,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Pages\ControlsStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\ExtendedTookitTwo.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

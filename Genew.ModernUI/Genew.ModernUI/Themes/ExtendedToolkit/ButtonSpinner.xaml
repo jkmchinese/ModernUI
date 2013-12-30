@@ -69,8 +69,6 @@
                 Value="Stretch" />
         <Setter Property="IsTabStop"
                 Value="True" />
-        <Setter Property="Padding"
-                Value="1" />
         <Setter Property="VerticalContentAlignment"
                 Value="Center" />
         <Setter Property="Template">

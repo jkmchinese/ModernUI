@@ -8,6 +8,7 @@
                   ContentSource="/Pages/ExtendedTookit.xaml"
                   Width="1024"
                   Height="768"
+                  WindowState="Maximized"
                   WindowStartupLocation="CenterScreen">
 
     <mui:ModernWindow.TitleLinks>
@@ -22,6 +23,8 @@
                           Source="/Pages/Introduction.xaml" />
                 <mui:Link DisplayName="ExtendedTookit"
                           Source="/Pages/ExtendedTookit.xaml" />
+                <mui:Link DisplayName="ExtendedTookitTwo"
+                          Source="/Pages/ExtendedTookitTwo.xaml" />
             </mui:LinkGroup.Links>
         </mui:LinkGroup>
         <mui:LinkGroup DisplayName="Layout">

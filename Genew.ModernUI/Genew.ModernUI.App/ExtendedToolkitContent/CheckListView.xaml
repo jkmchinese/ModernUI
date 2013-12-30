@@ -1,0 +1,186 @@
+﻿<UserControl x:Class="Genew.ModernUI.App.ExtendedToolkitContent.CheckListView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:s="clr-namespace:System;assembly=mscorlib"
+             xmlns:mui="http://genew.com.cn/ModernUI"
+             mc:Ignorable="d"
+             d:DesignHeight="300"
+             d:DesignWidth="300">
+    <UserControl.Resources>
+        <x:Array x:Key="PersonProperties"
+                 Type="s:String">
+            <s:String>ID</s:String>
+            <s:String>FirstName</s:String>
+            <s:String>LastName</s:String>
+        </x:Array>
+
+        <Style TargetType="TextBlock"
+               x:Key="StyleTitleTbk">
+            <Setter Property="Foreground"
+                    Value="{DynamicResource Accent}"></Setter>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <StackPanel HorizontalAlignment="Left">
+            <TextBlock Text="CheckListBox and CheckComboBox:"
+                       Style="{StaticResource StyleTitleTbk}" />
+            <TextBlock Text="Features:"
+                       FontStyle="Italic" />
+            <Border Margin="8 1 4 1"
+                    BorderThickness="1"
+                    CornerRadius="1"
+                    BorderBrush="{DynamicResource ButtonBorder}">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Row="0"
+                               Grid.Column="0"
+                               Text="Delimiter:"
+                               Margin="2,5,5,5" />
+                    <TextBox x:Name="Delimiter"
+                             Grid.Row="0"
+                             Grid.Column="1"
+                             Width="200"
+                             Margin="5"
+                             HorizontalAlignment="Left"
+                             Text="," />
+
+                    <TextBlock Grid.Row="1"
+                               Grid.Column="0"
+                               Text="ValueMemberPath:"
+                               Margin="2,5,5,5" />
+                    <ComboBox x:Name="ValueMemberPath"
+                              Grid.Row="1"
+                              Grid.Column="1"
+                              HorizontalAlignment="Left"
+                              Width="100"
+                              Margin="5"
+                              ItemsSource="{StaticResource PersonProperties}"
+                              SelectedIndex="0" />
+
+                    <TextBlock Grid.Row="2"
+                               Grid.Column="0"
+                               Text="SelectedValue:"
+                               Margin="2,5,5,5" />
+                    <TextBox x:Name="SelectedValue"
+                             Grid.Row="2"
+                             Grid.Column="1"
+                             Width="200"
+                             Margin="5"
+                             HorizontalAlignment="Left"
+                             Text="{Binding ElementName=CheckListBox, Path=SelectedValue, Mode=TwoWay}" />
+
+                    <TextBlock Grid.Row="0"
+                               Grid.Column="2"
+                               Text="SelectedMemberPath:"
+                               Margin="2,5,5,5" />
+                    <TextBox x:Name="SelectedMemberPath"
+                             Grid.Row="0"
+                             Grid.Column="3"
+                             Margin="5"
+                             Width="125"
+                             HorizontalAlignment="Left"
+                             IsEnabled="False"
+                             Text="IsSelected" />
+
+                    <TextBlock Grid.Row="1"
+                               Grid.Column="2"
+                               Text="DisplayMemberPath:"
+                               Margin="5" />
+                    <ComboBox x:Name="DisplayMemberPath"
+                              Grid.Row="1"
+                              Grid.Column="3"
+                              Width="125"
+                              Margin="5"
+                              HorizontalAlignment="Left"
+                              ItemsSource="{StaticResource PersonProperties}"
+                              SelectedIndex="1" />
+                    <TextBlock Grid.Row="2"
+                               Grid.Column="2"
+                               Text="IsDropDownOpen:"
+                               Margin="5" />
+                    <CheckBox x:Name="IsDropDownOpen"
+                              Grid.Row="2"
+                              Grid.Column="3"
+                              Margin="5"
+                              HorizontalAlignment="Left"
+                              Content="(CheckComboBox only)"
+                              ClickMode="Press"
+                              IsChecked="{Binding IsDropDownOpen, ElementName=CheckComboBox}" />
+                    <TextBlock Grid.Row="3"
+                               Grid.Column="2"
+                               Text="MaxDropDownHeight:"
+                               Margin="5" />
+                    <StackPanel Orientation="Horizontal"
+                                Grid.Row="3"
+                                Grid.Column="3"
+                                HorizontalAlignment="Left"
+                                Margin="5">
+                        <mui:DoubleUpDown x:Name="MaxDropDownHeight"
+                                          Width="45"
+                                          Value="{Binding MaxDropDownHeight, ElementName=CheckComboBox}"
+                                          DefaultValue="150"
+                                          AllowInputSpecialValues="PositiveInfinity"
+                                          Minimum="0" />
+                        <TextBlock Text="(CheckComboBox only)"
+                                   Margin="4" />
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <TextBlock Text="Item Models:"
+                       FontStyle="Italic" />
+            <Border Margin="8 1 4 1"
+                    BorderThickness="1"
+                    CornerRadius="1"
+                    BorderBrush="{DynamicResource ButtonBorder}">
+                <ListBox DisplayMemberPath="ModelDisplay"
+                         FontFamily="Global Monospace"
+                         ItemsSource="{Binding}" />
+            </Border>
+            <StackPanel Orientation="Horizontal">
+                <StackPanel HorizontalAlignment="Left">
+                    <TextBlock Text="CheckListBox:"
+                               Style="{StaticResource StyleTitleTbk}" />
+
+                    <mui:CheckListBox x:Name="CheckListBox"
+                                      Margin="0 1"
+                                      Width="150"
+                                      ItemsSource="{Binding }"
+                                      Delimiter="{Binding ElementName=Delimiter, Path=Text}"
+                                      ValueMemberPath="{Binding ElementName=ValueMemberPath, Path=SelectedItem}"
+                                      SelectedMemberPath="{Binding ElementName=SelectedMemberPath, Path=Text}"
+                                      DisplayMemberPath="{Binding ElementName=DisplayMemberPath, Path=SelectedItem}" />
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Left"
+                            Margin="4 0 0 0">
+                    <TextBlock Text="CheckComboBox:"
+                               Style="{StaticResource StyleTitleTbk}" />
+                    <mui:CheckComboBox x:Name="CheckComboBox"
+                                       Margin="0 1"
+                                       Width="180"
+                                       ItemsSource="{Binding }"
+                                       Delimiter="{Binding ElementName=Delimiter, Path=Text}"
+                                       ValueMemberPath="{Binding ElementName=ValueMemberPath, Path=SelectedItem}"
+                                       SelectedMemberPath="{Binding ElementName=SelectedMemberPath, Path=Text}"
+                                       DisplayMemberPath="{Binding ElementName=DisplayMemberPath, Path=SelectedItem}"
+                                       IsDropDownOpen="false"
+                                       MaxDropDownHeight="145" />
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>

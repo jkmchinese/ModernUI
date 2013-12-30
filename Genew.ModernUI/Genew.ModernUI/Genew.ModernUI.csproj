@@ -74,6 +74,8 @@
     <Compile Include="ExtendedToolkit\ButtonSpinner\SpinEventArgs.cs" />
     <Compile Include="ExtendedToolkit\ButtonSpinner\Spinner.cs" />
     <Compile Include="ExtendedToolkit\ButtonSpinner\ValidSpinDirections.cs" />
+    <Compile Include="ExtendedToolkit\CheckCombobox\CheckComboBox.cs" />
+    <Compile Include="ExtendedToolkit\CheckListBox\CheckListBox.cs" />
     <Compile Include="ExtendedToolkit\Chromes\ButtonChrome.cs" />
     <Compile Include="ExtendedToolkit\ColorCanvas\ColorCanvas.cs" />
     <Compile Include="ExtendedToolkit\ColorCanvas\ColorSpectrumSlider.cs" />
@@ -98,11 +100,14 @@
     <Compile Include="ExtendedToolkit\Core\Primitives\HsvColor.cs" />
     <Compile Include="ExtendedToolkit\Core\Primitives\InputBase.cs" />
     <Compile Include="ExtendedToolkit\Core\Primitives\MouseWheelActiveTriggerEnum.cs" />
+    <Compile Include="ExtendedToolkit\Core\Primitives\Selector.cs" />
+    <Compile Include="ExtendedToolkit\Core\Primitives\SelectorItem.cs" />
     <Compile Include="ExtendedToolkit\Core\Primitives\UpDownBase.cs" />
     <Compile Include="ExtendedToolkit\Core\Primitives\ValueRangeTextBox.cs" />
     <Compile Include="ExtendedToolkit\Core\QueryTextFromValueEventArgs.cs" />
     <Compile Include="ExtendedToolkit\Core\QueryValueFromTextEventArgs.cs" />
     <Compile Include="ExtendedToolkit\Core\Utilities\KeyboardUtilities.cs" />
+    <Compile Include="ExtendedToolkit\Core\Utilities\ValueChangeHelper.cs" />
     <Compile Include="ExtendedToolkit\DateTimePicker\DateTimePicker.cs" />
     <Compile Include="ExtendedToolkit\DateTimeUpDown\DateTimeFormat.cs" />
     <Compile Include="ExtendedToolkit\DateTimeUpDown\DateTimeInfo.cs" />
@@ -354,6 +359,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Themes\ExtendedToolkit\CheckListBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\ExtendedToolkit\CheckComboBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Themes\ExtendedToolkit\MultiLineTextEditor.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -387,6 +400,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Themes\ExtendedToolkit\ButtonChrome.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\ExtendedToolkit\Common\SelectorItem.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

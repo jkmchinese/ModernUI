@@ -12,13 +12,17 @@
                 Value="{DynamicResource WindowText}" />
         <Setter Property="BorderThickness"
                 Value="1" />
-
+        <Setter Property="HorizontalAlignment"
+                Value="Stretch"></Setter>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type CheckBox}">
                     <StackPanel x:Name="LayoutRoot"
                                 Orientation="Horizontal"
-                                Margin="{TemplateBinding Padding}">
+                                Margin="{TemplateBinding Padding}"
+                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                Background="#01FFFFFF">
                         <Border x:Name="CheckBorder"
                                 Width="16"
                                 Height="16"
@@ -43,8 +47,9 @@
                                            Visibility="Hidden" />
                             </Grid>
                         </Border>
-                        <TextBlock Text="{TemplateBinding Content}"
-                                   VerticalAlignment="Center" />
+                        <ContentPresenter Margin="{TemplateBinding Padding}"
+                                          RecognizesAccessKey="True"
+                                          SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
                     </StackPanel>
                     <ControlTemplate.Triggers>
                         <MultiDataTrigger>

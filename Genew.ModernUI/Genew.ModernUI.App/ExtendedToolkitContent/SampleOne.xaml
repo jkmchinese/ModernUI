@@ -4,6 +4,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mui="http://genew.com.cn/ModernUI"
+             xmlns:s="clr-namespace:System;assembly=mscorlib"
+             xmlns:extendedToolkitContent="clr-namespace:Genew.ModernUI.App.ExtendedToolkitContent"
              mc:Ignorable="d"
              d:DesignHeight="300"
              d:DesignWidth="300">
@@ -13,6 +15,18 @@
             <Setter Property="Foreground"
                     Value="{DynamicResource Accent}"></Setter>
         </Style>
+        <x:Array x:Key="Names"
+                 Type="s:String">
+            <s:String>John Smith</s:String>
+            <s:String>Janel Leverling</s:String>
+            <s:String>Laura Callahan</s:String>
+            <s:String>Robert King</s:String>
+            <s:String>Margaret Peacock</s:String>
+            <s:String>Andrew Fuller</s:String>
+            <s:String>Anne Dodsworth</s:String>
+            <s:String>Nancy Davolio</s:String>
+            <s:String>Naomi Suyama</s:String>
+        </x:Array>
     </UserControl.Resources>
     <Grid>
         <StackPanel>
@@ -174,6 +188,44 @@
                         </StackPanel>
                     </mui:SplitButton.DropDownContent>
                 </mui:SplitButton>
+
+                <TextBlock Text="SplitButton:"
+                           Margin="0,8,0,0"
+                           Style="{StaticResource StyleTitleTbk}"></TextBlock>
+                <TextBlock Text="Option:"
+                           FontStyle="Italic" />
+                <Border Margin="8 1 4 1"
+                        BorderThickness="1"
+                        CornerRadius="1"
+                        BorderBrush="{DynamicResource ButtonBorder}">
+                    <StackPanel Margin="2">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="AllowSpin:" />
+                            <CheckBox x:Name="AllowSpin"
+                                      IsChecked="True"
+                                      ToolTip="When true allows the ButtonSpinner to perform increment/decrement operations." />
+
+                            <TextBlock Text="ShowButtonSpinner:"
+                                       Margin="4 0 0 0" />
+                            <CheckBox x:Name="ShowButtonSpinner"
+                                      IsChecked="True"
+                                      ToolTip="Gets/Sets the visibility of the button spinners." />
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+                <StackPanel>
+                    <TextBlock Text="Usage:"
+                               FontStyle="Italic" />
+                    <mui:ButtonSpinner Width="150"
+                                       HorizontalAlignment="Left"
+                                       AllowSpin="{Binding IsChecked, ElementName=AllowSpin}"
+                                       ShowButtonSpinner="{Binding IsChecked, ElementName=ShowButtonSpinner}"
+                                       Spin="ButtonSpinner_Spin">
+                        <TextBox Text="John Smith"
+                                 IsReadOnly="True"
+                                 HorizontalContentAlignment="Right" />
+                    </mui:ButtonSpinner>
+                </StackPanel>
             </StackPanel>
         </StackPanel>
     </Grid>

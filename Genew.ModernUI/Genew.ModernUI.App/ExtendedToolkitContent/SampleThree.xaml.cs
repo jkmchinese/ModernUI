@@ -18,11 +18,11 @@ using Genew.ModernUI.Windows.Controls;
 namespace Genew.ModernUI.App.ExtendedToolkitContent
 {
     /// <summary>
-    /// Interaction logic for SampleOne.xaml
+    /// Interaction logic for SampleThree.xaml
     /// </summary>
-    public partial class SampleOne : UserControl
+    public partial class SampleThree : UserControl
     {
-        public SampleOne()
+        public SampleThree()
         {
             InitializeComponent();
         }
