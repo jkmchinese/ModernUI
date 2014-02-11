@@ -22,6 +22,9 @@ using Genew.ModernUI.ExtendedToolkit.Utilities;
 
 namespace Genew.ModernUI.ExtendedToolkit.Primitives
 {
+    /// <summary>
+    /// 选择器
+    /// </summary>
     public class Selector : ItemsControl, IWeakEventListener //should probably make this control an ICommandSource
     {
         #region Members

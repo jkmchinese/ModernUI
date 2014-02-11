@@ -14,7 +14,7 @@ using System.Windows.Controls;
 namespace Genew.ModernUI.ExtendedToolkit
 {
     /// <summary>
-    ///     Base class for controls that represents controls that can spin.
+    ///     微调控件基类(Base class for controls that represents controls that can spin.)
     /// </summary>
     public abstract class Spinner : Control
     {
@@ -28,6 +28,9 @@ namespace Genew.ModernUI.ExtendedToolkit
                 new PropertyMetadata(ValidSpinDirections.Increase | ValidSpinDirections.Decrease,
                     OnValidSpinDirectionPropertyChanged));
 
+        /// <summary>
+        /// 有效微调方向
+        /// </summary>
         public ValidSpinDirections ValidSpinDirection
         {
             get { return (ValidSpinDirections) GetValue(ValidSpinDirectionProperty); }
@@ -50,7 +53,7 @@ namespace Genew.ModernUI.ExtendedToolkit
         #endregion //Properties
 
         /// <summary>
-        ///     Occurs when spinning is initiated by the end-user.
+        ///     当用户微调时触发该事件(Occurs when spinning is initiated by the end-user.)
         /// </summary>
         public event EventHandler<SpinEventArgs> Spin;
 

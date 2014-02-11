@@ -15,10 +15,10 @@ using System.Windows.Markup;
 namespace Genew.ModernUI.ExtendedToolkit
 {
     /// <summary>
-    ///     Represents a spinner control that includes two Buttons.
+    ///     代表一个带上下按钮的微调控件.(Represents a spinner control that includes two Buttons.)
     /// </summary>
-    [TemplatePart(Name = PART_IncreaseButton, Type = typeof (ButtonBase))]
-    [TemplatePart(Name = PART_DecreaseButton, Type = typeof (ButtonBase))]
+    [TemplatePart(Name = PART_IncreaseButton, Type = typeof(ButtonBase))]
+    [TemplatePart(Name = PART_DecreaseButton, Type = typeof(ButtonBase))]
     [ContentProperty("Content")]
     public class ButtonSpinner : Spinner
     {
@@ -30,18 +30,21 @@ namespace Genew.ModernUI.ExtendedToolkit
         #region AllowSpin
 
         public static readonly DependencyProperty AllowSpinProperty = DependencyProperty.Register("AllowSpin",
-            typeof (bool), typeof (ButtonSpinner), new UIPropertyMetadata(true, AllowSpinPropertyChanged));
+            typeof(bool), typeof(ButtonSpinner), new UIPropertyMetadata(true, AllowSpinPropertyChanged));
 
+        /// <summary>
+        /// 允许微调
+        /// </summary>
         public bool AllowSpin
         {
-            get { return (bool) GetValue(AllowSpinProperty); }
+            get { return (bool)GetValue(AllowSpinProperty); }
             set { SetValue(AllowSpinProperty, value); }
         }
 
         private static void AllowSpinPropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
             ButtonSpinner source = d as ButtonSpinner;
-            source.OnAllowSpinChanged((bool) e.OldValue, (bool) e.NewValue);
+            source.OnAllowSpinChanged((bool)e.OldValue, (bool)e.NewValue);
         }
 
         #endregion //AllowSpin
@@ -52,8 +55,11 @@ namespace Genew.ModernUI.ExtendedToolkit
         ///     Identifies the Content dependency property.
         /// </summary>
         public static readonly DependencyProperty ContentProperty = DependencyProperty.Register("Content",
-            typeof (object), typeof (ButtonSpinner), new PropertyMetadata(null, OnContentPropertyChanged));
+            typeof(object), typeof(ButtonSpinner), new PropertyMetadata(null, OnContentPropertyChanged));
 
+        /// <summary>
+        /// 内容
+        /// </summary>
         public object Content
         {
             get { return GetValue(ContentProperty); }
@@ -132,12 +138,15 @@ namespace Genew.ModernUI.ExtendedToolkit
         #region ShowButtonSpinner
 
         public static readonly DependencyProperty ShowButtonSpinnerProperty =
-            DependencyProperty.Register("ShowButtonSpinner", typeof (bool), typeof (ButtonSpinner),
+            DependencyProperty.Register("ShowButtonSpinner", typeof(bool), typeof(ButtonSpinner),
                 new UIPropertyMetadata(true));
 
+        /// <summary>
+        /// 显示微调按钮
+        /// </summary>
         public bool ShowButtonSpinner
         {
-            get { return (bool) GetValue(ShowButtonSpinnerProperty); }
+            get { return (bool)GetValue(ShowButtonSpinnerProperty); }
             set { SetValue(ShowButtonSpinnerProperty, value); }
         }
 
@@ -149,8 +158,8 @@ namespace Genew.ModernUI.ExtendedToolkit
 
         static ButtonSpinner()
         {
-            DefaultStyleKeyProperty.OverrideMetadata(typeof (ButtonSpinner),
-                new FrameworkPropertyMetadata(typeof (ButtonSpinner)));
+            DefaultStyleKeyProperty.OverrideMetadata(typeof(ButtonSpinner),
+                new FrameworkPropertyMetadata(typeof(ButtonSpinner)));
         }
 
         #endregion //Constructors
@@ -203,23 +212,23 @@ namespace Genew.ModernUI.ExtendedToolkit
             switch (e.Key)
             {
                 case Key.Up:
-                {
-                    if (AllowSpin)
                     {
-                        OnSpin(new SpinEventArgs(SpinDirection.Increase));
+                        if (AllowSpin)
+                        {
+                            OnSpin(new SpinEventArgs(SpinDirection.Increase));
+                        }
+                        e.Handled = true;
+                        break;
                     }
-                    e.Handled = true;
-                    break;
-                }
                 case Key.Down:
-                {
-                    if (AllowSpin)
                     {
-                        OnSpin(new SpinEventArgs(SpinDirection.Decrease));
+                        if (AllowSpin)
+                        {
+                            OnSpin(new SpinEventArgs(SpinDirection.Decrease));
+                        }
+                        e.Handled = true;
+                        break;
                     }
-                    e.Handled = true;
-                    break;
-                }
             }
         }
 

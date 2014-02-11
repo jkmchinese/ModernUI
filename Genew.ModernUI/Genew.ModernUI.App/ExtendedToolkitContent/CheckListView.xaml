@@ -171,7 +171,7 @@
                                Style="{StaticResource StyleTitleTbk}" />
                     <mui:CheckComboBox x:Name="CheckComboBox"
                                        Margin="0 1"
-                                       Width="180"
+                                       Width="230"
                                        ItemsSource="{Binding }"
                                        Delimiter="{Binding ElementName=Delimiter, Path=Text}"
                                        ValueMemberPath="{Binding ElementName=ValueMemberPath, Path=SelectedItem}"

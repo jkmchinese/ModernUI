@@ -13,6 +13,9 @@ using System.Windows.Input;
 
 namespace Genew.ModernUI.ExtendedToolkit
 {
+    /// <summary>
+    /// 水印文本框
+    /// </summary>
     public class WatermarkTextBox : TextBox
     {
         #region Properties
@@ -23,6 +26,9 @@ namespace Genew.ModernUI.ExtendedToolkit
             DependencyProperty.Register("SelectAllOnGotFocus", typeof(bool), typeof(WatermarkTextBox),
                 new PropertyMetadata(false));
 
+        /// <summary>
+        /// 聚焦时选中文本
+        /// </summary>
         public bool SelectAllOnGotFocus
         {
             get { return (bool)GetValue(SelectAllOnGotFocusProperty); }
@@ -36,6 +42,9 @@ namespace Genew.ModernUI.ExtendedToolkit
         public static readonly DependencyProperty WatermarkProperty = DependencyProperty.Register("Watermark",
             typeof(object), typeof(WatermarkTextBox), new UIPropertyMetadata(null));
 
+        /// <summary>
+        /// 水印
+        /// </summary>
         public object Watermark
         {
             get { return GetValue(WatermarkProperty); }
@@ -50,6 +59,9 @@ namespace Genew.ModernUI.ExtendedToolkit
             DependencyProperty.Register("WatermarkTemplate", typeof(DataTemplate), typeof(WatermarkTextBox),
                 new UIPropertyMetadata(null));
 
+        /// <summary>
+        /// 水印数据模板
+        /// </summary>
         public DataTemplate WatermarkTemplate
         {
             get { return (DataTemplate)GetValue(WatermarkTemplateProperty); }

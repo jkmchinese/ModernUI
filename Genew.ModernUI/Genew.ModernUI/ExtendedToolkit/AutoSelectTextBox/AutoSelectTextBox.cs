@@ -15,6 +15,9 @@ using Genew.ModernUI.UIHelper;
 
 namespace Genew.ModernUI.ExtendedToolkit
 {
+    /// <summary>
+    /// 具备自动聚焦和导航聚焦文本框
+    /// </summary>
     public class AutoSelectTextBox : TextBox
     {
         static AutoSelectTextBox()
@@ -32,6 +35,9 @@ namespace Genew.ModernUI.ExtendedToolkit
             DependencyProperty.Register("AutoSelectBehavior", typeof(AutoSelectBehavior), typeof(AutoSelectTextBox),
                 new UIPropertyMetadata(AutoSelectBehavior.Never));
 
+        /// <summary>
+        /// 自动选择行为
+        /// </summary>
         public AutoSelectBehavior AutoSelectBehavior
         {
             get { return (AutoSelectBehavior)GetValue(AutoSelectBehaviorProperty); }
@@ -46,6 +52,9 @@ namespace Genew.ModernUI.ExtendedToolkit
             DependencyProperty.Register("AutoMoveFocus", typeof(bool), typeof(AutoSelectTextBox),
                 new UIPropertyMetadata(false));
 
+        /// <summary>
+        /// 自动导航聚焦
+        /// </summary>
         public bool AutoMoveFocus
         {
             get { return (bool)GetValue(AutoMoveFocusProperty); }
@@ -56,6 +65,9 @@ namespace Genew.ModernUI.ExtendedToolkit
 
         #region QueryMoveFocus EVENT
 
+        /// <summary>
+        /// 导航事件,决定是否自动导航
+        /// </summary>
         public static readonly RoutedEvent QueryMoveFocusEvent = EventManager.RegisterRoutedEvent("QueryMoveFocus",
             RoutingStrategy.Bubble,
             typeof(QueryMoveFocusEventHandler),

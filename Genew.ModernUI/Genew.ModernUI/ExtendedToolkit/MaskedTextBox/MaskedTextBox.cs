@@ -25,6 +25,9 @@ using Genew.ModernUI.ExtendedToolkit.Primitives;
 
 namespace Genew.ModernUI.ExtendedToolkit
 {
+    /// <summary>
+    /// 模板文本框
+    /// </summary>
     public class MaskedTextBox : ValueRangeTextBox
     {
         #region STATIC MEMBERS

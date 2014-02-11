@@ -12,6 +12,9 @@ using Genew.ModernUI.ExtendedToolkit.Primitives;
 
 namespace Genew.ModernUI.ExtendedToolkit
 {
+    /// <summary>
+    /// 选择列表
+    /// </summary>
     public class CheckListBox : Selector
     {
         #region Constructors

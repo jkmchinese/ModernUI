@@ -16,6 +16,9 @@ using Genew.ModernUI.ExtendedToolkit.Utilities;
 
 namespace Genew.ModernUI.ExtendedToolkit
 {
+    /// <summary>
+    /// 多行编辑框
+    /// </summary>
     [TemplatePart(Name = PART_ResizeThumb, Type = typeof(Thumb))]
     public class MultiLineTextEditor : ContentControl
     {
@@ -34,6 +37,9 @@ namespace Genew.ModernUI.ExtendedToolkit
         public static readonly DependencyProperty DropDownHeightProperty = DependencyProperty.Register(
             "DropDownHeight", typeof(double), typeof(MultiLineTextEditor), new UIPropertyMetadata(150.0));
 
+        /// <summary>
+        /// 编辑窗高度
+        /// </summary>
         public double DropDownHeight
         {
             get { return (double)GetValue(DropDownHeightProperty); }
@@ -47,6 +53,9 @@ namespace Genew.ModernUI.ExtendedToolkit
         public static readonly DependencyProperty DropDownWidthProperty = DependencyProperty.Register("DropDownWidth",
             typeof(double), typeof(MultiLineTextEditor), new UIPropertyMetadata(200.0));
 
+        /// <summary>
+        /// 编辑窗宽度
+        /// </summary>
         public double DropDownWidth
         {
             get { return (double)GetValue(DropDownWidthProperty); }
@@ -60,6 +69,9 @@ namespace Genew.ModernUI.ExtendedToolkit
         public static readonly DependencyProperty IsOpenProperty = DependencyProperty.Register("IsOpen", typeof(bool),
             typeof(MultiLineTextEditor), new UIPropertyMetadata(false, OnIsOpenChanged));
 
+        /// <summary>
+        /// 打开编辑窗
+        /// </summary>
         public bool IsOpen
         {
             get { return (bool)GetValue(IsOpenProperty); }
@@ -85,6 +97,9 @@ namespace Genew.ModernUI.ExtendedToolkit
             DependencyProperty.Register("IsSpellCheckEnabled", typeof(bool), typeof(MultiLineTextEditor),
                 new UIPropertyMetadata(false));
 
+        /// <summary>
+        /// 是否打开文件拼写检查
+        /// </summary>
         public bool IsSpellCheckEnabled
         {
             get { return (bool)GetValue(IsSpellCheckEnabledProperty); }
@@ -98,6 +113,9 @@ namespace Genew.ModernUI.ExtendedToolkit
         public static readonly DependencyProperty IsReadOnlyProperty = DependencyProperty.Register("IsReadOnly",
             typeof(bool), typeof(MultiLineTextEditor), new UIPropertyMetadata(false));
 
+        /// <summary>
+        /// 文本只读
+        /// </summary>
         public bool IsReadOnly
         {
             get { return (bool)GetValue(IsReadOnlyProperty); }
@@ -113,6 +131,9 @@ namespace Genew.ModernUI.ExtendedToolkit
             new FrameworkPropertyMetadata(String.Empty, FrameworkPropertyMetadataOptions.BindsTwoWayByDefault,
                 OnTextChanged));
 
+        /// <summary>
+        /// 文本
+        /// </summary>
         public string Text
         {
             get { return (string)GetValue(TextProperty); }
@@ -137,6 +158,9 @@ namespace Genew.ModernUI.ExtendedToolkit
         public static readonly DependencyProperty TextAlignmentProperty = DependencyProperty.Register("TextAlignment",
             typeof(TextAlignment), typeof(MultiLineTextEditor), new UIPropertyMetadata(TextAlignment.Left));
 
+        /// <summary>
+        /// 文本对齐方式
+        /// </summary>
         public TextAlignment TextAlignment
         {
             get { return (TextAlignment)GetValue(TextAlignmentProperty); }
@@ -150,6 +174,9 @@ namespace Genew.ModernUI.ExtendedToolkit
         public static readonly DependencyProperty TextWrappingProperty = DependencyProperty.Register("TextWrapping",
             typeof(TextWrapping), typeof(MultiLineTextEditor), new UIPropertyMetadata(TextWrapping.NoWrap));
 
+        /// <summary>
+        /// 文本换行
+        /// </summary>
         public TextWrapping TextWrapping
         {
             get { return (TextWrapping)GetValue(TextWrappingProperty); }
