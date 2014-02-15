@@ -5,6 +5,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Genew.ModernUI", "Genew.Mod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Genew.ModernUI.App", "Genew.ModernUI.App\Genew.ModernUI.App.csproj", "{BE476D34-0A22-4771-B38A-8914F45E8E9B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Genew.ModernUI.WPF4", "Genew.ModernUI.WPF4\Genew.ModernUI.WPF4.csproj", "{EF89DBA0-F998-41ED-AF3B-7308A0B3189D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Binaries", "Binaries", "{CDE94912-B8DA-4FD2-B4ED-0ED606C70EB6}"
+	ProjectSection(SolutionItems) = preProject
+		Binaries\Microsoft.Windows.Shell.dll = Binaries\Microsoft.Windows.Shell.dll
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +26,10 @@ Global
 		{BE476D34-0A22-4771-B38A-8914F45E8E9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE476D34-0A22-4771-B38A-8914F45E8E9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE476D34-0A22-4771-B38A-8914F45E8E9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF89DBA0-F998-41ED-AF3B-7308A0B3189D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF89DBA0-F998-41ED-AF3B-7308A0B3189D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF89DBA0-F998-41ED-AF3B-7308A0B3189D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF89DBA0-F998-41ED-AF3B-7308A0B3189D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

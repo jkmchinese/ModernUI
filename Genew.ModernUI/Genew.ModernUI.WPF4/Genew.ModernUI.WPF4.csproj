@@ -1,0 +1,814 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EF89DBA0-F998-41ED-AF3B-7308A0B3189D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Genew.ModernUI</RootNamespace>
+    <AssemblyName>Genew.ModernUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NET4</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Genew.ModernUI.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NET4</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Expression.Interactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Windows.Shell">
+      <HintPath>..\Binaries\Microsoft.Windows.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Genew.ModernUI\Behaviors\ButtonBaseMouseBehavior.cs">
+      <Link>Behaviors\ButtonBaseMouseBehavior.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Behaviors\DataStateBehaviorFix.cs">
+      <Link>Behaviors\DataStateBehaviorFix.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Behaviors\DataTriggerEvaluateOnLoad.cs">
+      <Link>Behaviors\DataTriggerEvaluateOnLoad.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Behaviors\ItemSelectBehavior.cs">
+      <Link>Behaviors\ItemSelectBehavior.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Behaviors\KeyboardBehavior.cs">
+      <Link>Behaviors\KeyboardBehavior.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Behaviors\KeyDownCommandBehavior.cs">
+      <Link>Behaviors\KeyDownCommandBehavior.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Behaviors\MouseBehavior.cs">
+      <Link>Behaviors\MouseBehavior.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Behaviors\ScrollStateBehavior.cs">
+      <Link>Behaviors\ScrollStateBehavior.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Behaviors\TextBoxDefaultStringBehavior.cs">
+      <Link>Behaviors\TextBoxDefaultStringBehavior.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Behaviors\TextSelectAllBehavior.cs">
+      <Link>Behaviors\TextSelectAllBehavior.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\AutoSelectTextBox\AutoSelectBehaviorEnum.cs">
+      <Link>ExtendedToolkit\AutoSelectTextBox\AutoSelectBehaviorEnum.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\AutoSelectTextBox\AutoSelectTextBox.cs">
+      <Link>ExtendedToolkit\AutoSelectTextBox\AutoSelectTextBox.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\AutoSelectTextBox\QueryMoveFocusEventArgs.cs">
+      <Link>ExtendedToolkit\AutoSelectTextBox\QueryMoveFocusEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\BusyIndicator\BusyIndicator.cs">
+      <Link>ExtendedToolkit\BusyIndicator\BusyIndicator.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\BusyIndicator\VisualStates.BusyIndicator.cs">
+      <Link>ExtendedToolkit\BusyIndicator\VisualStates.BusyIndicator.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\ButtonSpinner\ButtonSpinner.cs">
+      <Link>ExtendedToolkit\ButtonSpinner\ButtonSpinner.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\ButtonSpinner\SpinDirection.cs">
+      <Link>ExtendedToolkit\ButtonSpinner\SpinDirection.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\ButtonSpinner\SpinEventArgs.cs">
+      <Link>ExtendedToolkit\ButtonSpinner\SpinEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\ButtonSpinner\Spinner.cs">
+      <Link>ExtendedToolkit\ButtonSpinner\Spinner.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\ButtonSpinner\ValidSpinDirections.cs">
+      <Link>ExtendedToolkit\ButtonSpinner\ValidSpinDirections.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\CheckCombobox\CheckComboBox.cs">
+      <Link>ExtendedToolkit\CheckCombobox\CheckComboBox.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\CheckListBox\CheckListBox.cs">
+      <Link>ExtendedToolkit\CheckListBox\CheckListBox.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Chromes\ButtonChrome.cs">
+      <Link>ExtendedToolkit\Chromes\ButtonChrome.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\ColorCanvas\ColorCanvas.cs">
+      <Link>ExtendedToolkit\ColorCanvas\ColorCanvas.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\ColorCanvas\ColorSpectrumSlider.cs">
+      <Link>ExtendedToolkit\ColorCanvas\ColorSpectrumSlider.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\ColorPicker\ColorItem.cs">
+      <Link>ExtendedToolkit\ColorPicker\ColorItem.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\ColorPicker\ColorPicker.cs">
+      <Link>ExtendedToolkit\ColorPicker\ColorPicker.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Converters\BorderThicknessToStrokeThicknessConverter.cs">
+      <Link>ExtendedToolkit\Core\Converters\BorderThicknessToStrokeThicknessConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Converters\CalculatorMemoryToVisibilityConverter.cs">
+      <Link>ExtendedToolkit\Core\Converters\CalculatorMemoryToVisibilityConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Converters\ColorBlendConverter.cs">
+      <Link>ExtendedToolkit\Core\Converters\ColorBlendConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Converters\ColorToSolidColorBrushConverter.cs">
+      <Link>ExtendedToolkit\Core\Converters\ColorToSolidColorBrushConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Converters\InverseBoolConverter.cs">
+      <Link>ExtendedToolkit\Core\Converters\InverseBoolConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Converters\ObjectTypeToNameConverter.cs">
+      <Link>ExtendedToolkit\Core\Converters\ObjectTypeToNameConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Converters\RoundedValueConverter.cs">
+      <Link>ExtendedToolkit\Core\Converters\RoundedValueConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Converters\SolidColorBrushToColorConverter.cs">
+      <Link>ExtendedToolkit\Core\Converters\SolidColorBrushToColorConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Converters\TimeFormatToDateTimeFormatConverter.cs">
+      <Link>ExtendedToolkit\Core\Converters\TimeFormatToDateTimeFormatConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Converters\VisibilityToBoolConverter.cs">
+      <Link>ExtendedToolkit\Core\Converters\VisibilityToBoolConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Converters\WindowContentBorderMarginConverter.cs">
+      <Link>ExtendedToolkit\Core\Converters\WindowContentBorderMarginConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Converters\WindowControlBackgroundConverter.cs">
+      <Link>ExtendedToolkit\Core\Converters\WindowControlBackgroundConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\ErrorMessages.cs">
+      <Link>ExtendedToolkit\Core\ErrorMessages.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Input\InputValidationErrorEventArgs.cs">
+      <Link>ExtendedToolkit\Core\Input\InputValidationErrorEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Input\IValidateInput.cs">
+      <Link>ExtendedToolkit\Core\Input\IValidateInput.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Primitives\CachedTextInfo.cs">
+      <Link>ExtendedToolkit\Core\Primitives\CachedTextInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Primitives\HsvColor.cs">
+      <Link>ExtendedToolkit\Core\Primitives\HsvColor.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Primitives\InputBase.cs">
+      <Link>ExtendedToolkit\Core\Primitives\InputBase.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Primitives\MouseWheelActiveTriggerEnum.cs">
+      <Link>ExtendedToolkit\Core\Primitives\MouseWheelActiveTriggerEnum.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Primitives\Selector.cs">
+      <Link>ExtendedToolkit\Core\Primitives\Selector.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Primitives\SelectorItem.cs">
+      <Link>ExtendedToolkit\Core\Primitives\SelectorItem.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Primitives\UpDownBase.cs">
+      <Link>ExtendedToolkit\Core\Primitives\UpDownBase.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Primitives\ValueRangeTextBox.cs">
+      <Link>ExtendedToolkit\Core\Primitives\ValueRangeTextBox.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\QueryTextFromValueEventArgs.cs">
+      <Link>ExtendedToolkit\Core\QueryTextFromValueEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\QueryValueFromTextEventArgs.cs">
+      <Link>ExtendedToolkit\Core\QueryValueFromTextEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Utilities\ColorUtilities.cs">
+      <Link>ExtendedToolkit\Core\Utilities\ColorUtilities.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Utilities\KeyboardUtilities.cs">
+      <Link>ExtendedToolkit\Core\Utilities\KeyboardUtilities.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Utilities\ValueChangeHelper.cs">
+      <Link>ExtendedToolkit\Core\Utilities\ValueChangeHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\DateTimePicker\DateTimePicker.cs">
+      <Link>ExtendedToolkit\DateTimePicker\DateTimePicker.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\DateTimeUpDown\DateTimeFormat.cs">
+      <Link>ExtendedToolkit\DateTimeUpDown\DateTimeFormat.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\DateTimeUpDown\DateTimeInfo.cs">
+      <Link>ExtendedToolkit\DateTimeUpDown\DateTimeInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\DateTimeUpDown\DateTimeParser.cs">
+      <Link>ExtendedToolkit\DateTimeUpDown\DateTimeParser.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\DateTimeUpDown\DateTimePart.cs">
+      <Link>ExtendedToolkit\DateTimeUpDown\DateTimePart.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\DateTimeUpDown\DateTimeUpDown.cs">
+      <Link>ExtendedToolkit\DateTimeUpDown\DateTimeUpDown.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\DropDownButton\DropDownButton.cs">
+      <Link>ExtendedToolkit\DropDownButton\DropDownButton.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\MaskedTextBox\AutoCompletingMaskEventArgs.cs">
+      <Link>ExtendedToolkit\MaskedTextBox\AutoCompletingMaskEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\MaskedTextBox\InsertKeyModeEnum.cs">
+      <Link>ExtendedToolkit\MaskedTextBox\InsertKeyModeEnum.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\MaskedTextBox\MaskedTextBox.cs">
+      <Link>ExtendedToolkit\MaskedTextBox\MaskedTextBox.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\MaskedTextBox\MaskFormatEnum.cs">
+      <Link>ExtendedToolkit\MaskedTextBox\MaskFormatEnum.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\MultiLineTextEditor\MultiLineTextEditor.cs">
+      <Link>ExtendedToolkit\MultiLineTextEditor\MultiLineTextEditor.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\NumericUpDown\AllowedSpecialValuesEnum.cs">
+      <Link>ExtendedToolkit\NumericUpDown\AllowedSpecialValuesEnum.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\NumericUpDown\ByteUpDown.cs">
+      <Link>ExtendedToolkit\NumericUpDown\ByteUpDown.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\NumericUpDown\CommonNumericUpDown.cs">
+      <Link>ExtendedToolkit\NumericUpDown\CommonNumericUpDown.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\NumericUpDown\DecimalUpDown.cs">
+      <Link>ExtendedToolkit\NumericUpDown\DecimalUpDown.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\NumericUpDown\DoubleUpDown.cs">
+      <Link>ExtendedToolkit\NumericUpDown\DoubleUpDown.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\NumericUpDown\IntegerUpDown.cs">
+      <Link>ExtendedToolkit\NumericUpDown\IntegerUpDown.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\NumericUpDown\LongUpDown.cs">
+      <Link>ExtendedToolkit\NumericUpDown\LongUpDown.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\NumericUpDown\NumericUpDown.cs">
+      <Link>ExtendedToolkit\NumericUpDown\NumericUpDown.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\NumericUpDown\SByteUpDown.cs">
+      <Link>ExtendedToolkit\NumericUpDown\SByteUpDown.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\NumericUpDown\ShortUpDown.cs">
+      <Link>ExtendedToolkit\NumericUpDown\ShortUpDown.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\NumericUpDown\SingleUpDown.cs">
+      <Link>ExtendedToolkit\NumericUpDown\SingleUpDown.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\NumericUpDown\UIntegerUpDown.cs">
+      <Link>ExtendedToolkit\NumericUpDown\UIntegerUpDown.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\NumericUpDown\ULongUpDown.cs">
+      <Link>ExtendedToolkit\NumericUpDown\ULongUpDown.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\NumericUpDown\UShortUpDown.cs">
+      <Link>ExtendedToolkit\NumericUpDown\UShortUpDown.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\SplitButton\SplitButton.cs">
+      <Link>ExtendedToolkit\SplitButton\SplitButton.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\TimePicker\TimeFormat.cs">
+      <Link>ExtendedToolkit\TimePicker\TimeFormat.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\TimePicker\TimeItem.cs">
+      <Link>ExtendedToolkit\TimePicker\TimeItem.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\TimePicker\TimePicker.cs">
+      <Link>ExtendedToolkit\TimePicker\TimePicker.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\VisualStates.cs">
+      <Link>ExtendedToolkit\VisualStates.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\WatermarkTextBox\WatermarkTextBox.cs">
+      <Link>ExtendedToolkit\WatermarkTextBox\WatermarkTextBox.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Presentation\AppearanceManager.cs">
+      <Link>Presentation\AppearanceManager.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Presentation\CommandBase.cs">
+      <Link>Presentation\CommandBase.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Presentation\Displayable.cs">
+      <Link>Presentation\Displayable.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Presentation\FontSize.cs">
+      <Link>Presentation\FontSize.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Presentation\Link.cs">
+      <Link>Presentation\Link.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Presentation\LinkCollection.cs">
+      <Link>Presentation\LinkCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Presentation\LinkGroup.cs">
+      <Link>Presentation\LinkGroup.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Presentation\LinkGroupCollection.cs">
+      <Link>Presentation\LinkGroupCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Presentation\NotifyPropertyChanged.cs">
+      <Link>Presentation\NotifyPropertyChanged.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Presentation\ReadOnlyLinkGroupCollection.cs">
+      <Link>Presentation\ReadOnlyLinkGroupCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Presentation\RelayCommand.cs">
+      <Link>Presentation\RelayCommand.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="..\Genew.ModernUI\Properties\Resources.Designer.cs">
+      <Link>Properties\Resources.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Properties\Settings.Designer.cs">
+      <Link>Properties\Settings.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\UIHelper\ExtensionMethod.cs">
+      <Link>UIHelper\ExtensionMethod.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\UIHelper\ModernUIHelper.cs">
+      <Link>UIHelper\ModernUIHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\CommandDictionary.cs">
+      <Link>Windows\CommandDictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Controls\BBCodeBlock.cs">
+      <Link>Windows\Controls\BBCodeBlock.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Controls\BBCode\BBCodeLexer.cs">
+      <Link>Windows\Controls\BBCode\BBCodeLexer.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Controls\BBCode\BBCodeParser.cs">
+      <Link>Windows\Controls\BBCode\BBCodeParser.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Controls\BBCode\CharBuffer.cs">
+      <Link>Windows\Controls\BBCode\CharBuffer.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Controls\BBCode\Lexer.cs">
+      <Link>Windows\Controls\BBCode\Lexer.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Controls\BBCode\ParseException.cs">
+      <Link>Windows\Controls\BBCode\ParseException.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Controls\BBCode\Parser.cs">
+      <Link>Windows\Controls\BBCode\Parser.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Controls\BBCode\Token.cs">
+      <Link>Windows\Controls\BBCode\Token.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Controls\BBCode\TokenBuffer.cs">
+      <Link>Windows\Controls\BBCode\TokenBuffer.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Controls\DataGridCheckBoxColumn.cs">
+      <Link>Windows\Controls\DataGridCheckBoxColumn.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Controls\DataGridComboBoxColumn.cs">
+      <Link>Windows\Controls\DataGridComboBoxColumn.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Controls\DataGridTextColumn.cs">
+      <Link>Windows\Controls\DataGridTextColumn.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Controls\ModernButton.cs">
+      <Link>Windows\Controls\ModernButton.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Controls\ModernDialog.cs">
+      <Link>Windows\Controls\ModernDialog.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Controls\ModernFrame.cs">
+      <Link>Windows\Controls\ModernFrame.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Controls\ModernMenu.cs">
+      <Link>Windows\Controls\ModernMenu.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Controls\ModernTab.cs">
+      <Link>Windows\Controls\ModernTab.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Controls\ModernWindow.cs">
+      <Link>Windows\Controls\ModernWindow.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Controls\RelativeAnimatingContentControl.cs">
+      <Link>Windows\Controls\RelativeAnimatingContentControl.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Controls\SourceEventArgs.cs">
+      <Link>Windows\Controls\SourceEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Controls\TabLayout.cs">
+      <Link>Windows\Controls\TabLayout.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Controls\TransitioningContentControl.cs">
+      <Link>Windows\Controls\TransitioningContentControl.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Converters\BooleanToFontWeightConverter.cs">
+      <Link>Windows\Converters\BooleanToFontWeightConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Converters\BooleanToVisibilityConverter.cs">
+      <Link>Windows\Converters\BooleanToVisibilityConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Converters\NullOrEmptyStringToVisibilityConverter.cs">
+      <Link>Windows\Converters\NullOrEmptyStringToVisibilityConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Converters\NullToVisibilityConverter.cs">
+      <Link>Windows\Converters\NullToVisibilityConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Converters\ToLowerConverter.cs">
+      <Link>Windows\Converters\ToLowerConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Converters\ToUpperConverter.cs">
+      <Link>Windows\Converters\ToUpperConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\DefaultContentLoader.cs">
+      <Link>Windows\DefaultContentLoader.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\IContent.cs">
+      <Link>Windows\IContent.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\IContentLoader.cs">
+      <Link>Windows\IContentLoader.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Media\VisualTreeHelperEx.cs">
+      <Link>Windows\Media\VisualTreeHelperEx.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Navigation\DefaultLinkNavigator.cs">
+      <Link>Windows\Navigation\DefaultLinkNavigator.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Navigation\FragmentNavigationEventArgs.cs">
+      <Link>Windows\Navigation\FragmentNavigationEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Navigation\ILinkNavigator.cs">
+      <Link>Windows\Navigation\ILinkNavigator.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Navigation\NavigatingCancelEventArgs.cs">
+      <Link>Windows\Navigation\NavigatingCancelEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Navigation\NavigationBaseEventArgs.cs">
+      <Link>Windows\Navigation\NavigationBaseEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Navigation\NavigationEventArgs.cs">
+      <Link>Windows\Navigation\NavigationEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Navigation\NavigationFailedEventArgs.cs">
+      <Link>Windows\Navigation\NavigationFailedEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Navigation\NavigationHelper.cs">
+      <Link>Windows\Navigation\NavigationHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Navigation\NavigationType.cs">
+      <Link>Windows\Navigation\NavigationType.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\Genew.ModernUI\ExtendedToolkit\Core\ErrorMessages.resx">
+      <Link>ExtendedToolkit\Core\ErrorMessages.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Genew.ModernUI\Properties\Resources.resx">
+      <Link>Properties\Resources.resx</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Genew.ModernUI\Properties\Settings.settings">
+      <Link>Properties\Settings.settings</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Page Include="..\Genew.ModernUI\Assets\Button.xaml">
+      <Link>Assets\Button.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Assets\Calendar.xaml">
+      <Link>Assets\Calendar.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Assets\CheckBox.xaml">
+      <Link>Assets\CheckBox.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Assets\ComboBox.xaml">
+      <Link>Assets\ComboBox.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Assets\ContextMenu.xaml">
+      <Link>Assets\ContextMenu.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Assets\Converters.xaml">
+      <Link>Assets\Converters.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Assets\DataGrid.xaml">
+      <Link>Assets\DataGrid.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Assets\DatePicker.xaml">
+      <Link>Assets\DatePicker.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Assets\GridSplitter.xaml">
+      <Link>Assets\GridSplitter.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Assets\Hyperlink.xaml">
+      <Link>Assets\Hyperlink.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Assets\Label.xaml">
+      <Link>Assets\Label.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Assets\ListBox.xaml">
+      <Link>Assets\ListBox.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Assets\ListView.xaml">
+      <Link>Assets\ListView.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Assets\Menu.xaml">
+      <Link>Assets\Menu.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Assets\MenuItem.xaml">
+      <Link>Assets\MenuItem.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Assets\ModernUI.Dark.xaml">
+      <Link>Assets\ModernUI.Dark.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Assets\ModernUI.Light.xaml">
+      <Link>Assets\ModernUI.Light.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Assets\ModernUI.xaml">
+      <Link>Assets\ModernUI.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Assets\PasswordBox.xaml">
+      <Link>Assets\PasswordBox.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Assets\PathGeometrys.xaml">
+      <Link>Assets\PathGeometrys.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Assets\ProgressBar.xaml">
+      <Link>Assets\ProgressBar.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Assets\RadioButton.xaml">
+      <Link>Assets\RadioButton.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Assets\ScrollBar.xaml">
+      <Link>Assets\ScrollBar.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Assets\Slider.xaml">
+      <Link>Assets\Slider.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Assets\TextBlock.xaml">
+      <Link>Assets\TextBlock.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Assets\TextBox.xaml">
+      <Link>Assets\TextBox.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Assets\ToolTip.xaml">
+      <Link>Assets\ToolTip.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Assets\TreeView.xaml">
+      <Link>Assets\TreeView.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\BBCodeBlock.xaml">
+      <Link>Themes\BBCodeBlock.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\ExtendedToolkit\AutoSelectTextBox.xaml">
+      <Link>Themes\ExtendedToolkit\AutoSelectTextBox.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\ExtendedToolkit\BusyIndicator.xaml">
+      <Link>Themes\ExtendedToolkit\BusyIndicator.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\ExtendedToolkit\ButtonChrome.xaml">
+      <Link>Themes\ExtendedToolkit\ButtonChrome.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\ExtendedToolkit\ButtonSpinner.xaml">
+      <Link>Themes\ExtendedToolkit\ButtonSpinner.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\ExtendedToolkit\CheckComboBox.xaml">
+      <Link>Themes\ExtendedToolkit\CheckComboBox.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\ExtendedToolkit\CheckListBox.xaml">
+      <Link>Themes\ExtendedToolkit\CheckListBox.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\ExtendedToolkit\ColorCanvas.xaml">
+      <Link>Themes\ExtendedToolkit\ColorCanvas.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\ExtendedToolkit\ColorPicker.xaml">
+      <Link>Themes\ExtendedToolkit\ColorPicker.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\ExtendedToolkit\Common\ColorPickerToggleButton.xaml">
+      <Link>Themes\ExtendedToolkit\Common\ColorPickerToggleButton.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\ExtendedToolkit\Common\SelectorItem.xaml">
+      <Link>Themes\ExtendedToolkit\Common\SelectorItem.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\ExtendedToolkit\Common\TimePickerToggleButton.xaml">
+      <Link>Themes\ExtendedToolkit\Common\TimePickerToggleButton.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\ExtendedToolkit\Common\TransparentBrush.xaml">
+      <Link>Themes\ExtendedToolkit\Common\TransparentBrush.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\ExtendedToolkit\DateTimePicker.xaml">
+      <Link>Themes\ExtendedToolkit\DateTimePicker.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\ExtendedToolkit\DateTimeUpDown.xaml">
+      <Link>Themes\ExtendedToolkit\DateTimeUpDown.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\ExtendedToolkit\DropDownButton.xaml">
+      <Link>Themes\ExtendedToolkit\DropDownButton.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\ExtendedToolkit\MaskedTextBox.xaml">
+      <Link>Themes\ExtendedToolkit\MaskedTextBox.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\ExtendedToolkit\MultiLineTextEditor.xaml">
+      <Link>Themes\ExtendedToolkit\MultiLineTextEditor.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\ExtendedToolkit\NumericUpDown.xaml">
+      <Link>Themes\ExtendedToolkit\NumericUpDown.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\ExtendedToolkit\SplitButton.xaml">
+      <Link>Themes\ExtendedToolkit\SplitButton.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\ExtendedToolkit\TimePicker.xaml">
+      <Link>Themes\ExtendedToolkit\TimePicker.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\ExtendedToolkit\WatermarkTextBox.xaml">
+      <Link>Themes\ExtendedToolkit\WatermarkTextBox.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\Generic.xaml">
+      <Link>Themes\Generic.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\ModernButton.xaml">
+      <Link>Themes\ModernButton.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\ModernFrame.xaml">
+      <Link>Themes\ModernFrame.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\ModernMenu.xaml">
+      <Link>Themes\ModernMenu.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\ModernTab.xaml">
+      <Link>Themes\ModernTab.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\TransitioningContentControl.xaml">
+      <Link>Themes\TransitioningContentControl.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Assets\ModernWindowEx.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\ModernDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\ModernWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

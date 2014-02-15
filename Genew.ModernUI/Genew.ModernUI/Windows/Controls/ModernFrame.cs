@@ -64,7 +64,7 @@ namespace Genew.ModernUI.Windows.Controls
         private readonly Stack<Uri> m_history = new Stack<Uri>();
         private readonly Dictionary<Uri, object> m_contentCache = new Dictionary<Uri, object>();
 #if NET4
-        private List<WeakReference> childFrames = new List<WeakReference>();        // list of registered frames in sub tree
+        private List<WeakReference> m_childFrames = new List<WeakReference>();        // list of registered frames in sub tree
 #else
         private readonly List<WeakReference<ModernFrame>> m_childFrames = new List<WeakReference<ModernFrame>>();        // list of registered frames in sub tree
 #endif
