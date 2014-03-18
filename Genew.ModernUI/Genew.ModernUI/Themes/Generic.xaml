@@ -13,6 +13,7 @@
         <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ModernTab.xaml" />
         <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ModernWindow.xaml" />
         <ResourceDictionary Source="/Genew.ModernUI;component/Themes/TransitioningContentControl.xaml" />
+        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ModernProgressRing.xaml" />
 
         <!--ExtendedToolkit-->
         <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/Common/SelectorItem.xaml" />

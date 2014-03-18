@@ -36,6 +36,26 @@
                                Margin="8,2,0,0"
                                Foreground="{DynamicResource WindowTextReadOnly}" />
                 </StackPanel>
+                <TextBlock Text="MENU"
+                           Style="{StaticResource Heading2}"
+                           Margin="0,0,0,8" />
+                <Menu Margin="0,0,0,32">
+                    <MenuItem Header="_Edit">
+                        <MenuItem Command="ApplicationCommands.Copy" />
+                        <MenuItem Command="ApplicationCommands.Cut" />
+                        <MenuItem Command="ApplicationCommands.Paste" />
+                    </MenuItem>
+                    <MenuItem Header="_Font">
+                        <MenuItem Header="_Bold"
+                                  IsCheckable="True" />
+                        <MenuItem Header="_Italic"
+                                  IsCheckable="True"
+                                  IsChecked="True" />
+                        <Separator />
+                        <MenuItem Header="I_ncrease Font Size" />
+                        <MenuItem Header="_Decrease Font Size" />
+                    </MenuItem>
+                </Menu>
                 <TextBlock Text="CONTEXTMENU"
                            Style="{StaticResource Heading2}"
                            Margin="0,0,0,8" />

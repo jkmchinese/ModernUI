@@ -419,6 +419,9 @@
     <Compile Include="..\Genew.ModernUI\Windows\Controls\ModernMenu.cs">
       <Link>Windows\Controls\ModernMenu.cs</Link>
     </Compile>
+    <Compile Include="..\Genew.ModernUI\Windows\Controls\ModernProgressRing.cs">
+      <Link>Windows\Controls\ModernProgressRing.cs</Link>
+    </Compile>
     <Compile Include="..\Genew.ModernUI\Windows\Controls\ModernTab.cs">
       <Link>Windows\Controls\ModernTab.cs</Link>
     </Compile>
@@ -582,6 +585,11 @@
     </Page>
     <Page Include="..\Genew.ModernUI\Assets\MenuItem.xaml">
       <Link>Assets\MenuItem.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Assets\ModernProgressRing.xaml">
+      <Link>Assets\ModernProgressRing.xaml</Link>
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -777,6 +785,11 @@
     </Page>
     <Page Include="..\Genew.ModernUI\Themes\ModernMenu.xaml">
       <Link>Themes\ModernMenu.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\ModernProgressRing.xaml">
+      <Link>Themes\ModernProgressRing.xaml</Link>
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

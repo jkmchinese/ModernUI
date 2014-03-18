@@ -21,6 +21,8 @@
                           Source="/Content/ControlsModernFrame.xaml" />
                 <mui:Link DisplayName="ModernMenu"
                           Source="/Content/ControlsModernMenu.xaml" />
+                <mui:Link DisplayName="ModernProgressRing"
+                          Source="/Content/ControlsModernProgressRing.xaml" />
                 <mui:Link DisplayName="ModernWindow"
                           Source="/Content/ControlsModernWindow.xaml" />
             </mui:ModernTab.Links>

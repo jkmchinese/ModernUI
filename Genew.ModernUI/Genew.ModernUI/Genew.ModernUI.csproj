@@ -185,6 +185,7 @@
     <Compile Include="Windows\Controls\ModernDialog.cs" />
     <Compile Include="Windows\Controls\ModernFrame.cs" />
     <Compile Include="Windows\Controls\ModernMenu.cs" />
+    <Compile Include="Windows\Controls\ModernProgressRing.cs" />
     <Compile Include="Windows\Controls\ModernTab.cs" />
     <Compile Include="Windows\Controls\ModernWindow.cs" />
     <Compile Include="Windows\Controls\RelativeAnimatingContentControl.cs" />
@@ -281,6 +282,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Assets\MenuItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Assets\ModernProgressRing.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -445,6 +450,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Themes\ModernMenu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\ModernProgressRing.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
