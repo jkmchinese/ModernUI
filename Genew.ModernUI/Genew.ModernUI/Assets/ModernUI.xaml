@@ -29,6 +29,7 @@
         <ResourceDictionary Source="ToolTip.xaml" />
         <ResourceDictionary Source="TreeView.xaml" />
         <ResourceDictionary Source="ModernProgressRing.xaml" />
+        <ResourceDictionary Source="TabControl.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <!-- default accent colors and brushes -->

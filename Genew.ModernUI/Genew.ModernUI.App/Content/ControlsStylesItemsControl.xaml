@@ -64,6 +64,62 @@
                         Margin="0,0,0,32"
                         HorizontalAlignment="Left" />
 
+                <TextBlock Text="TabControl"
+                           Style="{StaticResource Heading2}"
+                           Margin="0,0,0,8" />
+                <TabControl Margin="0,0,0,32">
+                    <TabItem Header="Item1"
+                             Content="Item 1" />
+                    <TabItem Header="Item2"
+                             Content="Item 2" />
+                    <TabItem Header="Item3"
+                             Content="Item 3" />
+                    <TabItem Header="Item4"
+                             Content="Item 4" />
+                    <TabItem Header="Item5"
+                             Content="Item 5" />
+                </TabControl>
+                <TabControl Margin="0,0,0,32"
+                            TabStripPlacement="Left">
+                    <TabItem Header="Item1"
+                             Content="Item 1" />
+                    <TabItem Header="Item2"
+                             Content="Item 2" />
+                    <TabItem Header="Item3"
+                             Content="Item 3" />
+                    <TabItem Header="Item4"
+                             Content="Item 4" />
+                    <TabItem Header="Item5"
+                             Content="Item 5" />
+                </TabControl>
+                <TabControl Margin="0,0,0,32"
+                            TabStripPlacement="Right">
+                    <TabItem Header="Item1"
+                             Content="Item 1" />
+                    <TabItem Header="Item2"
+                             Content="Item 2" />
+                    <TabItem Header="Item3"
+                             Content="Item 3" />
+                    <TabItem Header="Item4"
+                             Content="Item 4" />
+                    <TabItem Header="Item5"
+                             Content="Item 5" />
+                </TabControl>
+                <TabControl Margin="0,0,0,32"
+                            TabStripPlacement="Bottom">
+                    <TabItem Header="Item1"
+                             Content="Item 1" />
+                    <TabItem Header="Item2"
+                             Content="Item 2" />
+                    <TabItem Header="Item3"
+                             Content="Item 3" />
+                    <TabItem Header="Item4"
+                             Content="Item 4" />
+                    <TabItem Header="Item5"
+                             Content="Item 5" />
+                </TabControl>
+
+
                 <TextBlock Text="LISTBOX"
                            Style="{StaticResource Heading2}"
                            Margin="0,0,0,8" />
