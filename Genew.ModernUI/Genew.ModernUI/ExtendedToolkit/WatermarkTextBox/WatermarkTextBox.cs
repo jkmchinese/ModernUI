@@ -7,6 +7,7 @@
 * 修改时间：             修改人：                修改内容：
 *******************************************************************/
 
+using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -16,12 +17,13 @@ namespace Genew.ModernUI.ExtendedToolkit
     /// <summary>
     /// 水印文本框
     /// </summary>
-    public class WatermarkTextBox : TextBox
+    public class WatermarkTextBox : AutoSelectTextBox
     {
         #region Properties
 
         #region SelectAllOnGotFocus
 
+        [Obsolete("This property is obsolete and should no longer be used. Use AutoSelectTextBox.AutoSelectBehavior instead.")]
         public static readonly DependencyProperty SelectAllOnGotFocusProperty =
             DependencyProperty.Register("SelectAllOnGotFocus", typeof(bool), typeof(WatermarkTextBox),
                 new PropertyMetadata(false));
@@ -29,6 +31,7 @@ namespace Genew.ModernUI.ExtendedToolkit
         /// <summary>
         /// 聚焦时选中文本
         /// </summary>
+        [Obsolete("This property is obsolete and should no longer be used. Use AutoSelectTextBox.AutoSelectBehavior instead.")]
         public bool SelectAllOnGotFocus
         {
             get { return (bool)GetValue(SelectAllOnGotFocusProperty); }

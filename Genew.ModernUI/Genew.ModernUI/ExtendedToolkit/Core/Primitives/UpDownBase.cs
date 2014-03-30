@@ -86,6 +86,36 @@ namespace Genew.ModernUI.ExtendedToolkit.Primitives
 
         #endregion //DefaultValue
 
+        #region DisplayDefaultValueOnEmptyText
+
+        public static readonly DependencyProperty DisplayDefaultValueOnEmptyTextProperty = DependencyProperty.Register("DisplayDefaultValueOnEmptyText", typeof(bool), typeof(UpDownBase<T>), new UIPropertyMetadata(false, OnDisplayDefaultValueOnEmptyTextChanged));
+        public bool DisplayDefaultValueOnEmptyText
+        {
+            get
+            {
+                return (bool)GetValue(DisplayDefaultValueOnEmptyTextProperty);
+            }
+            set
+            {
+                SetValue(DisplayDefaultValueOnEmptyTextProperty, value);
+            }
+        }
+
+        private static void OnDisplayDefaultValueOnEmptyTextChanged(DependencyObject source, DependencyPropertyChangedEventArgs args)
+        {
+            ((UpDownBase<T>)source).OnDisplayDefaultValueOnEmptyTextChanged((bool)args.OldValue, (bool)args.NewValue);
+        }
+
+        private void OnDisplayDefaultValueOnEmptyTextChanged(bool oldValue, bool newValue)
+        {
+            if (this.IsInitialized && string.IsNullOrEmpty(Text))
+            {
+                this.SyncTextAndValueProperties(true, Text);
+            }
+        }
+
+        #endregion //DisplayDefaultValueOnEmptyText
+
         #region MouseWheelActiveTrigger
 
         /// <summary>
@@ -154,6 +184,104 @@ namespace Genew.ModernUI.ExtendedToolkit.Primitives
         }
 
         #endregion //ShowButtonSpinner
+        
+        #region ClipValueToMinMax
+
+        public static readonly DependencyProperty ClipValueToMinMaxProperty =
+            DependencyProperty.Register("ClipValueToMinMax", typeof(bool), typeof(NumericUpDown<T>),
+                new UIPropertyMetadata(false));
+
+        public bool ClipValueToMinMax
+        {
+            get { return (bool)GetValue(ClipValueToMinMaxProperty); }
+            set { SetValue(ClipValueToMinMaxProperty, value); }
+        }
+
+        #endregion //ClipValueToMinMax
+
+        #region Maximum
+
+        public static readonly DependencyProperty MaximumProperty = DependencyProperty.Register("Maximum", typeof(T),
+            typeof(NumericUpDown<T>), new UIPropertyMetadata(default(T), OnMaximumChanged, OnCoerceMaximum));
+
+        public T Maximum
+        {
+            get { return (T)GetValue(MaximumProperty); }
+            set { SetValue(MaximumProperty, value); }
+        }
+
+        private static void OnMaximumChanged(DependencyObject o, DependencyPropertyChangedEventArgs e)
+        {
+            NumericUpDown<T> numericUpDown = o as NumericUpDown<T>;
+            if (numericUpDown != null)
+                numericUpDown.OnMaximumChanged((T)e.OldValue, (T)e.NewValue);
+        }
+
+        protected virtual void OnMaximumChanged(T oldValue, T newValue)
+        {
+            if (IsInitialized)
+            {
+                SetValidSpinDirection();
+            }
+        }
+
+        private static object OnCoerceMaximum(DependencyObject d, object baseValue)
+        {
+            NumericUpDown<T> numericUpDown = d as NumericUpDown<T>;
+            if (numericUpDown != null)
+                return numericUpDown.OnCoerceMaximum((T)baseValue);
+
+            return baseValue;
+        }
+
+        protected virtual T OnCoerceMaximum(T baseValue)
+        {
+            return baseValue;
+        }
+
+        #endregion //Maximum
+
+        #region Minimum
+
+        public static readonly DependencyProperty MinimumProperty = DependencyProperty.Register("Minimum", typeof(T),
+            typeof(NumericUpDown<T>), new UIPropertyMetadata(default(T), OnMinimumChanged, OnCoerceMinimum));
+
+        public T Minimum
+        {
+            get { return (T)GetValue(MinimumProperty); }
+            set { SetValue(MinimumProperty, value); }
+        }
+
+        private static void OnMinimumChanged(DependencyObject o, DependencyPropertyChangedEventArgs e)
+        {
+            NumericUpDown<T> numericUpDown = o as NumericUpDown<T>;
+            if (numericUpDown != null)
+                numericUpDown.OnMinimumChanged((T)e.OldValue, (T)e.NewValue);
+        }
+
+        protected virtual void OnMinimumChanged(T oldValue, T newValue)
+        {
+            if (IsInitialized)
+            {
+                SetValidSpinDirection();
+            }
+        }
+
+        private static object OnCoerceMinimum(DependencyObject d, object baseValue)
+        {
+            NumericUpDown<T> numericUpDown = d as NumericUpDown<T>;
+            if (numericUpDown != null)
+                return numericUpDown.OnCoerceMinimum((T)baseValue);
+
+            return baseValue;
+        }
+
+        protected virtual T OnCoerceMinimum(T baseValue)
+        {
+            return baseValue;
+        }
+
+        #endregion //Minimum
 
         #region Value
 

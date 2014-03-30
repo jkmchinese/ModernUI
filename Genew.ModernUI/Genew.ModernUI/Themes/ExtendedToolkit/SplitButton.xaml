@@ -4,10 +4,11 @@
                     xmlns:extendedToolkit="clr-namespace:Genew.ModernUI.ExtendedToolkit">
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary>
+            <PathGeometry x:Key="UpArrowData">M 0,3 C0,3 0,4 0,4 0,4 3,4 3,4 3,4 3,3 3,3 3,3 4,3 4,3 4,3 4,4 4,4 4,4 7,4 7,4 7,4 7,3 7,3 7,3 6,3 6,3 6,3 6,2 6,2 6,2 5,2 5,2 5,2 5,1 5,1 5,1 4,1 4,1 4,1 4,0 4,0 4,0 3,0 3,0 3,0 3,1 3,1 3,1 2,1 2,1 2,1 2,2 2,2 2,2 1,2 1,2 1,2 1,3 1,3 1,3 0,3 0,3 z</PathGeometry>
             <PathGeometry x:Key="DownArrowData">M 0,1 C0,1 0,0 0,0 0,0 3,0 3,0 3,0 3,1 3,1 3,1 4,1 4,1 4,1 4,0 4,0 4,0 7,0 7,0 7,0 7,1 7,1 7,1 6,1 6,1 6,1 6,2 6,2 6,2 5,2 5,2 5,2 5,3 5,3 5,3 4,3 4,3 4,3 4,4 4,4 4,4 3,4 3,4 3,4 3,3 3,3 3,3 2,3 2,3 2,3 2,2 2,2 2,2 1,2 1,2 1,2 1,1 1,1 1,1 0,1 0,1 z</PathGeometry>
         </ResourceDictionary>
     </ResourceDictionary.MergedDictionaries>
-    
+
     <converters:InverseBoolConverter x:Key="InverseBoolConverter" />
 
     <!-- =============================================================================== -->
@@ -125,6 +126,12 @@
                             <Setter Property="Fill"
                                     TargetName="Arrow"
                                     Value="{DynamicResource ButtonTextDisabled}" />
+                        </Trigger>
+                        <Trigger Property="IsOpen"
+                                 Value="True">
+                            <Setter TargetName="Arrow"
+                                    Property="Data"
+                                    Value="{StaticResource UpArrowData}"></Setter>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>

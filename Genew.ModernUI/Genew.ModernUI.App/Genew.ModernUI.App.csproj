@@ -60,8 +60,12 @@
     <Compile Include="Content\ControlsModernProgressRing.xaml.cs">
       <DependentUpon>ControlsModernProgressRing.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Converters\IntegerToTimespanConverter.cs" />
     <Compile Include="ExtendedToolkitContent\CheckListView.xaml.cs">
       <DependentUpon>CheckListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ExtendedToolkitContent\SampleFour.xaml.cs">
+      <DependentUpon>SampleFour.xaml</DependentUpon>
     </Compile>
     <Compile Include="ExtendedToolkitContent\SampleThree.xaml.cs">
       <DependentUpon>SampleThree.xaml</DependentUpon>
@@ -257,6 +261,10 @@
     <Page Include="ExtendedToolkitContent\CheckListView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ExtendedToolkitContent\SampleFour.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="ExtendedToolkitContent\SampleThree.xaml">
       <Generator>MSBuild:Compile</Generator>

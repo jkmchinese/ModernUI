@@ -34,5 +34,9 @@
         <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/MultiLineTextEditor.xaml" />
         <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/CheckListBox.xaml" />
         <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/CheckComboBox.xaml" />
+        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/Calculator.xaml" />
+        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/Wizard.xaml" />
+        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/CalculatorUpDown.xaml" />
+
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

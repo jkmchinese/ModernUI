@@ -19,7 +19,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\bin\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -29,7 +29,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\bin\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -75,6 +75,9 @@
     <Compile Include="ExtendedToolkit\ButtonSpinner\SpinEventArgs.cs" />
     <Compile Include="ExtendedToolkit\ButtonSpinner\Spinner.cs" />
     <Compile Include="ExtendedToolkit\ButtonSpinner\ValidSpinDirections.cs" />
+    <Compile Include="ExtendedToolkit\CalculatorUpDown\CalculatorUpDown.cs" />
+    <Compile Include="ExtendedToolkit\Calculator\Calculator.cs" />
+    <Compile Include="ExtendedToolkit\Calculator\CalculatorCommands.cs" />
     <Compile Include="ExtendedToolkit\CheckCombobox\CheckComboBox.cs" />
     <Compile Include="ExtendedToolkit\CheckListBox\CheckListBox.cs" />
     <Compile Include="ExtendedToolkit\Chromes\ButtonChrome.cs" />
@@ -82,10 +85,12 @@
     <Compile Include="ExtendedToolkit\ColorCanvas\ColorSpectrumSlider.cs" />
     <Compile Include="ExtendedToolkit\ColorPicker\ColorItem.cs" />
     <Compile Include="ExtendedToolkit\ColorPicker\ColorPicker.cs" />
+    <Compile Include="ExtendedToolkit\Core\CancelRoutedEventArgs.cs" />
     <Compile Include="ExtendedToolkit\Core\Converters\BorderThicknessToStrokeThicknessConverter.cs" />
     <Compile Include="ExtendedToolkit\Core\Converters\CalculatorMemoryToVisibilityConverter.cs" />
     <Compile Include="ExtendedToolkit\Core\Converters\ColorBlendConverter.cs" />
     <Compile Include="ExtendedToolkit\Core\Converters\ColorToSolidColorBrushConverter.cs" />
+    <Compile Include="ExtendedToolkit\Core\Converters\WizardPageButtonVisibilityConverter.cs" />
     <Compile Include="ExtendedToolkit\Core\Converters\InverseBoolConverter.cs" />
     <Compile Include="ExtendedToolkit\Core\Converters\ObjectTypeToNameConverter.cs" />
     <Compile Include="ExtendedToolkit\Core\Converters\RoundedValueConverter.cs" />
@@ -107,6 +112,7 @@
     <Compile Include="ExtendedToolkit\Core\Primitives\ValueRangeTextBox.cs" />
     <Compile Include="ExtendedToolkit\Core\QueryTextFromValueEventArgs.cs" />
     <Compile Include="ExtendedToolkit\Core\QueryValueFromTextEventArgs.cs" />
+    <Compile Include="ExtendedToolkit\Core\Utilities\CalculatorUtilities.cs" />
     <Compile Include="ExtendedToolkit\Core\Utilities\KeyboardUtilities.cs" />
     <Compile Include="ExtendedToolkit\Core\Utilities\ValueChangeHelper.cs" />
     <Compile Include="ExtendedToolkit\DateTimePicker\DateTimePicker.cs" />
@@ -142,6 +148,11 @@
     <Compile Include="ExtendedToolkit\Core\Utilities\ColorUtilities.cs" />
     <Compile Include="ExtendedToolkit\VisualStates.cs" />
     <Compile Include="ExtendedToolkit\WatermarkTextBox\WatermarkTextBox.cs" />
+    <Compile Include="ExtendedToolkit\WatermarkTextBox\WizardCommands.cs" />
+    <Compile Include="ExtendedToolkit\WatermarkTextBox\WizardPage.cs" />
+    <Compile Include="ExtendedToolkit\WatermarkTextBox\WizardPageButtonVisibility.cs" />
+    <Compile Include="ExtendedToolkit\WatermarkTextBox\WizardPageType.cs" />
+    <Compile Include="ExtendedToolkit\Wizard\Wizard.cs" />
     <Compile Include="UIHelper\ExtensionMethod.cs" />
     <Compile Include="UIHelper\ModernUIHelper.cs" />
     <Compile Include="Presentation\AppearanceManager.cs" />
@@ -374,6 +385,18 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Themes\ExtendedToolkit\CheckComboBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\ExtendedToolkit\Calculator.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\ExtendedToolkit\CalculatorUpDown.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\ExtendedToolkit\Wizard.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

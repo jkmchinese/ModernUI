@@ -1,0 +1,158 @@
+﻿<UserControl x:Class="Genew.ModernUI.App.ExtendedToolkitContent.SampleFour"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mui="http://genew.com.cn/ModernUI"
+             xmlns:converters="clr-namespace:Genew.ModernUI.App.Converters"
+             mc:Ignorable="d"
+             d:DesignHeight="300"
+             d:DesignWidth="300">
+    <UserControl.Resources>
+
+        <converters:IntegerToTimespanConverter x:Key="TimeSpanConverter" />
+
+        <Style TargetType="TextBlock"
+               x:Key="StyleTitleTbk">
+            <Setter Property="Foreground"
+                    Value="{DynamicResource Accent}"></Setter>
+        </Style>
+        <mui:Wizard x:Key="Wizard"
+                    FinishButtonClosesWindow="True"
+                    Help="OnWizardHelp">
+            <mui:WizardPage Title="Welcome to my Wizard"
+                            Description="This Wizard will walk you though how to do something." />
+            <mui:WizardPage PageType="Interior"
+                            Title="Page 1"
+                            Description="This is the first page in the process." />
+            <mui:WizardPage PageType="Interior"
+                            Title="Page 2"
+                            Description="This is the second page in the process" />
+            <mui:WizardPage PageType="Interior"
+                            Title="Last Page"
+                            Description="This is the last page in the process"
+                            CanFinish="True" />
+        </mui:Wizard>
+    </UserControl.Resources>
+    <Grid>
+        <StackPanel>
+            <StackPanel>
+                <TextBlock Text="SampleFour"
+                           Style="{StaticResource Heading1}"
+                           Margin="0,0,0,8" />
+                <StackPanel x:Name="StackPanelCalcultor"
+                            HorizontalAlignment="Left">
+                    <TextBlock Text="Calculator:"
+                               Style="{StaticResource StyleTitleTbk}" />
+                    <TextBlock Text="The Calculator is a control used for performing mathematical calculations."
+                               FontStyle="Italic" />
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Precision(decimal places): " />
+                        <mui:IntegerUpDown x:Name="Precision"
+                                           Width="75"
+                                           Margin="5 0 0 0"
+                                           Minimum="0"
+                                           Value="2"
+                                           ToolTip="Gets/Sets the maximum number of digits displayed to the right of the decimal point." />
+                    </StackPanel>
+
+                    <mui:Calculator Margin="10"
+                                    Width="250"
+                                    Precision="{Binding Value, ElementName=Precision}" />
+                </StackPanel>
+
+                <StackPanel x:Name="StackPanelCalculatorUpDown"
+                            HorizontalAlignment="Left">
+                    <TextBlock Text="CalculatorUpDown:"
+                               Style="{StaticResource StyleTitleTbk}" />
+                    <mui:CalculatorUpDown x:Name="CalculatorUpDown"
+                                          Margin="10"
+                                          Width="250"
+                                          Precision="2"
+                                          EnterClosesCalculator="False"
+                                          Value="30" />
+                </StackPanel>
+
+                <StackPanel HorizontalAlignment="Left">
+                    <TextBlock Text="Wizard:"
+                               Style="{StaticResource StyleTitleTbk}" />
+                    <TextBlock Text="The Wizard will explain how to do something in a series of steps."
+                               FontStyle="Italic" />
+                    <Button Content="Start Wizard"
+                            Click="OnButtonClick"
+                            Width="150"
+                            Height="50"
+                            Margin="5" />
+                </StackPanel>
+
+                <StackPanel HorizontalAlignment="Left">
+                    <TextBlock Text="BusyIndicator:"
+                               Style="{StaticResource StyleTitleTbk}" />
+                    <TextBlock Text="BusyIndicator makes it easy to let the user know when an application is busy. Simply wrap the relevant content in an instance of the BusyIndicator control and toggle its IsBusy property to True during any long-running process."
+                               FontStyle="Italic"
+                               TextWrapping="Wrap" />
+                    <StackPanel Orientation="Horizontal"
+                                Margin="5">
+                        <TextBlock Text="IsBusy:" />
+                        <CheckBox x:Name="IsBusy"
+                                  IsChecked="False"
+                                  Margin="5 0 0 0"
+                                  ToolTip="When true shows the BusyIndicator" />
+                        <TextBlock Text="DisplayAfter:"
+                                   Margin="20 0 0 0" />
+                        <mui:IntegerUpDown x:Name="DisplayAfter"
+                                           Width="65"
+                                           Minimum="0"
+                                           Increment="100"
+                                           Text="0"
+                                           DefaultValue="0"
+                                           ToolTip="Sets the TimeSpan to wait until the BusyIndicator is displayed." />
+                        <TextBlock Text="milliseconds"
+                                   Margin="2,0" />
+                    </StackPanel>
+                    <mui:BusyIndicator IsBusy="{Binding IsChecked, ElementName=IsBusy}"
+                                       DisplayAfter="{Binding Value, ElementName=DisplayAfter, Converter={StaticResource TimeSpanConverter}}">
+                        <ContentControl HorizontalAlignment="Center">
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal"
+                                            Margin="5">
+                                    <Label Content="Gender"
+                                           Width="80"
+                                           Target="{Binding ElementName=RadioGendeMale}" />
+                                    <RadioButton x:Name="RadioGendeMale"
+                                                 Content="Male" />
+                                    <RadioButton Content="Female"
+                                                 Margin="8,0,0,0" />
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal"
+                                            Margin="5">
+                                    <Label Content="Birth date"
+                                           Width="80"
+                                           Target="{Binding ElementName=DateBirth}" />
+                                    <DatePicker x:Name="DateBirth" />
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal"
+                                            Margin="5">
+                                    <Label Content="Zip code"
+                                           Width="80"
+                                           Target="{Binding ElementName=TextZipCode}" />
+                                    <TextBox x:Name="TextZipCode"
+                                             Width="150" />
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal"
+                                            Margin="5">
+                                    <Label />
+                                    <CheckBox Content="I agree to the terms of use" />
+                                </StackPanel>
+
+                                <Button Content="Submit"
+                                        Margin="20"
+                                        HorizontalAlignment="Left" />
+                            </StackPanel>
+                        </ContentControl>
+                    </mui:BusyIndicator>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>
