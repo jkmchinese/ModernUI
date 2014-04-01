@@ -25,6 +25,8 @@
                           Source="/Pages/ExtendedTookit.xaml" />
                 <mui:Link DisplayName="ExtendedTookitTwo"
                           Source="/Pages/ExtendedTookitTwo.xaml" />
+                <mui:Link DisplayName="ExtendedTookitTwo"
+                          Source="/Pages/ExtendedTookitThree.xaml" />
             </mui:LinkGroup.Links>
         </mui:LinkGroup>
         <mui:LinkGroup DisplayName="Layout">

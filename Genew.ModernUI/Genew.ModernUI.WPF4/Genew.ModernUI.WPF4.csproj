@@ -118,6 +118,15 @@
     <Compile Include="..\Genew.ModernUI\ExtendedToolkit\ButtonSpinner\ValidSpinDirections.cs">
       <Link>ExtendedToolkit\ButtonSpinner\ValidSpinDirections.cs</Link>
     </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\CalculatorUpDown\CalculatorUpDown.cs">
+      <Link>ExtendedToolkit\CalculatorUpDown\CalculatorUpDown.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Calculator\Calculator.cs">
+      <Link>ExtendedToolkit\Calculator\Calculator.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Calculator\CalculatorCommands.cs">
+      <Link>ExtendedToolkit\Calculator\CalculatorCommands.cs</Link>
+    </Compile>
     <Compile Include="..\Genew.ModernUI\ExtendedToolkit\CheckCombobox\CheckComboBox.cs">
       <Link>ExtendedToolkit\CheckCombobox\CheckComboBox.cs</Link>
     </Compile>
@@ -138,6 +147,9 @@
     </Compile>
     <Compile Include="..\Genew.ModernUI\ExtendedToolkit\ColorPicker\ColorPicker.cs">
       <Link>ExtendedToolkit\ColorPicker\ColorPicker.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\CancelRoutedEventArgs.cs">
+      <Link>ExtendedToolkit\Core\CancelRoutedEventArgs.cs</Link>
     </Compile>
     <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Converters\BorderThicknessToStrokeThicknessConverter.cs">
       <Link>ExtendedToolkit\Core\Converters\BorderThicknessToStrokeThicknessConverter.cs</Link>
@@ -174,6 +186,9 @@
     </Compile>
     <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Converters\WindowControlBackgroundConverter.cs">
       <Link>ExtendedToolkit\Core\Converters\WindowControlBackgroundConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Converters\WizardPageButtonVisibilityConverter.cs">
+      <Link>ExtendedToolkit\Core\Converters\WizardPageButtonVisibilityConverter.cs</Link>
     </Compile>
     <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\ErrorMessages.cs">
       <Link>ExtendedToolkit\Core\ErrorMessages.cs</Link>
@@ -213,6 +228,9 @@
     </Compile>
     <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\QueryValueFromTextEventArgs.cs">
       <Link>ExtendedToolkit\Core\QueryValueFromTextEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Utilities\CalculatorUtilities.cs">
+      <Link>ExtendedToolkit\Core\Utilities\CalculatorUtilities.cs</Link>
     </Compile>
     <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Utilities\ColorUtilities.cs">
       <Link>ExtendedToolkit\Core\Utilities\ColorUtilities.cs</Link>
@@ -318,6 +336,21 @@
     </Compile>
     <Compile Include="..\Genew.ModernUI\ExtendedToolkit\WatermarkTextBox\WatermarkTextBox.cs">
       <Link>ExtendedToolkit\WatermarkTextBox\WatermarkTextBox.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Wizard\Wizard.cs">
+      <Link>ExtendedToolkit\Wizard\Wizard.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Wizard\WizardCommands.cs">
+      <Link>ExtendedToolkit\Wizard\WizardCommands.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Wizard\WizardPage.cs">
+      <Link>ExtendedToolkit\Wizard\WizardPage.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Wizard\WizardPageButtonVisibility.cs">
+      <Link>ExtendedToolkit\Wizard\WizardPageButtonVisibility.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Wizard\WizardPageType.cs">
+      <Link>ExtendedToolkit\Wizard\WizardPageType.cs</Link>
     </Compile>
     <Compile Include="..\Genew.ModernUI\Presentation\AppearanceManager.cs">
       <Link>Presentation\AppearanceManager.cs</Link>
@@ -683,6 +716,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="..\Genew.ModernUI\Themes\ExtendedToolkit\Calculator.xaml">
+      <Link>Themes\ExtendedToolkit\Calculator.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\ExtendedToolkit\CalculatorUpDown.xaml">
+      <Link>Themes\ExtendedToolkit\CalculatorUpDown.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="..\Genew.ModernUI\Themes\ExtendedToolkit\CheckComboBox.xaml">
       <Link>Themes\ExtendedToolkit\CheckComboBox.xaml</Link>
       <Generator>MSBuild:Compile</Generator>
@@ -765,6 +808,11 @@
     </Page>
     <Page Include="..\Genew.ModernUI\Themes\ExtendedToolkit\WatermarkTextBox.xaml">
       <Link>Themes\ExtendedToolkit\WatermarkTextBox.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\ExtendedToolkit\Wizard.xaml">
+      <Link>Themes\ExtendedToolkit\Wizard.xaml</Link>
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

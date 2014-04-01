@@ -50,11 +50,14 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Automation\Peers\AutoCompleteBoxAutomationPeer.cs" />
     <Compile Include="Behaviors\ButtonBaseMouseBehavior.cs" />
     <Compile Include="Behaviors\DataStateBehaviorFix.cs" />
     <Compile Include="Behaviors\DataTriggerEvaluateOnLoad.cs" />
@@ -65,6 +68,20 @@
     <Compile Include="Behaviors\ScrollStateBehavior.cs" />
     <Compile Include="Behaviors\TextBoxDefaultStringBehavior.cs" />
     <Compile Include="Behaviors\TextSelectAllBehavior.cs" />
+    <Compile Include="ExtendedToolkit\AutoCompleteBox\AutoCompleteBox.cs" />
+    <Compile Include="ExtendedToolkit\AutoCompleteBox\AutoCompleteFilter.cs" />
+    <Compile Include="ExtendedToolkit\AutoCompleteBox\AutoCompleteFilterMode.cs" />
+    <Compile Include="ExtendedToolkit\AutoCompleteBox\AutoCompleteFilterPredicate.cs" />
+    <Compile Include="ExtendedToolkit\AutoCompleteBox\PopulatedEventArgs.cs" />
+    <Compile Include="ExtendedToolkit\AutoCompleteBox\PopulatedEventHandler.cs" />
+    <Compile Include="ExtendedToolkit\AutoCompleteBox\PopulatingEventArgs.cs" />
+    <Compile Include="ExtendedToolkit\AutoCompleteBox\PopulatingEventHandler.cs" />
+    <Compile Include="ExtendedToolkit\AutoCompleteBox\PopupHelper.cs" />
+    <Compile Include="ExtendedToolkit\AutoCompleteBox\RoutedPropertyChangingEventArgs.cs" />
+    <Compile Include="ExtendedToolkit\AutoCompleteBox\RoutedPropertyChangingEventHandler.cs" />
+    <Compile Include="ExtendedToolkit\AutoCompleteBox\SelectorSelectionAdapter.cs" />
+    <Compile Include="ExtendedToolkit\Core\Interface\ISelectionAdapter.cs" />
+    <Compile Include="ExtendedToolkit\AutoCompleteBox\AutoCompleteBox.VisualStates.cs" />
     <Compile Include="ExtendedToolkit\AutoSelectTextBox\AutoSelectBehaviorEnum.cs" />
     <Compile Include="ExtendedToolkit\AutoSelectTextBox\AutoSelectTextBox.cs" />
     <Compile Include="ExtendedToolkit\AutoSelectTextBox\QueryMoveFocusEventArgs.cs" />
@@ -102,6 +119,7 @@
     <Compile Include="ExtendedToolkit\Core\ErrorMessages.cs" />
     <Compile Include="ExtendedToolkit\Core\Input\InputValidationErrorEventArgs.cs" />
     <Compile Include="ExtendedToolkit\Core\Input\IValidateInput.cs" />
+    <Compile Include="ExtendedToolkit\Core\Interface\IUpdateVisualState.cs" />
     <Compile Include="ExtendedToolkit\Core\Primitives\CachedTextInfo.cs" />
     <Compile Include="ExtendedToolkit\Core\Primitives\HsvColor.cs" />
     <Compile Include="ExtendedToolkit\Core\Primitives\InputBase.cs" />
@@ -112,9 +130,13 @@
     <Compile Include="ExtendedToolkit\Core\Primitives\ValueRangeTextBox.cs" />
     <Compile Include="ExtendedToolkit\Core\QueryTextFromValueEventArgs.cs" />
     <Compile Include="ExtendedToolkit\Core\QueryValueFromTextEventArgs.cs" />
+    <Compile Include="ExtendedToolkit\Core\Utilities\BindingEvaluator.cs" />
     <Compile Include="ExtendedToolkit\Core\Utilities\CalculatorUtilities.cs" />
+    <Compile Include="ExtendedToolkit\Core\Utilities\Extensions.cs" />
+    <Compile Include="ExtendedToolkit\Core\Utilities\InteractionHelper.cs" />
     <Compile Include="ExtendedToolkit\Core\Utilities\KeyboardUtilities.cs" />
     <Compile Include="ExtendedToolkit\Core\Utilities\ValueChangeHelper.cs" />
+    <Compile Include="ExtendedToolkit\Core\Utilities\WeakEventListener.cs" />
     <Compile Include="ExtendedToolkit\DateTimePicker\DateTimePicker.cs" />
     <Compile Include="ExtendedToolkit\DateTimeUpDown\DateTimeFormat.cs" />
     <Compile Include="ExtendedToolkit\DateTimeUpDown\DateTimeInfo.cs" />
@@ -148,10 +170,10 @@
     <Compile Include="ExtendedToolkit\Core\Utilities\ColorUtilities.cs" />
     <Compile Include="ExtendedToolkit\VisualStates.cs" />
     <Compile Include="ExtendedToolkit\WatermarkTextBox\WatermarkTextBox.cs" />
-    <Compile Include="ExtendedToolkit\WatermarkTextBox\WizardCommands.cs" />
-    <Compile Include="ExtendedToolkit\WatermarkTextBox\WizardPage.cs" />
-    <Compile Include="ExtendedToolkit\WatermarkTextBox\WizardPageButtonVisibility.cs" />
-    <Compile Include="ExtendedToolkit\WatermarkTextBox\WizardPageType.cs" />
+    <Compile Include="ExtendedToolkit\Wizard\WizardCommands.cs" />
+    <Compile Include="ExtendedToolkit\Wizard\WizardPage.cs" />
+    <Compile Include="ExtendedToolkit\Wizard\WizardPageButtonVisibility.cs" />
+    <Compile Include="ExtendedToolkit\Wizard\WizardPageType.cs" />
     <Compile Include="ExtendedToolkit\Wizard\Wizard.cs" />
     <Compile Include="UIHelper\ExtensionMethod.cs" />
     <Compile Include="UIHelper\ModernUIHelper.cs" />
@@ -393,6 +415,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Themes\ExtendedToolkit\CalculatorUpDown.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\ExtendedToolkit\AutoCompleteBox.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

@@ -38,6 +38,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
@@ -57,12 +58,29 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Common\SampleDatas\SampleEmployeeCollection.cs" />
+    <Compile Include="Common\SampleEntitys\Airport.cs" />
+    <Compile Include="Common\SampleEntitys\City.cs" />
+    <Compile Include="Common\SampleEntitys\Contact.cs" />
+    <Compile Include="Common\SampleEntitys\Customer.cs" />
+    <Compile Include="Common\SampleEntitys\CustomerList.cs" />
+    <Compile Include="Common\SampleEntitys\Department.cs" />
+    <Compile Include="Common\SampleEntitys\Employee.cs" />
+    <Compile Include="Common\SampleEntitys\Feature.cs" />
+    <Compile Include="Common\SampleEntitys\MemberInfoData.cs" />
+    <Compile Include="Common\SampleEntitys\ObjectCollection.cs" />
+    <Compile Include="Common\SampleEntitys\Photograph.cs" />
+    <Compile Include="Common\SampleEntitys\Words.cs" />
+    <Compile Include="Common\SharedResources.cs" />
     <Compile Include="Content\ControlsModernProgressRing.xaml.cs">
       <DependentUpon>ControlsModernProgressRing.xaml</DependentUpon>
     </Compile>
     <Compile Include="Converters\IntegerToTimespanConverter.cs" />
     <Compile Include="ExtendedToolkitContent\CheckListView.xaml.cs">
       <DependentUpon>CheckListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ExtendedToolkitContent\SampleFive.xaml.cs">
+      <DependentUpon>SampleFive.xaml</DependentUpon>
     </Compile>
     <Compile Include="ExtendedToolkitContent\SampleFour.xaml.cs">
       <DependentUpon>SampleFour.xaml</DependentUpon>
@@ -75,6 +93,9 @@
     </Compile>
     <Compile Include="ExtendedToolkitContent\SampleOne.xaml.cs">
       <DependentUpon>SampleOne.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ExtendedTookitThree.xaml.cs">
+      <DependentUpon>ExtendedTookitThree.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\ExtendedTookitTwo.xaml.cs">
       <DependentUpon>ExtendedTookitTwo.xaml</DependentUpon>
@@ -262,6 +283,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ExtendedToolkitContent\SampleFive.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="ExtendedToolkitContent\SampleFour.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -372,6 +397,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Pages\ControlsStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\ExtendedTookitThree.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

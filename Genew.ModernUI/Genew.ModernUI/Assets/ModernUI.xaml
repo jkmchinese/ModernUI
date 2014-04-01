@@ -33,7 +33,7 @@
     </ResourceDictionary.MergedDictionaries>
 
     <!-- default accent colors and brushes -->
-    <Color x:Key="AccentColor">#76608a</Color>
+    <Color x:Key="AccentColor">#1ba1e2</Color>
     <SolidColorBrush x:Key="Accent"
                      Color="{DynamicResource AccentColor}" />
 

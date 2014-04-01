@@ -112,7 +112,8 @@
                     </StackPanel>
                     <mui:BusyIndicator IsBusy="{Binding IsChecked, ElementName=IsBusy}"
                                        DisplayAfter="{Binding Value, ElementName=DisplayAfter, Converter={StaticResource TimeSpanConverter}}">
-                        <ContentControl HorizontalAlignment="Center">
+                        <ContentControl HorizontalAlignment="Left"
+                                        Margin="20 5 0 0">
                             <StackPanel>
                                 <StackPanel Orientation="Horizontal"
                                             Margin="5">
