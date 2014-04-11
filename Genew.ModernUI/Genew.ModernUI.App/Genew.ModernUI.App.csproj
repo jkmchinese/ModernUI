@@ -76,8 +76,17 @@
       <DependentUpon>ControlsModernProgressRing.xaml</DependentUpon>
     </Compile>
     <Compile Include="Converters\IntegerToTimespanConverter.cs" />
+    <Compile Include="ExtendedToolkitContent\AutoCompletion\AutoCompleteLambda.xaml.cs">
+      <DependentUpon>AutoCompleteLambda.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ExtendedToolkitContent\AutoCompletion\CustomEvents.xaml.cs">
+      <DependentUpon>CustomEvents.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ExtendedToolkitContent\CheckListView.xaml.cs">
       <DependentUpon>CheckListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ExtendedToolkitContent\SampleSix.xaml.cs">
+      <DependentUpon>SampleSix.xaml</DependentUpon>
     </Compile>
     <Compile Include="ExtendedToolkitContent\SampleFive.xaml.cs">
       <DependentUpon>SampleFive.xaml</DependentUpon>
@@ -93,6 +102,9 @@
     </Compile>
     <Compile Include="ExtendedToolkitContent\SampleOne.xaml.cs">
       <DependentUpon>SampleOne.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ExtendedTookitFour.xaml.cs">
+      <DependentUpon>ExtendedTookitFour.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\ExtendedTookitThree.xaml.cs">
       <DependentUpon>ExtendedTookitThree.xaml</DependentUpon>
@@ -279,9 +291,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="ExtendedToolkitContent\AutoCompletion\AutoCompleteLambda.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ExtendedToolkitContent\AutoCompletion\CustomEvents.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="ExtendedToolkitContent\CheckListView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ExtendedToolkitContent\SampleSix.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="ExtendedToolkitContent\SampleFive.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -397,6 +421,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Pages\ControlsStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\ExtendedTookitFour.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

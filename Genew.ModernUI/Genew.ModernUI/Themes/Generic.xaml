@@ -38,6 +38,7 @@
         <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/Wizard.xaml" />
         <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/CalculatorUpDown.xaml" />
         <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/AutoCompleteBox.xaml" />
+        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/Zoombox.xaml" />
 
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

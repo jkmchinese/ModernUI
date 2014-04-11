@@ -1,0 +1,64 @@
+﻿<UserControl x:Class="Genew.ModernUI.App.ExtendedToolkitContent.SampleSix"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mui="http://genew.com.cn/ModernUI"
+             mc:Ignorable="d"
+             d:DesignHeight="300"
+             d:DesignWidth="300">
+    <UserControl.Resources>
+
+        <Style TargetType="TextBlock"
+               x:Key="StyleTitleTbk">
+            <Setter Property="Foreground"
+                    Value="{DynamicResource Accent}"></Setter>
+        </Style>
+
+        <Style TargetType="TextBlock"
+               x:Key="StyleDescribeTbk">
+            <Setter Property="Width"
+                    Value="180"></Setter>
+        </Style>
+
+        <Style x:Key="Information"
+               TargetType="TextBlock">
+            <Setter Property="FontSize"
+                    Value="12" />
+            <Setter Property="FontFamily"
+                    Value="Verdana" />
+            <Setter Property="HorizontalAlignment"
+                    Value="Left" />
+            <Setter Property="TextWrapping"
+                    Value="Wrap" />
+            <Setter Property="Padding"
+                    Value="5" />
+        </Style>
+
+    </UserControl.Resources>
+    <Grid>
+        <StackPanel>
+            <StackPanel>
+                <TextBlock Text="SampleSix"
+                           Style="{StaticResource Heading1}"
+                           Margin="0,0,0,8" />
+                <mui:Zoombox x:Name="zoombox"
+                             ViewStackIndex="0"
+                             HorizontalAlignment="Left"
+                             Margin="20"
+                             Focusable="True"
+                             IsTabStop="True"
+                             Width="800"
+                             Height="600"
+                             BorderBrush="{DynamicResource Accent}"
+                             BorderThickness="1">
+                    <mui:Zoombox.ViewStack>
+                        <mui:ZoomboxView>Fill</mui:ZoomboxView>
+                    </mui:Zoombox.ViewStack>
+                    <Image Source="/ModernUIDemo;Component/Assets/background.love.jpg"
+                           Stretch="UniformToFill" />
+                </mui:Zoombox>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>

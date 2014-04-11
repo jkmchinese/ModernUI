@@ -6,6 +6,7 @@
              xmlns:mui="http://genew.com.cn/ModernUI"
              xmlns:system="clr-namespace:System;assembly=mscorlib"
              xmlns:sampleDatas="clr-namespace:Genew.ModernUI.App.Common.SampleDatas"
+             xmlns:autoCompletion="clr-namespace:Genew.ModernUI.App.ExtendedToolkitContent.AutoCompletion"
              mc:Ignorable="d"
              d:DesignHeight="300"
              d:DesignWidth="300">
@@ -255,6 +256,28 @@
                             </StackPanel>
                         </TabItem>
                     </TabControl>
+                </StackPanel>
+                
+                <StackPanel x:Name="StackPanelAutoCompleteLambda"
+                            HorizontalAlignment="Left">
+                    <TextBlock Text="AutoCompleteLambda:"
+                               Style="{StaticResource StyleTitleTbk}" />
+                    <TextBlock FontStyle="Italic">
+                               ItemFilter with a lambda &amp; a custom DataTemplate.
+                    </TextBlock>
+                    <autoCompletion:AutoCompleteLambda HorizontalAlignment="Left"
+                                                       Margin="5"></autoCompletion:AutoCompleteLambda>
+                </StackPanel>
+                
+                <StackPanel x:Name="StackPanelCustomEvents"
+                            HorizontalAlignment="Left">
+                    <TextBlock Text="CustomEvents:"
+                               Style="{StaticResource StyleTitleTbk}" />
+                    <TextBlock FontStyle="Italic">
+                               Populating and Populated events.
+                    </TextBlock>
+                    <autoCompletion:CustomEvents HorizontalAlignment="Left"
+                                                 Margin="5"></autoCompletion:CustomEvents>
                 </StackPanel>
             </StackPanel>
         </StackPanel>

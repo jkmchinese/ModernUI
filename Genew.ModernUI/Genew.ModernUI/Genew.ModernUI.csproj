@@ -23,7 +23,8 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Debug\Genew.ModernUI.XML</DocumentationFile>
+    <DocumentationFile>
+    </DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -80,6 +81,11 @@
     <Compile Include="ExtendedToolkit\AutoCompleteBox\RoutedPropertyChangingEventArgs.cs" />
     <Compile Include="ExtendedToolkit\AutoCompleteBox\RoutedPropertyChangingEventHandler.cs" />
     <Compile Include="ExtendedToolkit\AutoCompleteBox\SelectorSelectionAdapter.cs" />
+    <Compile Include="ExtendedToolkit\Core\IndexChangedEventArgs.cs" />
+    <Compile Include="ExtendedToolkit\Core\IndexChangedEventHandler.cs" />
+    <Compile Include="ExtendedToolkit\Core\Input\KeyModifier.cs" />
+    <Compile Include="ExtendedToolkit\Core\Input\KeyModifierCollection.cs" />
+    <Compile Include="ExtendedToolkit\Core\Input\KeyModifierCollectionConverter.cs" />
     <Compile Include="ExtendedToolkit\Core\Interface\ISelectionAdapter.cs" />
     <Compile Include="ExtendedToolkit\AutoCompleteBox\AutoCompleteBox.VisualStates.cs" />
     <Compile Include="ExtendedToolkit\AutoSelectTextBox\AutoSelectBehaviorEnum.cs" />
@@ -120,6 +126,8 @@
     <Compile Include="ExtendedToolkit\Core\Input\InputValidationErrorEventArgs.cs" />
     <Compile Include="ExtendedToolkit\Core\Input\IValidateInput.cs" />
     <Compile Include="ExtendedToolkit\Core\Interface\IUpdateVisualState.cs" />
+    <Compile Include="ExtendedToolkit\Core\InvalidContentException.cs" />
+    <Compile Include="ExtendedToolkit\Core\InvalidTemplateException.cs" />
     <Compile Include="ExtendedToolkit\Core\Primitives\CachedTextInfo.cs" />
     <Compile Include="ExtendedToolkit\Core\Primitives\HsvColor.cs" />
     <Compile Include="ExtendedToolkit\Core\Primitives\InputBase.cs" />
@@ -128,13 +136,19 @@
     <Compile Include="ExtendedToolkit\Core\Primitives\SelectorItem.cs" />
     <Compile Include="ExtendedToolkit\Core\Primitives\UpDownBase.cs" />
     <Compile Include="ExtendedToolkit\Core\Primitives\ValueRangeTextBox.cs" />
+    <Compile Include="ExtendedToolkit\Core\PropertyChangedEventArgs.cs" />
+    <Compile Include="ExtendedToolkit\Core\PropertyChangedEventHandler.cs" />
     <Compile Include="ExtendedToolkit\Core\QueryTextFromValueEventArgs.cs" />
     <Compile Include="ExtendedToolkit\Core\QueryValueFromTextEventArgs.cs" />
     <Compile Include="ExtendedToolkit\Core\Utilities\BindingEvaluator.cs" />
     <Compile Include="ExtendedToolkit\Core\Utilities\CalculatorUtilities.cs" />
+    <Compile Include="ExtendedToolkit\Core\Utilities\DoubleHelper.cs" />
     <Compile Include="ExtendedToolkit\Core\Utilities\Extensions.cs" />
     <Compile Include="ExtendedToolkit\Core\Utilities\InteractionHelper.cs" />
     <Compile Include="ExtendedToolkit\Core\Utilities\KeyboardUtilities.cs" />
+    <Compile Include="ExtendedToolkit\Core\Utilities\PointHelper.cs" />
+    <Compile Include="ExtendedToolkit\Core\Utilities\ResourceHelper.cs" />
+    <Compile Include="ExtendedToolkit\Core\Utilities\Segment.cs" />
     <Compile Include="ExtendedToolkit\Core\Utilities\ValueChangeHelper.cs" />
     <Compile Include="ExtendedToolkit\Core\Utilities\WeakEventListener.cs" />
     <Compile Include="ExtendedToolkit\DateTimePicker\DateTimePicker.cs" />
@@ -175,6 +189,19 @@
     <Compile Include="ExtendedToolkit\Wizard\WizardPageButtonVisibility.cs" />
     <Compile Include="ExtendedToolkit\Wizard\WizardPageType.cs" />
     <Compile Include="ExtendedToolkit\Wizard\Wizard.cs" />
+    <Compile Include="ExtendedToolkit\Zoombox\Zoombox.cs" />
+    <Compile Include="ExtendedToolkit\Zoombox\ZoomboxCursors.cs" />
+    <Compile Include="ExtendedToolkit\Zoombox\ZoomboxView.cs" />
+    <Compile Include="ExtendedToolkit\Zoombox\ZoomboxViewChangedEventArgs.cs" />
+    <Compile Include="ExtendedToolkit\Zoombox\ZoomboxViewChangedEventHandler.cs" />
+    <Compile Include="ExtendedToolkit\Zoombox\ZoomboxViewConverter.cs" />
+    <Compile Include="ExtendedToolkit\Zoombox\ZoomboxViewException.cs" />
+    <Compile Include="ExtendedToolkit\Zoombox\ZoomboxViewFinderDisplay.cs" />
+    <Compile Include="ExtendedToolkit\Zoombox\ZoomboxViewKind.cs" />
+    <Compile Include="ExtendedToolkit\Zoombox\ZoomboxViewStack.cs" />
+    <Compile Include="ExtendedToolkit\Zoombox\ZoomboxViewStackMode.cs" />
+    <Compile Include="ExtendedToolkit\Zoombox\ZoomboxZoomOn.cs" />
+    <Compile Include="Presentation\FixPopup.cs" />
     <Compile Include="UIHelper\ExtensionMethod.cs" />
     <Compile Include="UIHelper\ModernUIHelper.cs" />
     <Compile Include="Presentation\AppearanceManager.cs" />
@@ -422,6 +449,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Themes\ExtendedToolkit\Zoombox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Themes\ExtendedToolkit\Wizard.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -523,7 +554,10 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="ExtendedToolkit\Zoombox\Resources\Zoom.cur" />
+    <Resource Include="ExtendedToolkit\Zoombox\Resources\ZoomRelative.cur" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -1,0 +1,88 @@
+﻿<UserControl x:Class="Genew.ModernUI.App.ExtendedToolkitContent.AutoCompletion.CustomEvents"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mui="http://genew.com.cn/ModernUI"
+             mc:Ignorable="d"
+             d:DesignHeight="300"
+             d:DesignWidth="300">
+    <UserControl.Resources>
+
+        <Style TargetType="TextBlock"
+               x:Key="StyleTitleTbk">
+            <Setter Property="Foreground"
+                    Value="{DynamicResource Accent}"></Setter>
+        </Style>
+
+        <Style TargetType="TextBlock"
+               x:Key="StyleDescribeTbk">
+            <Setter Property="Width"
+                    Value="180"></Setter>
+        </Style>
+
+        <Style x:Key="Information"
+               TargetType="TextBlock">
+            <Setter Property="FontSize"
+                    Value="12" />
+            <Setter Property="FontFamily"
+                    Value="Verdana" />
+            <Setter Property="HorizontalAlignment"
+                    Value="Left" />
+            <Setter Property="TextWrapping"
+                    Value="Wrap" />
+            <Setter Property="Padding"
+                    Value="5" />
+        </Style>
+
+    </UserControl.Resources>
+    <StackPanel>
+        <TextBlock Text="Text completion off: "
+                   Style="{StaticResource StyleTitleTbk}" />
+        <StackPanel Orientation="Horizontal"
+                    Margin="0, 4, 0, 4">
+            <TextBlock Text="Immediate population: "
+                       Style="{StaticResource StyleDescribeTbk}" />
+            <mui:AutoCompleteBox x:Name="NowAutoComplete"
+                                 FilterMode="None"
+                                 Width="400"
+                                 IsTextCompletionEnabled="False" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal"
+                    Margin="0, 4, 0, 8">
+            <TextBlock Text="Delayed population: "
+                       Style="{StaticResource StyleDescribeTbk}" />
+            <mui:AutoCompleteBox x:Name="LaterAutoComplete"
+                                 FilterMode="None"
+                                 Width="400"
+                                 IsTextCompletionEnabled="True" />
+        </StackPanel>
+        <TextBlock Text="Text completion on: "
+                   Style="{StaticResource StyleTitleTbk}" />
+        <StackPanel Orientation="Horizontal"
+                    Margin="0, 4, 0, 4">
+            <TextBlock Text="Immediate population: "
+                       Style="{StaticResource StyleDescribeTbk}" />
+            <mui:AutoCompleteBox x:Name="NowAutoComplete2"
+                                 FilterMode="None"
+                                 Width="400"
+                                 IsTextCompletionEnabled="False" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal"
+                    Margin="0, 4, 0, 8">
+            <TextBlock Text="Delayed population: "
+                       Style="{StaticResource StyleDescribeTbk}" />
+            <mui:AutoCompleteBox x:Name="LaterAutoComplete2"
+                                 FilterMode="None"
+                                 Width="400"
+                                 IsTextCompletionEnabled="True" />
+        </StackPanel>
+        <TextBlock Style="{StaticResource Information}">
+                    The AutoCompleteBox control is able to work with unbound data as 
+                    well. By subscribing to the Populating event of an 
+                    AutoCompleteBox control, as a developer you can cancel the 
+                    population, change ItemsSource data, or otherwise react to the 
+                    input before the control provides suggestions.
+        </TextBlock>
+    </StackPanel>
+</UserControl>

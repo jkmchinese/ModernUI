@@ -1,7 +1,8 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:converters="clr-namespace:Genew.ModernUI.ExtendedToolkit.Converters"
-                    xmlns:extendedToolkit="clr-namespace:Genew.ModernUI.ExtendedToolkit">
+                    xmlns:extendedToolkit="clr-namespace:Genew.ModernUI.ExtendedToolkit"
+                    xmlns:presentation="clr-namespace:Genew.ModernUI.Presentation">
 
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary>
@@ -111,15 +112,15 @@
                                       IsHitTestVisible="{Binding IsOpen, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource InverseBoolConverter}}"
                                       VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
                                       HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}" />
-                        <Popup IsOpen="{Binding IsChecked, ElementName=PART_DropDownButton}"
-                               StaysOpen="False"
-                               Placement="Bottom"
-                               SnapsToDevicePixels="True"
-                               AllowsTransparency="True"
-                               Focusable="False"
-                               PopupAnimation="Slide"
-                               Width="{TemplateBinding DropDownWidth}"
-                               Height="{TemplateBinding DropDownHeight}">
+                        <presentation:FixPopup IsOpen="{Binding IsChecked, ElementName=PART_DropDownButton}"
+                                               StaysOpen="False"
+                                               Placement="Bottom"
+                                               SnapsToDevicePixels="True"
+                                               AllowsTransparency="True"
+                                               Focusable="False"
+                                               PopupAnimation="Slide"
+                                               Width="{TemplateBinding DropDownWidth}"
+                                               Height="{TemplateBinding DropDownHeight}">
                             <Border BorderThickness="1"
                                     Background="{DynamicResource PopupBackground}"
                                     BorderBrush="{DynamicResource PopupBorder}">
@@ -151,7 +152,7 @@
                                     </Thumb>
                                 </Grid>
                             </Border>
-                        </Popup>
+                        </presentation:FixPopup>
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>
