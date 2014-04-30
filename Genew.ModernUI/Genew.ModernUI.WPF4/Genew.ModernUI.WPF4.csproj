@@ -23,7 +23,8 @@
     <DefineConstants>TRACE;DEBUG;NET4</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Debug\Genew.ModernUI.XML</DocumentationFile>
+    <DocumentationFile>
+    </DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -53,11 +54,16 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\Genew.ModernUI\Automation\Peers\AutoCompleteBoxAutomationPeer.cs">
+      <Link>Automation\Peers\AutoCompleteBoxAutomationPeer.cs</Link>
+    </Compile>
     <Compile Include="..\Genew.ModernUI\Behaviors\ButtonBaseMouseBehavior.cs">
       <Link>Behaviors\ButtonBaseMouseBehavior.cs</Link>
     </Compile>
@@ -87,6 +93,45 @@
     </Compile>
     <Compile Include="..\Genew.ModernUI\Behaviors\TextSelectAllBehavior.cs">
       <Link>Behaviors\TextSelectAllBehavior.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\AutoCompleteBox\AutoCompleteBox.cs">
+      <Link>ExtendedToolkit\AutoCompleteBox\AutoCompleteBox.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\AutoCompleteBox\AutoCompleteBox.VisualStates.cs">
+      <Link>ExtendedToolkit\AutoCompleteBox\AutoCompleteBox.VisualStates.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\AutoCompleteBox\AutoCompleteFilter.cs">
+      <Link>ExtendedToolkit\AutoCompleteBox\AutoCompleteFilter.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\AutoCompleteBox\AutoCompleteFilterMode.cs">
+      <Link>ExtendedToolkit\AutoCompleteBox\AutoCompleteFilterMode.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\AutoCompleteBox\AutoCompleteFilterPredicate.cs">
+      <Link>ExtendedToolkit\AutoCompleteBox\AutoCompleteFilterPredicate.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\AutoCompleteBox\PopulatedEventArgs.cs">
+      <Link>ExtendedToolkit\AutoCompleteBox\PopulatedEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\AutoCompleteBox\PopulatedEventHandler.cs">
+      <Link>ExtendedToolkit\AutoCompleteBox\PopulatedEventHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\AutoCompleteBox\PopulatingEventArgs.cs">
+      <Link>ExtendedToolkit\AutoCompleteBox\PopulatingEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\AutoCompleteBox\PopulatingEventHandler.cs">
+      <Link>ExtendedToolkit\AutoCompleteBox\PopulatingEventHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\AutoCompleteBox\PopupHelper.cs">
+      <Link>ExtendedToolkit\AutoCompleteBox\PopupHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\AutoCompleteBox\RoutedPropertyChangingEventArgs.cs">
+      <Link>ExtendedToolkit\AutoCompleteBox\RoutedPropertyChangingEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\AutoCompleteBox\RoutedPropertyChangingEventHandler.cs">
+      <Link>ExtendedToolkit\AutoCompleteBox\RoutedPropertyChangingEventHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\AutoCompleteBox\SelectorSelectionAdapter.cs">
+      <Link>ExtendedToolkit\AutoCompleteBox\SelectorSelectionAdapter.cs</Link>
     </Compile>
     <Compile Include="..\Genew.ModernUI\ExtendedToolkit\AutoSelectTextBox\AutoSelectBehaviorEnum.cs">
       <Link>ExtendedToolkit\AutoSelectTextBox\AutoSelectBehaviorEnum.cs</Link>
@@ -193,11 +238,38 @@
     <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\ErrorMessages.cs">
       <Link>ExtendedToolkit\Core\ErrorMessages.cs</Link>
     </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\IndexChangedEventArgs.cs">
+      <Link>ExtendedToolkit\Core\IndexChangedEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\IndexChangedEventHandler.cs">
+      <Link>ExtendedToolkit\Core\IndexChangedEventHandler.cs</Link>
+    </Compile>
     <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Input\InputValidationErrorEventArgs.cs">
       <Link>ExtendedToolkit\Core\Input\InputValidationErrorEventArgs.cs</Link>
     </Compile>
     <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Input\IValidateInput.cs">
       <Link>ExtendedToolkit\Core\Input\IValidateInput.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Input\KeyModifier.cs">
+      <Link>ExtendedToolkit\Core\Input\KeyModifier.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Input\KeyModifierCollection.cs">
+      <Link>ExtendedToolkit\Core\Input\KeyModifierCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Input\KeyModifierCollectionConverter.cs">
+      <Link>ExtendedToolkit\Core\Input\KeyModifierCollectionConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Interface\ISelectionAdapter.cs">
+      <Link>ExtendedToolkit\Core\Interface\ISelectionAdapter.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Interface\IUpdateVisualState.cs">
+      <Link>ExtendedToolkit\Core\Interface\IUpdateVisualState.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\InvalidContentException.cs">
+      <Link>ExtendedToolkit\Core\InvalidContentException.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\InvalidTemplateException.cs">
+      <Link>ExtendedToolkit\Core\InvalidTemplateException.cs</Link>
     </Compile>
     <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Primitives\CachedTextInfo.cs">
       <Link>ExtendedToolkit\Core\Primitives\CachedTextInfo.cs</Link>
@@ -223,11 +295,20 @@
     <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Primitives\ValueRangeTextBox.cs">
       <Link>ExtendedToolkit\Core\Primitives\ValueRangeTextBox.cs</Link>
     </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\PropertyChangedEventArgs.cs">
+      <Link>ExtendedToolkit\Core\PropertyChangedEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\PropertyChangedEventHandler.cs">
+      <Link>ExtendedToolkit\Core\PropertyChangedEventHandler.cs</Link>
+    </Compile>
     <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\QueryTextFromValueEventArgs.cs">
       <Link>ExtendedToolkit\Core\QueryTextFromValueEventArgs.cs</Link>
     </Compile>
     <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\QueryValueFromTextEventArgs.cs">
       <Link>ExtendedToolkit\Core\QueryValueFromTextEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Utilities\BindingEvaluator.cs">
+      <Link>ExtendedToolkit\Core\Utilities\BindingEvaluator.cs</Link>
     </Compile>
     <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Utilities\CalculatorUtilities.cs">
       <Link>ExtendedToolkit\Core\Utilities\CalculatorUtilities.cs</Link>
@@ -235,11 +316,32 @@
     <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Utilities\ColorUtilities.cs">
       <Link>ExtendedToolkit\Core\Utilities\ColorUtilities.cs</Link>
     </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Utilities\DoubleHelper.cs">
+      <Link>ExtendedToolkit\Core\Utilities\DoubleHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Utilities\Extensions.cs">
+      <Link>ExtendedToolkit\Core\Utilities\Extensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Utilities\InteractionHelper.cs">
+      <Link>ExtendedToolkit\Core\Utilities\InteractionHelper.cs</Link>
+    </Compile>
     <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Utilities\KeyboardUtilities.cs">
       <Link>ExtendedToolkit\Core\Utilities\KeyboardUtilities.cs</Link>
     </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Utilities\PointHelper.cs">
+      <Link>ExtendedToolkit\Core\Utilities\PointHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Utilities\ResourceHelper.cs">
+      <Link>ExtendedToolkit\Core\Utilities\ResourceHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Utilities\Segment.cs">
+      <Link>ExtendedToolkit\Core\Utilities\Segment.cs</Link>
+    </Compile>
     <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Utilities\ValueChangeHelper.cs">
       <Link>ExtendedToolkit\Core\Utilities\ValueChangeHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Utilities\WeakEventListener.cs">
+      <Link>ExtendedToolkit\Core\Utilities\WeakEventListener.cs</Link>
     </Compile>
     <Compile Include="..\Genew.ModernUI\ExtendedToolkit\DateTimePicker\DateTimePicker.cs">
       <Link>ExtendedToolkit\DateTimePicker\DateTimePicker.cs</Link>
@@ -352,6 +454,42 @@
     <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Wizard\WizardPageType.cs">
       <Link>ExtendedToolkit\Wizard\WizardPageType.cs</Link>
     </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Zoombox\Zoombox.cs">
+      <Link>ExtendedToolkit\Zoombox\Zoombox.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Zoombox\ZoomboxCursors.cs">
+      <Link>ExtendedToolkit\Zoombox\ZoomboxCursors.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Zoombox\ZoomboxView.cs">
+      <Link>ExtendedToolkit\Zoombox\ZoomboxView.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Zoombox\ZoomboxViewChangedEventArgs.cs">
+      <Link>ExtendedToolkit\Zoombox\ZoomboxViewChangedEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Zoombox\ZoomboxViewChangedEventHandler.cs">
+      <Link>ExtendedToolkit\Zoombox\ZoomboxViewChangedEventHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Zoombox\ZoomboxViewConverter.cs">
+      <Link>ExtendedToolkit\Zoombox\ZoomboxViewConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Zoombox\ZoomboxViewException.cs">
+      <Link>ExtendedToolkit\Zoombox\ZoomboxViewException.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Zoombox\ZoomboxViewFinderDisplay.cs">
+      <Link>ExtendedToolkit\Zoombox\ZoomboxViewFinderDisplay.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Zoombox\ZoomboxViewKind.cs">
+      <Link>ExtendedToolkit\Zoombox\ZoomboxViewKind.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Zoombox\ZoomboxViewStack.cs">
+      <Link>ExtendedToolkit\Zoombox\ZoomboxViewStack.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Zoombox\ZoomboxViewStackMode.cs">
+      <Link>ExtendedToolkit\Zoombox\ZoomboxViewStackMode.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Zoombox\ZoomboxZoomOn.cs">
+      <Link>ExtendedToolkit\Zoombox\ZoomboxZoomOn.cs</Link>
+    </Compile>
     <Compile Include="..\Genew.ModernUI\Presentation\AppearanceManager.cs">
       <Link>Presentation\AppearanceManager.cs</Link>
     </Compile>
@@ -360,6 +498,9 @@
     </Compile>
     <Compile Include="..\Genew.ModernUI\Presentation\Displayable.cs">
       <Link>Presentation\Displayable.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Presentation\FixPopup.cs">
+      <Link>Presentation\FixPopup.cs</Link>
     </Compile>
     <Compile Include="..\Genew.ModernUI\Presentation\FontSize.cs">
       <Link>Presentation\FontSize.cs</Link>
@@ -544,7 +685,14 @@
       <Link>Properties\Settings.settings</Link>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="..\Genew.ModernUI\ExtendedToolkit\Zoombox\Resources\Zoom.cur">
+      <Link>ExtendedToolkit\Zoombox\Resources\Zoom.cur</Link>
+    </Resource>
+    <Resource Include="..\Genew.ModernUI\ExtendedToolkit\Zoombox\Resources\ZoomRelative.cur">
+      <Link>ExtendedToolkit\Zoombox\Resources\ZoomRelative.cur</Link>
+    </Resource>
+  </ItemGroup>
   <ItemGroup>
     <Page Include="..\Genew.ModernUI\Assets\Button.xaml">
       <Link>Assets\Button.xaml</Link>
