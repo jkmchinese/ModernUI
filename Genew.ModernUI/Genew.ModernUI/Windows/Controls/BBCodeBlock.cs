@@ -33,7 +33,7 @@ namespace Genew.ModernUI.Windows.Controls
             // ensures the implicit BBCodeBlock style is used
             this.DefaultStyleKey = typeof(BBCodeBlock);
 
-            AddHandler(Hyperlink.LoadedEvent, new RoutedEventHandler(OnLoaded));
+            AddHandler(FrameworkContentElement.LoadedEvent, new RoutedEventHandler(OnLoaded));
             AddHandler(Hyperlink.RequestNavigateEvent, new RequestNavigateEventHandler(OnRequestNavigate));
         }
 

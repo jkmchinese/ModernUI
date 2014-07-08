@@ -71,6 +71,9 @@ namespace Genew.ModernUI.ExtendedToolkit.Primitives
             set { SetValue(CommandProperty, value); }
         }
 
+        /// <summary>
+        /// Set the 'IsSelect' value back to the Model
+        /// </summary>
         public string SelectedMemberPath
         {
             get { return (string)GetValue(SelectedMemberPathProperty); }
@@ -487,11 +490,8 @@ namespace Genew.ModernUI.ExtendedToolkit.Primitives
         /// </summary>
         private void UpdateSelectedValue()
         {
-#if VS2008
-      string newValue = String.Join( Delimiter, SelectedItems.Cast<object>().Select( x => GetItemValue( x ).ToString() ).ToArray() );
-#else
-            string newValue = String.Join(Delimiter, SelectedItems.Cast<object>().Select(x => GetItemValue(x)));
-#endif
+            string newValue = String.Join(Delimiter, SelectedItems.Cast<object>().Select(GetItemValue));
+
             if (String.IsNullOrEmpty(SelectedValue) || !SelectedValue.Equals(newValue))
             {
                 _ignoreSelectedValueChanged = true;

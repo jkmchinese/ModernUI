@@ -42,6 +42,7 @@
     <Reference Include="Microsoft.Expression.Interactions, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -81,6 +82,7 @@
     <Compile Include="ExtendedToolkit\AutoCompleteBox\RoutedPropertyChangingEventArgs.cs" />
     <Compile Include="ExtendedToolkit\AutoCompleteBox\RoutedPropertyChangingEventHandler.cs" />
     <Compile Include="ExtendedToolkit\AutoCompleteBox\SelectorSelectionAdapter.cs" />
+    <Compile Include="ExtendedToolkit\ColorPicker\ColorSorter.cs" />
     <Compile Include="ExtendedToolkit\Core\IndexChangedEventArgs.cs" />
     <Compile Include="ExtendedToolkit\Core\IndexChangedEventHandler.cs" />
     <Compile Include="ExtendedToolkit\Core\Input\KeyModifier.cs" />
@@ -129,6 +131,7 @@
     <Compile Include="ExtendedToolkit\Core\InvalidContentException.cs" />
     <Compile Include="ExtendedToolkit\Core\InvalidTemplateException.cs" />
     <Compile Include="ExtendedToolkit\Core\Primitives\CachedTextInfo.cs" />
+    <Compile Include="ExtendedToolkit\Core\Primitives\DateTimeUpDownBase.cs" />
     <Compile Include="ExtendedToolkit\Core\Primitives\HsvColor.cs" />
     <Compile Include="ExtendedToolkit\Core\Primitives\InputBase.cs" />
     <Compile Include="ExtendedToolkit\Core\Primitives\MouseWheelActiveTriggerEnum.cs" />

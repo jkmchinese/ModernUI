@@ -268,7 +268,8 @@
                                     <Separator Grid.Row="1"
                                                HorizontalAlignment="Stretch"
                                                Margin="5,0,5,0"
-                                               Style="{DynamicResource {x:Type Separator}}" />
+                                               Style="{DynamicResource {x:Type Separator}}"
+                                               Visibility="{TemplateBinding ShowAdvancedButton, Converter={StaticResource BooleanToVisibilityConverter}}" />
 
                                     <!-- More Colors Button -->
                                     <ToggleButton x:Name="_colorMode"

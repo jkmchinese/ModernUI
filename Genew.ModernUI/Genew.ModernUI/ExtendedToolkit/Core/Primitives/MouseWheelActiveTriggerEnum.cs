@@ -14,7 +14,7 @@ namespace Genew.ModernUI.ExtendedToolkit.Primitives
     /// </summary>
     public enum MouseWheelActiveTrigger
     {
-        Focused,
+        FocusedMouseOver,
         MouseOver,
         Disabled
     }

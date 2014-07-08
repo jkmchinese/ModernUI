@@ -57,9 +57,13 @@
                                                                 FormatString="{TemplateBinding FormatString}"
                                                                 ShowButtonSpinner="{TemplateBinding ShowButtonSpinner}"
                                                                 Value="{Binding Value, RelativeSource={RelativeSource TemplatedParent}}"
+                                                                Padding="{TemplateBinding Padding}"
                                                                 Watermark="{TemplateBinding Watermark}"
                                                                 WatermarkTemplate="{TemplateBinding WatermarkTemplate}"
-                                                                TextAlignment="{TemplateBinding TextAlignment}" />
+                                                                TextAlignment="{TemplateBinding TextAlignment}"
+                                                                Minimum="{Binding Minimum, RelativeSource={RelativeSource TemplatedParent}}"
+                                                                Maximum="{Binding Maximum, RelativeSource={RelativeSource TemplatedParent}}"
+                                                                ClipValueToMinMax="{Binding ClipValueToMinMax, RelativeSource={RelativeSource TemplatedParent}}" />
                                 <ToggleButton x:Name="_timePickerToggleButton"
                                               Grid.Column="1"
                                               Focusable="False"

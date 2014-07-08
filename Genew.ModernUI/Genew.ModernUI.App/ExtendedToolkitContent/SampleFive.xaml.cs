@@ -11,7 +11,7 @@ namespace Genew.ModernUI.App.ExtendedToolkitContent
     /// </summary>
     public partial class SampleFive : UserControl
     {
-        private ModernWindow m_window;
+        //private ModernWindow m_window;
 
         public SampleFive()
         {

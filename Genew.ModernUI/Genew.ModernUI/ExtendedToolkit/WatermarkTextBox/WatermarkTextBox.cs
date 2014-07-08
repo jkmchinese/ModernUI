@@ -91,13 +91,13 @@ namespace Genew.ModernUI.ExtendedToolkit
         {
             base.OnGotFocus(e);
 
-            if (SelectAllOnGotFocus)
+            if (AutoSelectBehavior == AutoSelectBehavior.OnFocus)
                 SelectAll();
         }
 
         protected override void OnPreviewMouseLeftButtonDown(MouseButtonEventArgs e)
         {
-            if (!IsKeyboardFocused && SelectAllOnGotFocus)
+            if (!IsKeyboardFocused && AutoSelectBehavior == AutoSelectBehavior.OnFocus)
             {
                 e.Handled = true;
                 Focus();

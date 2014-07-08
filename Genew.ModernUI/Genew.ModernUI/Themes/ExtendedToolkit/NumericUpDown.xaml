@@ -25,7 +25,7 @@
                 Value="{DynamicResource InputText}" />
         <Setter Property="HorizontalContentAlignment"
                 Value="Right" />
-        <Setter Property="IsTabStop"
+        <Setter Property="Focusable"
                 Value="False" />
         <Setter Property="VerticalContentAlignment"
                 Value="Center" />
