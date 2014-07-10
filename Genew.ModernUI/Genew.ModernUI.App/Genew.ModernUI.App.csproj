@@ -85,6 +85,9 @@
     <Compile Include="ExtendedToolkitContent\CheckListView.xaml.cs">
       <DependentUpon>CheckListView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ExtendedToolkitContent\SampleSeven.xaml.cs">
+      <DependentUpon>SampleSeven.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ExtendedToolkitContent\SampleSix.xaml.cs">
       <DependentUpon>SampleSix.xaml</DependentUpon>
     </Compile>
@@ -302,6 +305,10 @@
     <Page Include="ExtendedToolkitContent\CheckListView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ExtendedToolkitContent\SampleSeven.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="ExtendedToolkitContent\SampleSix.xaml">
       <Generator>MSBuild:Compile</Generator>

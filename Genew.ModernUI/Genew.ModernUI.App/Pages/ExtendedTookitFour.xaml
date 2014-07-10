@@ -10,12 +10,12 @@
     <Grid Style="{StaticResource ContentRoot}">
         <ScrollViewer>
             <Grid>
-                <!--<Grid.ColumnDefinitions>
+                <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*"></ColumnDefinition>
                     <ColumnDefinition Width="1*"></ColumnDefinition>
-                </Grid.ColumnDefinitions>-->
+                </Grid.ColumnDefinitions>
                 <extendedToolkitContent:SampleSix Grid.Column="0" />
-                <!--<extendedToolkitContent:SampleFour  Grid.Column="1" />-->
+                <extendedToolkitContent:SampleSeven  Grid.Column="1" />
             </Grid>
         </ScrollViewer>
     </Grid>

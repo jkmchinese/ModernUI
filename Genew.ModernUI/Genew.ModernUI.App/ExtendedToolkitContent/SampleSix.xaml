@@ -42,22 +42,29 @@
                 <TextBlock Text="SampleSix"
                            Style="{StaticResource Heading1}"
                            Margin="0,0,0,8" />
-                <mui:Zoombox x:Name="zoombox"
-                             ViewStackIndex="0"
-                             HorizontalAlignment="Left"
-                             Margin="20"
-                             Focusable="True"
-                             IsTabStop="True"
-                             Width="800"
-                             Height="600"
-                             BorderBrush="{DynamicResource Accent}"
-                             BorderThickness="1">
-                    <mui:Zoombox.ViewStack>
-                        <mui:ZoomboxView>Fill</mui:ZoomboxView>
-                    </mui:Zoombox.ViewStack>
-                    <Image Source="/ModernUIDemo;Component/Assets/background.love.jpg"
-                           Stretch="UniformToFill" />
-                </mui:Zoombox>
+                <StackPanel x:Name="StackPanelZoombox"
+                            HorizontalAlignment="Left">
+                    <TextBlock Text="Zoombox:"
+                               Style="{StaticResource StyleTitleTbk}" />
+                    <TextBlock Text="Zoombox is a control that can zoomin or zoomout a Usercontrol of Wpf, For example, an Image Control."
+                               FontStyle="Italic" />
+                    <mui:Zoombox x:Name="zoombox"
+                                 ViewStackIndex="0"
+                                 HorizontalAlignment="Left"
+                                 Margin="20"
+                                 Focusable="True"
+                                 IsTabStop="True"
+                                 Width="480"
+                                 Height="320"
+                                 BorderBrush="{DynamicResource Accent}"
+                                 BorderThickness="1">
+                        <mui:Zoombox.ViewStack>
+                            <mui:ZoomboxView>Fill</mui:ZoomboxView>
+                        </mui:Zoombox.ViewStack>
+                        <Image Source="/ModernUIDemo;Component/Assets/background.snowflakes.jpg"
+                               Stretch="UniformToFill" />
+                    </mui:Zoombox>
+                </StackPanel>
             </StackPanel>
         </StackPanel>
     </Grid>

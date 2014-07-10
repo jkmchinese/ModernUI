@@ -59,6 +59,9 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Automation\Peers\AccordionAutomationPeer.cs" />
+    <Compile Include="Automation\Peers\AccordionItemAutomationPeer.cs" />
+    <Compile Include="Automation\Peers\AccordionItemWrapperAutomationPeer.cs" />
     <Compile Include="Automation\Peers\AutoCompleteBoxAutomationPeer.cs" />
     <Compile Include="Behaviors\ButtonBaseMouseBehavior.cs" />
     <Compile Include="Behaviors\DataStateBehaviorFix.cs" />
@@ -70,6 +73,13 @@
     <Compile Include="Behaviors\ScrollStateBehavior.cs" />
     <Compile Include="Behaviors\TextBoxDefaultStringBehavior.cs" />
     <Compile Include="Behaviors\TextSelectAllBehavior.cs" />
+    <Compile Include="ExtendedToolkit\Accordion\Accordion.cs" />
+    <Compile Include="ExtendedToolkit\Accordion\AccordionAction.cs" />
+    <Compile Include="ExtendedToolkit\Accordion\AccordionButton.cs" />
+    <Compile Include="ExtendedToolkit\Accordion\AccordionItem.cs" />
+    <Compile Include="ExtendedToolkit\Accordion\AccordionSelectionMode.cs" />
+    <Compile Include="ExtendedToolkit\Accordion\ExpandableContentControl.cs" />
+    <Compile Include="ExtendedToolkit\Accordion\SelectionSequence.cs" />
     <Compile Include="ExtendedToolkit\AutoCompleteBox\AutoCompleteBox.cs" />
     <Compile Include="ExtendedToolkit\AutoCompleteBox\AutoCompleteFilter.cs" />
     <Compile Include="ExtendedToolkit\AutoCompleteBox\AutoCompleteFilterMode.cs" />
@@ -148,6 +158,7 @@
     <Compile Include="ExtendedToolkit\Core\Utilities\DoubleHelper.cs" />
     <Compile Include="ExtendedToolkit\Core\Utilities\Extensions.cs" />
     <Compile Include="ExtendedToolkit\Core\Utilities\InteractionHelper.cs" />
+    <Compile Include="ExtendedToolkit\Core\Utilities\ItemsControlHelper.cs" />
     <Compile Include="ExtendedToolkit\Core\Utilities\KeyboardUtilities.cs" />
     <Compile Include="ExtendedToolkit\Core\Utilities\PointHelper.cs" />
     <Compile Include="ExtendedToolkit\Core\Utilities\ResourceHelper.cs" />
@@ -452,6 +463,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Themes\ExtendedToolkit\Accrodion.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Themes\ExtendedToolkit\Zoombox.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -561,6 +576,7 @@
     <Resource Include="ExtendedToolkit\Zoombox\Resources\Zoom.cur" />
     <Resource Include="ExtendedToolkit\Zoombox\Resources\ZoomRelative.cur" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
