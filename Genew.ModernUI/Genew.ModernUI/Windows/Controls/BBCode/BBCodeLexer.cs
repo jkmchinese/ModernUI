@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Genew.ModernUI.Windows.Controls.BBCode
+namespace ModernUI.Windows.Controls.BBCode
 {
     /// <summary>
     /// The BBCode lexer.

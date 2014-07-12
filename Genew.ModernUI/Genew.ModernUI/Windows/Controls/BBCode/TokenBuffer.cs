@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Genew.ModernUI.Windows.Controls.BBCode
+namespace ModernUI.Windows.Controls.BBCode
 {
     /// <summary>
     /// Represents a token buffer.

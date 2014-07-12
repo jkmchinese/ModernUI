@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Genew.ModernUI.Windows
+namespace ModernUI.Windows
 {
     /// <summary>
     /// The contract for loading content.

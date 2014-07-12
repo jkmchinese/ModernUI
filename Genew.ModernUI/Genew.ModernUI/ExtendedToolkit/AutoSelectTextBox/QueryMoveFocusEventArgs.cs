@@ -10,7 +10,7 @@
 using System.Windows;
 using System.Windows.Input;
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1003:UseGenericEventHandlerInstances")]
     public delegate void QueryMoveFocusEventHandler(object sender, QueryMoveFocusEventArgs e);

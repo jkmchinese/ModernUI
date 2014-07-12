@@ -12,7 +12,7 @@ using System.Collections;
 using System.Windows;
 using System.Windows.Data;
 
-namespace Genew.ModernUI.ExtendedToolkit.Utilities
+namespace ModernUI.ExtendedToolkit.Utilities
 {
     /// <summary>
     ///     This helper class will raise events when a specific

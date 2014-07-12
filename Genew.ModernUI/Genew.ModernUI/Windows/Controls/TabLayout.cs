@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Genew.ModernUI.Windows.Controls
+namespace ModernUI.Windows.Controls
 {
     /// <summary>
     /// Define the available tab layouts.

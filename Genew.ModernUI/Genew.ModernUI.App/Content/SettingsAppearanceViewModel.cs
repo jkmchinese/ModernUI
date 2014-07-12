@@ -1,4 +1,4 @@
-﻿using Genew.ModernUI.Presentation;
+﻿using ModernUI.Presentation;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media;
 
-namespace Genew.ModernUI.App.Content
+namespace ModernUI.App.Content
 {
     /// <summary>
     /// A simple view model for configuring theme, font and accent colors.

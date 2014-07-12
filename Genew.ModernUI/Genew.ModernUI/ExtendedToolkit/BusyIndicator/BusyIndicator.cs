@@ -13,7 +13,7 @@ using System.Windows.Controls;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     /// <summary>
     ///     A control to provide a visual indicator when an application is busy.

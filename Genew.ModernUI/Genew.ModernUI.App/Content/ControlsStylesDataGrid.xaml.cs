@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Genew.ModernUI.App.Content
+namespace ModernUI.App.Content
 {
     // taken from MSDN (http://msdn.microsoft.com/en-us/library/system.windows.controls.datagrid.aspx)
     public enum OrderStatus { None, New, Processing, Shipped, Received };

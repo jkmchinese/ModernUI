@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Genew.ModernUI.App.ExtendedToolkitContent
+namespace ModernUI.App.ExtendedToolkitContent
 {
     /// <summary>
     /// Interaction logic for CheckListView.xaml

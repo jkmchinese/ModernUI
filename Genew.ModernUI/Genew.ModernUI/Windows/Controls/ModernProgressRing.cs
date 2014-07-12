@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Genew.ModernUI.Windows.Controls
+namespace ModernUI.Windows.Controls
 {
     /// <summary>
     /// Represents a control that indicates that an operation is ongoing. 

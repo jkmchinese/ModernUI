@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Genew.ModernUI.Windows.Navigation
+namespace ModernUI.Windows.Navigation
 {
     /// <summary>
     /// Provides data for fragment navigation events.

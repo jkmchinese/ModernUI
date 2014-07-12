@@ -1,8 +1,8 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:converters="clr-namespace:Genew.ModernUI.ExtendedToolkit.Converters"
-                    xmlns:extendedToolkit="clr-namespace:Genew.ModernUI.ExtendedToolkit"
-                    xmlns:presentation="clr-namespace:Genew.ModernUI.Presentation">
+                    xmlns:converters="clr-namespace:ModernUI.ExtendedToolkit.Converters"
+                    xmlns:extendedToolkit="clr-namespace:ModernUI.ExtendedToolkit"
+                    xmlns:presentation="clr-namespace:ModernUI.Presentation">
 
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary>

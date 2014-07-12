@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace Genew.ModernUI.Windows
+namespace ModernUI.Windows
 {
     /// <summary>
     /// Represents a collection of commands keyed by a uri.

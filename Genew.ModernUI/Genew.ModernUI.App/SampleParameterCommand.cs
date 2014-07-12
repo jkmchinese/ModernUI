@@ -1,5 +1,5 @@
-﻿using Genew.ModernUI.Presentation;
-using Genew.ModernUI.Windows.Controls;
+﻿using ModernUI.Presentation;
+using ModernUI.Windows.Controls;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Genew.ModernUI.App
+namespace ModernUI.App
 {
     /// <summary>
     /// An ICommand implementation that displays the provided command parameter in a message box.

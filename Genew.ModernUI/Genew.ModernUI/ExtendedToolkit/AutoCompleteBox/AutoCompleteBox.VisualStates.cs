@@ -13,7 +13,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     /// <summary>
     ///     Names for visual states in the AutoCompleteBox.

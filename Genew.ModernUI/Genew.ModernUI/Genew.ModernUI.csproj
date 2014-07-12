@@ -7,8 +7,8 @@
     <ProjectGuid>{BC0F28D7-A920-420B-B2E7-8062F2FFD1F2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Genew.ModernUI</RootNamespace>
-    <AssemblyName>Genew.ModernUI</AssemblyName>
+    <RootNamespace>LWLCX.ModernUI</RootNamespace>
+    <AssemblyName>LWLCX.ModernUI</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>

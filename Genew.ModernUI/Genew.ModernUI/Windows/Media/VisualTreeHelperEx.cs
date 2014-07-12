@@ -5,7 +5,7 @@ using System.Text;
 using System.Windows;
 using System.Windows.Media;
 
-namespace Genew.ModernUI.Windows.Media
+namespace ModernUI.Windows.Media
 {
     /// <summary>
     /// Provides addition visual tree helper methods.

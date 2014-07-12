@@ -9,7 +9,7 @@
 
 using System.Resources;
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     /// <summary>
     /// 错误消息资源类
@@ -70,7 +70,7 @@ namespace Genew.ModernUI.ExtendedToolkit
 
         static ErrorMessages()
         {
-            _resourceManager = new ResourceManager("Genew.ModernUI.ExtendedToolkit.ErrorMessages",
+            _resourceManager = new ResourceManager("ModernUI.ExtendedToolkit.ErrorMessages",
                 typeof(ErrorMessages).Assembly);
         }
 

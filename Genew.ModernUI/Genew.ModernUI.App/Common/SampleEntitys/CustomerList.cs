@@ -13,7 +13,7 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Windows.Media;
 
-namespace Genew.ModernUI.App.Common.SampleDatas
+namespace ModernUI.App.Common.SampleDatas
 {
     /// <summary>
     ///     Represents a collection of Customer objects.

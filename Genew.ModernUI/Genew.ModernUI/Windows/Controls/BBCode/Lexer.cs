@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Genew.ModernUI.Windows.Controls.BBCode
+namespace ModernUI.Windows.Controls.BBCode
 {
     /// <summary>
     /// Provides basic lexer functionality.

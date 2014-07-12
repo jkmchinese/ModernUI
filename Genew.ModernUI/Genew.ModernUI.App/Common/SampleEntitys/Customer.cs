@@ -15,7 +15,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Media;
 
-namespace Genew.ModernUI.App.Common.SampleDatas
+namespace ModernUI.App.Common.SampleDatas
 {
     /// <summary>
     ///     Indicates the status of a customer's payment or complaint.

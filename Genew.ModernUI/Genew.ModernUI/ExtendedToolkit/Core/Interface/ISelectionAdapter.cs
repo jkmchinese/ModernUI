@@ -4,12 +4,12 @@ using System.Windows.Automation.Peers;
 using System.Windows.Controls;
 using System.Windows.Input;
 
-namespace Genew.ModernUI.ExtendedToolkit.Interface
+namespace ModernUI.ExtendedToolkit.Interface
 {
     /// <summary>
     /// Defines an item collection, selection members, and key handling for the
     /// selection adapter contained in the drop-down portion of an
-    /// <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" /> control.
+    /// <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" /> control.
     /// </summary>
     public interface ISelectionAdapter
     {
@@ -21,7 +21,7 @@ namespace Genew.ModernUI.ExtendedToolkit.Interface
 
         /// <summary>
         /// Occurs when the
-        /// <see cref="P:Genew.ModernUI.ExtendedToolkit.Interface.ISelectionAdapter.SelectedItem" />
+        /// <see cref="P:ModernUI.ExtendedToolkit.Interface.ISelectionAdapter.SelectedItem" />
         /// property value changes.
         /// </summary>
         event SelectionChangedEventHandler SelectionChanged;
@@ -49,7 +49,7 @@ namespace Genew.ModernUI.ExtendedToolkit.Interface
         /// Provides handling for the
         /// <see cref="E:System.Windows.UIElement.KeyDown" /> event that occurs
         /// when a key is pressed while the drop-down portion of the
-        /// <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" /> has focus.
+        /// <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" /> has focus.
         /// </summary>
         /// <param name="e">A <see cref="T:System.Windows.Input.KeyEventArgs" />
         /// that contains data about the

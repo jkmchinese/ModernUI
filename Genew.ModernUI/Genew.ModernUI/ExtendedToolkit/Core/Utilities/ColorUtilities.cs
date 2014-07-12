@@ -12,9 +12,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Windows.Media;
-using Genew.ModernUI.ExtendedToolkit.Primitives;
+using ModernUI.ExtendedToolkit.Primitives;
 
-namespace Genew.ModernUI.ExtendedToolkit.Utilities
+namespace ModernUI.ExtendedToolkit.Utilities
 {
     internal static class ColorUtilities
     {

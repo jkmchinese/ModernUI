@@ -11,7 +11,7 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Windows.Controls.Samples;
 
-namespace Genew.ModernUI.App.Common.SampleDatas
+namespace ModernUI.App.Common.SampleDatas
 {
     /// <summary>
     ///     Employee business object used in DataTemplate examples.

@@ -12,7 +12,7 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace Genew.ModernUI.App.Common.SampleDatas
+namespace ModernUI.App.Common.SampleDatas
 {
     /// <summary>
     ///     Represents a person's contact information.

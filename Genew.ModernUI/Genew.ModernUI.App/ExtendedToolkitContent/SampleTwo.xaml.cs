@@ -12,9 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Genew.ModernUI.Windows.Controls;
+using ModernUI.Windows.Controls;
 
-namespace Genew.ModernUI.App.ExtendedToolkitContent
+namespace ModernUI.App.ExtendedToolkitContent
 {
     /// <summary>
     /// Interaction logic for SampleOne.xaml

@@ -2,9 +2,9 @@
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Samples;
-using Genew.ModernUI.Windows.Controls;
+using ModernUI.Windows.Controls;
 
-namespace Genew.ModernUI.App.ExtendedToolkitContent
+namespace ModernUI.App.ExtendedToolkitContent
 {
     /// <summary>
     /// Interaction logic for SampleThree.xaml

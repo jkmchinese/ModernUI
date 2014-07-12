@@ -13,10 +13,10 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Controls.Primitives;
 using System.Windows.Input;
-using Genew.ModernUI.ExtendedToolkit.Utilities;
-using Selector = Genew.ModernUI.ExtendedToolkit.Primitives.Selector;
+using ModernUI.ExtendedToolkit.Utilities;
+using Selector = ModernUI.ExtendedToolkit.Primitives.Selector;
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     [TemplatePart(Name = PART_Popup, Type = typeof(Popup))]
     public class CheckComboBox : Selector

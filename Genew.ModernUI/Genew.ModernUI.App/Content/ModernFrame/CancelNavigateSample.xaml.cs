@@ -1,6 +1,6 @@
-﻿using Genew.ModernUI.Windows;
-using Genew.ModernUI.Windows.Controls;
-using Genew.ModernUI.Windows.Navigation;
+﻿using ModernUI.Windows;
+using ModernUI.Windows.Controls;
+using ModernUI.Windows.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -16,7 +16,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Genew.ModernUI.App.Content.ModernFrame
+namespace ModernUI.App.Content.ModernFrame
 {
     /// <summary>
     /// Interaction logic for CancelNavigateSample.xaml

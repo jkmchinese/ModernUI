@@ -1,6 +1,6 @@
-﻿using Genew.ModernUI.Presentation;
-using Genew.ModernUI.Windows.Controls;
-using Genew.ModernUI.Windows.Media;
+﻿using ModernUI.Presentation;
+using ModernUI.Windows.Controls;
+using ModernUI.Windows.Media;
 using System;
 using System.Diagnostics;
 using System.Globalization;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Input;
 
-namespace Genew.ModernUI.Windows.Navigation
+namespace ModernUI.Windows.Navigation
 {
     /// <summary>
     /// The default link navigator with support for loading frame content, external link navigation using the default browser and command execution.
@@ -99,14 +99,14 @@ namespace Genew.ModernUI.Windows.Navigation
                 // perform frame navigation
                 if (source == null)
                 {   // source required
-                    throw new ArgumentException(string.Format(CultureInfo.CurrentUICulture, Genew.ModernUI.Properties.Resources.NavigationFailedSourceNotSpecified, uri));
+                    throw new ArgumentException(string.Format(CultureInfo.CurrentUICulture, LWLCX.ModernUI.Properties.Resources.NavigationFailedSourceNotSpecified, uri));
                 }
 
                 // use optional parameter as navigation target to identify target frame (_self, _parent, _top or named target frame)
                 var frame = NavigationHelper.FindFrame(parameter, source);
                 if (frame == null)
                 {
-                    throw new ArgumentException(string.Format(CultureInfo.CurrentUICulture, Genew.ModernUI.Properties.Resources.NavigationFailedFrameNotFound, uri, parameter));
+                    throw new ArgumentException(string.Format(CultureInfo.CurrentUICulture, LWLCX.ModernUI.Properties.Resources.NavigationFailedFrameNotFound, uri, parameter));
                 }
 
                 // delegate navigation to the frame

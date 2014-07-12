@@ -2,7 +2,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 
-namespace Genew.ModernUI.Windows.Controls.BBCode
+namespace ModernUI.Windows.Controls.BBCode
 {
     /// <summary>
     /// Represents a single token.

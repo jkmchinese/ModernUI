@@ -14,9 +14,9 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Data;
 using System.Windows.Input;
-using Genew.ModernUI.ExtendedToolkit.Primitives;
+using ModernUI.ExtendedToolkit.Primitives;
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     public class DateTimeUpDown : DateTimeUpDownBase<DateTime?>
     {

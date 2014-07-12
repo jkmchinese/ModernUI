@@ -13,7 +13,7 @@ using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.Windows;
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     public sealed class ZoomboxViewStack : Collection<ZoomboxView>, IWeakEventListener
     {

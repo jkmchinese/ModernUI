@@ -12,9 +12,9 @@ using System.Windows.Controls;
 using System.Windows;
 using System.Collections.Specialized;
 using System.Windows.Controls.Primitives;
-using Genew.ModernUI.UIHelper;
+using ModernUI.UIHelper;
 
-namespace Genew.ModernUI.Behaviors
+namespace ModernUI.Behaviors
 {
     /// <summary>
     /// 将控件的滚动条与导航控件进行绑定的行为

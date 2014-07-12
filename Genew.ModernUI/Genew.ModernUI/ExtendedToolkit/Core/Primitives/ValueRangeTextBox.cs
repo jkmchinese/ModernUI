@@ -18,7 +18,7 @@ using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Input;
 
-namespace Genew.ModernUI.ExtendedToolkit.Primitives
+namespace ModernUI.ExtendedToolkit.Primitives
 {
     public class ValueRangeTextBox : AutoSelectTextBox
     {

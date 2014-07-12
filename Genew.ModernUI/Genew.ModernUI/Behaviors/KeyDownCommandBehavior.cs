@@ -12,7 +12,7 @@ using System.Windows.Input;
 using System.Windows.Interactivity;
 using System.Windows;
 
-namespace Genew.ModernUI.Behaviors
+namespace ModernUI.Behaviors
 {
     /// <summary>
     /// 按键命令行为

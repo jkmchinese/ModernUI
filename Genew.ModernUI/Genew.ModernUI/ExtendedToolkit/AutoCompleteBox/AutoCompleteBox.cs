@@ -24,11 +24,11 @@ using System.Windows.Input;
 using System.Windows.Markup;
 using System.Windows.Media;
 using System.Windows.Threading;
-using Genew.ModernUI.Automation.Peers;
-using Genew.ModernUI.ExtendedToolkit.Interface;
-using Genew.ModernUI.ExtendedToolkit.Utilities;
+using ModernUI.Automation.Peers;
+using ModernUI.ExtendedToolkit.Interface;
+using ModernUI.ExtendedToolkit.Utilities;
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     /// <summary>
     ///     Represent a Control that AutoComplete TextBox
@@ -185,13 +185,13 @@ namespace Genew.ModernUI.ExtendedToolkit
         /// <summary>
         ///     Gets or sets the minimum number of characters required to be entered
         ///     in the text box before the
-        ///     <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" /> displays
+        ///     <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" /> displays
         ///     possible matches.
         ///     matches.
         /// </summary>
         /// <value>
         ///     The minimum number of characters to be entered in the text box
-        ///     before the <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" />
+        ///     before the <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" />
         ///     displays possible matches. The default is 1.
         /// </value>
         /// <remarks>
@@ -208,12 +208,12 @@ namespace Genew.ModernUI.ExtendedToolkit
 
         /// <summary>
         ///     Identifies the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.MinimumPrefixLength" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.MinimumPrefixLength" />
         ///     dependency property.
         /// </summary>
         /// <value>
         ///     The identifier for the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.MinimumPrefixLength" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.MinimumPrefixLength" />
         ///     dependency property.
         /// </value>
         public static readonly DependencyProperty MinimumPrefixLengthProperty =
@@ -248,13 +248,13 @@ namespace Genew.ModernUI.ExtendedToolkit
         /// <summary>
         ///     Gets or sets the minimum delay, in milliseconds, after text is typed
         ///     in the text box before the
-        ///     <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" /> control
+        ///     <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" /> control
         ///     populates the list of possible matches in the drop-down.
         /// </summary>
         /// <value>
         ///     The minimum delay, in milliseconds, after text is typed in
         ///     the text box, but before the
-        ///     <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" /> populates
+        ///     <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" /> populates
         ///     the list of possible matches in the drop-down. The default is 0.
         /// </value>
         /// <exception cref="T:System.ArgumentException">The set value is less than 0.</exception>
@@ -266,12 +266,12 @@ namespace Genew.ModernUI.ExtendedToolkit
 
         /// <summary>
         ///     Identifies the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.MinimumPopulateDelay" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.MinimumPopulateDelay" />
         ///     dependency property.
         /// </summary>
         /// <value>
         ///     The identifier for the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.MinimumPopulateDelay" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.MinimumPopulateDelay" />
         ///     dependency property.
         /// </value>
         public static readonly DependencyProperty MinimumPopulateDelayProperty =
@@ -363,12 +363,12 @@ namespace Genew.ModernUI.ExtendedToolkit
 
         /// <summary>
         ///     Identifies the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.IsTextCompletionEnabled" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.IsTextCompletionEnabled" />
         ///     dependency property.
         /// </summary>
         /// <value>
         ///     The identifier for the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.IsTextCompletionEnabled" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.IsTextCompletionEnabled" />
         ///     dependency property.
         /// </value>
         public static readonly DependencyProperty IsTextCompletionEnabledProperty =
@@ -406,12 +406,12 @@ namespace Genew.ModernUI.ExtendedToolkit
 
         /// <summary>
         ///     Identifies the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.ItemTemplate" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.ItemTemplate" />
         ///     dependency property.
         /// </summary>
         /// <value>
         ///     The identifier for the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.ItemTemplate" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.ItemTemplate" />
         ///     dependency property.
         /// </value>
         public static readonly DependencyProperty ItemTemplateProperty =
@@ -428,13 +428,13 @@ namespace Genew.ModernUI.ExtendedToolkit
         /// <summary>
         ///     Gets or sets the <see cref="T:System.Windows.Style" /> that is
         ///     applied to the selection adapter contained in the drop-down portion
-        ///     of the <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" />
+        ///     of the <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" />
         ///     control.
         /// </summary>
         /// <value>
         ///     The <see cref="T:System.Windows.Style" /> applied to the
         ///     selection adapter contained in the drop-down portion of the
-        ///     <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" /> control.
+        ///     <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" /> control.
         ///     The default is null.
         /// </value>
         /// <remarks>
@@ -449,12 +449,12 @@ namespace Genew.ModernUI.ExtendedToolkit
 
         /// <summary>
         ///     Identifies the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.ItemContainerStyle" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.ItemContainerStyle" />
         ///     dependency property.
         /// </summary>
         /// <value>
         ///     The identifier for the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.ItemContainerStyle" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.ItemContainerStyle" />
         ///     dependency property.
         /// </value>
         public static readonly DependencyProperty ItemContainerStyleProperty =
@@ -471,12 +471,12 @@ namespace Genew.ModernUI.ExtendedToolkit
         /// <summary>
         ///     Gets or sets the <see cref="T:System.Windows.Style" /> applied to
         ///     the text box portion of the
-        ///     <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" /> control.
+        ///     <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" /> control.
         /// </summary>
         /// <value>
         ///     The <see cref="T:System.Windows.Style" /> applied to the text
         ///     box portion of the
-        ///     <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" /> control.
+        ///     <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" /> control.
         ///     The default is null.
         /// </value>
         public Style TextBoxStyle
@@ -487,12 +487,12 @@ namespace Genew.ModernUI.ExtendedToolkit
 
         /// <summary>
         ///     Identifies the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.TextBoxStyle" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.TextBoxStyle" />
         ///     dependency property.
         /// </summary>
         /// <value>
         ///     The identifier for the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.TextBoxStyle" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.TextBoxStyle" />
         ///     dependency property.
         /// </value>
         public static readonly DependencyProperty TextBoxStyleProperty =
@@ -508,11 +508,11 @@ namespace Genew.ModernUI.ExtendedToolkit
 
         /// <summary>
         ///     Gets or sets the maximum height of the drop-down portion of the
-        ///     <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" /> control.
+        ///     <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" /> control.
         /// </summary>
         /// <value>
         ///     The maximum height of the drop-down portion of the
-        ///     <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" /> control.
+        ///     <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" /> control.
         ///     The default is <see cref="F:System.Double.PositiveInfinity" />.
         /// </value>
         /// <exception cref="T:System.ArgumentException">The specified value is less than 0.</exception>
@@ -524,12 +524,12 @@ namespace Genew.ModernUI.ExtendedToolkit
 
         /// <summary>
         ///     Identifies the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.MaxDropDownHeight" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.MaxDropDownHeight" />
         ///     dependency property.
         /// </summary>
         /// <value>
         ///     The identifier for the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.MaxDropDownHeight" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.MaxDropDownHeight" />
         ///     dependency property.
         /// </value>
         public static readonly DependencyProperty MaxDropDownHeightProperty =
@@ -592,12 +592,12 @@ namespace Genew.ModernUI.ExtendedToolkit
 
         /// <summary>
         ///     Identifies the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.IsDropDownOpen" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.IsDropDownOpen" />
         ///     dependency property.
         /// </summary>
         /// <value>
         ///     The identifier for the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.IsDropDownOpen" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.IsDropDownOpen" />
         ///     dependency property.
         /// </value>
         public static readonly DependencyProperty IsDropDownOpenProperty =
@@ -645,12 +645,12 @@ namespace Genew.ModernUI.ExtendedToolkit
         /// <summary>
         ///     Gets or sets a collection that is used to generate the items for the
         ///     drop-down portion of the
-        ///     <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" /> control.
+        ///     <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" /> control.
         /// </summary>
         /// <value>
         ///     The collection that is used to generate the items of the
         ///     drop-down portion of the
-        ///     <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" /> control.
+        ///     <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" /> control.
         /// </value>
         public IEnumerable ItemsSource
         {
@@ -660,12 +660,12 @@ namespace Genew.ModernUI.ExtendedToolkit
 
         /// <summary>
         ///     Identifies the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.ItemsSource" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.ItemsSource" />
         ///     dependency property.
         /// </summary>
         /// <value>
         ///     The identifier for the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.ItemsSource" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.ItemsSource" />
         ///     dependency property.
         /// </value>
         public static readonly DependencyProperty ItemsSourceProperty =
@@ -708,12 +708,12 @@ namespace Genew.ModernUI.ExtendedToolkit
 
         /// <summary>
         ///     Identifies the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.SelectedItem" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.SelectedItem" />
         ///     dependency property.
         /// </summary>
         /// <value>
         ///     The identifier the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.SelectedItem" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.SelectedItem" />
         ///     dependency property.
         /// </value>
         public static readonly DependencyProperty SelectedItemProperty =
@@ -805,11 +805,11 @@ SelectionChangedEvent,
 
         /// <summary>
         ///     Gets or sets the text in the text box portion of the
-        ///     <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" /> control.
+        ///     <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" /> control.
         /// </summary>
         /// <value>
         ///     The text in the text box portion of the
-        ///     <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" /> control.
+        ///     <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" /> control.
         /// </value>
         public string Text
         {
@@ -819,12 +819,12 @@ SelectionChangedEvent,
 
         /// <summary>
         ///     Identifies the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.Text" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.Text" />
         ///     dependency property.
         /// </summary>
         /// <value>
         ///     The identifier for the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.Text" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.Text" />
         ///     dependency property.
         /// </value>
         public static readonly DependencyProperty TextProperty =
@@ -851,12 +851,12 @@ SelectionChangedEvent,
 
         /// <summary>
         ///     Gets the text that is used to filter items in the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.ItemsSource" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.ItemsSource" />
         ///     item collection.
         /// </summary>
         /// <value>
         ///     The text that is used to filter items in the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.ItemsSource" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.ItemsSource" />
         ///     item collection.
         /// </value>
         /// <remarks>
@@ -884,12 +884,12 @@ SelectionChangedEvent,
 
         /// <summary>
         ///     Identifies the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.SearchText" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.SearchText" />
         ///     dependency property.
         /// </summary>
         /// <value>
         ///     The identifier for the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.SearchText" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.SearchText" />
         ///     dependency property.
         /// </value>
         public static readonly DependencyProperty SearchTextProperty =
@@ -932,7 +932,7 @@ SelectionChangedEvent,
         /// <summary>
         ///     Gets or sets how the text in the text box is used to filter items
         ///     specified by the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.ItemsSource" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.ItemsSource" />
         ///     property for display in the drop-down.
         /// </summary>
         /// <value>
@@ -960,7 +960,7 @@ SelectionChangedEvent,
 
         /// <summary>
         ///     Gets the identifier for the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.FilterMode" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.FilterMode" />
         ///     dependency property.
         /// </summary>
         public static readonly DependencyProperty FilterModeProperty =
@@ -1015,13 +1015,13 @@ SelectionChangedEvent,
         /// <summary>
         ///     Gets or sets the custom method that uses user-entered text to filter
         ///     the items specified by the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.ItemsSource" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.ItemsSource" />
         ///     property for display in the drop-down.
         /// </summary>
         /// <value>
         ///     The custom method that uses the user-entered text to filter
         ///     the items specified by the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.ItemsSource" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.ItemsSource" />
         ///     property. The default is null.
         /// </value>
         /// <remarks>
@@ -1036,12 +1036,12 @@ SelectionChangedEvent,
 
         /// <summary>
         ///     Identifies the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.ItemFilter" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.ItemFilter" />
         ///     dependency property.
         /// </summary>
         /// <value>
         ///     The identifier for the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.ItemFilter" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.ItemFilter" />
         ///     dependency property.
         /// </value>
         public static readonly DependencyProperty ItemFilterProperty =
@@ -1080,13 +1080,13 @@ SelectionChangedEvent,
         /// <summary>
         ///     Gets or sets the custom method that uses the user-entered text to
         ///     filter items specified by the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.ItemsSource" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.ItemsSource" />
         ///     property in a text-based way for display in the drop-down.
         /// </summary>
         /// <value>
         ///     The custom method that uses the user-entered text to filter
         ///     items specified by the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.ItemsSource" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.ItemsSource" />
         ///     property in a text-based way for display in the drop-down.
         /// </value>
         /// <remarks>
@@ -1101,12 +1101,12 @@ SelectionChangedEvent,
 
         /// <summary>
         ///     Identifies the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.TextFilter" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.TextFilter" />
         ///     dependency property.
         /// </summary>
         /// <value>
         ///     The identifier for the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.TextFilter" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.TextFilter" />
         ///     dependency property.
         /// </value>
         public static readonly DependencyProperty TextFilterProperty =
@@ -1210,7 +1210,7 @@ SelectionChangedEvent,
 
         /// <summary>
         ///     Occurs when the text in the text box portion of the
-        ///     <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" /> changes.
+        ///     <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" /> changes.
         /// </summary>
 #if SILVERLIGHT
         public event RoutedEventHandler TextChanged;
@@ -1220,7 +1220,7 @@ SelectionChangedEvent,
 
         /// <summary>
         ///     Occurs when the text in the text box portion of the
-        ///     <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" /> changes.
+        ///     <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" /> changes.
         /// </summary>
         public event RoutedEventHandler TextChanged
         {
@@ -1231,9 +1231,9 @@ SelectionChangedEvent,
 
         /// <summary>
         ///     Occurs when the
-        ///     <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" /> is
+        ///     <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" /> is
         ///     populating the drop-down with possible matches based on the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.Text" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.Text" />
         ///     property.
         /// </summary>
         /// <remarks>
@@ -1251,9 +1251,9 @@ SelectionChangedEvent,
 
         /// <summary>
         ///     Occurs when the
-        ///     <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" /> is
+        ///     <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" /> is
         ///     populating the drop-down with possible matches based on the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.Text" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.Text" />
         ///     property.
         /// </summary>
         /// <remarks>
@@ -1272,9 +1272,9 @@ SelectionChangedEvent,
 
         /// <summary>
         ///     Occurs when the
-        ///     <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" /> has
+        ///     <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" /> has
         ///     populated the drop-down with possible matches based on the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.Text" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.Text" />
         ///     property.
         /// </summary>
 #if SILVERLIGHT
@@ -1285,9 +1285,9 @@ SelectionChangedEvent,
 
         /// <summary>
         ///     Occurs when the
-        ///     <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" /> has
+        ///     <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" /> has
         ///     populated the drop-down with possible matches based on the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.Text" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.Text" />
         ///     property.
         /// </summary>
         public event PopulatedEventHandler Populated
@@ -1299,7 +1299,7 @@ SelectionChangedEvent,
 
         /// <summary>
         ///     Occurs when the value of the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.IsDropDownOpen" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.IsDropDownOpen" />
         ///     property is changing from false to true.
         /// </summary>
 #if SILVERLIGHT
@@ -1310,7 +1310,7 @@ SelectionChangedEvent,
 
         /// <summary>
         ///     Occurs when the value of the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.IsDropDownOpen" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.IsDropDownOpen" />
         ///     property is changing from false to true.
         /// </summary>
         public event RoutedPropertyChangingEventHandler<bool> DropDownOpening
@@ -1322,7 +1322,7 @@ SelectionChangedEvent,
 
         /// <summary>
         ///     Occurs when the value of the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.IsDropDownOpen" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.IsDropDownOpen" />
         ///     property has changed from false to true and the drop-down is open.
         /// </summary>
 #if SILVERLIGHT
@@ -1333,7 +1333,7 @@ SelectionChangedEvent,
 
         /// <summary>
         ///     Occurs when the value of the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.IsDropDownOpen" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.IsDropDownOpen" />
         ///     property has changed from false to true and the drop-down is open.
         /// </summary>
         public event RoutedPropertyChangedEventHandler<bool> DropDownOpened
@@ -1345,7 +1345,7 @@ SelectionChangedEvent,
 
         /// <summary>
         ///     Occurs when the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.IsDropDownOpen" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.IsDropDownOpen" />
         ///     property is changing from true to false.
         /// </summary>
 #if SILVERLIGHT
@@ -1356,7 +1356,7 @@ SelectionChangedEvent,
 
         /// <summary>
         ///     Occurs when the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.IsDropDownOpen" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.IsDropDownOpen" />
         ///     property is changing from true to false.
         /// </summary>
         public event RoutedPropertyChangingEventHandler<bool> DropDownClosing
@@ -1368,7 +1368,7 @@ SelectionChangedEvent,
 
         /// <summary>
         ///     Occurs when the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.IsDropDownOpen" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.IsDropDownOpen" />
         ///     property was changed from true to false and the drop-down is open.
         /// </summary>
 #if SILVERLIGHT
@@ -1379,7 +1379,7 @@ SelectionChangedEvent,
 
         /// <summary>
         ///     Occurs when the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.IsDropDownOpen" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.IsDropDownOpen" />
         ///     property was changed from true to false and the drop-down is open.
         /// </summary>
         public event RoutedPropertyChangedEventHandler<bool> DropDownClosed
@@ -1391,7 +1391,7 @@ SelectionChangedEvent,
 
         /// <summary>
         ///     Occurs when the selected item in the drop-down portion of the
-        ///     <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" /> has
+        ///     <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" /> has
         ///     changed.
         /// </summary>
 #if SILVERLIGHT
@@ -1402,7 +1402,7 @@ SelectionChangedEvent,
 
         /// <summary>
         ///     Occurs when the selected item in the drop-down portion of the
-        ///     <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" /> has
+        ///     <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" /> has
         ///     changed.
         /// </summary>
         public event SelectionChangedEventHandler SelectionChanged
@@ -1415,7 +1415,7 @@ SelectionChangedEvent,
         /// <summary>
         ///     Gets or sets the  <see cref="T:System.Windows.Data.Binding" /> that
         ///     is used to get the values for display in the text portion of
-        ///     the <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" />
+        ///     the <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" />
         ///     control.
         /// </summary>
         /// <value>
@@ -1431,12 +1431,12 @@ SelectionChangedEvent,
         /// <summary>
         ///     Gets or sets the property path that is used to get values for
         ///     display in the text portion of the
-        ///     <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" /> control.
+        ///     <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" /> control.
         /// </summary>
         /// <value>
         ///     The property path that is used to get values for display in
         ///     the text portion of the
-        ///     <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" /> control.
+        ///     <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" /> control.
         /// </value>
         public string ValueMemberPath
         {
@@ -1447,7 +1447,7 @@ SelectionChangedEvent,
 #if !SILVERLIGHT
         /// <summary>
         ///     Initializes the static members of the
-        ///     <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" /> class.
+        ///     <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" /> class.
         /// </summary>
         static AutoCompleteBox()
         {
@@ -1458,7 +1458,7 @@ SelectionChangedEvent,
 
         /// <summary>
         ///     Initializes a new instance of the
-        ///     <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" /> class.
+        ///     <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" /> class.
         /// </summary>
         public AutoCompleteBox()
         {
@@ -1477,12 +1477,12 @@ SelectionChangedEvent,
 
         /// <summary>
         ///     Arranges and sizes the
-        ///     <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" />
+        ///     <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" />
         ///     control and its contents.
         /// </summary>
         /// <param name="finalSize">
         ///     The size allowed for the
-        ///     <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" /> control.
+        ///     <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" /> control.
         /// </param>
         /// <returns>The <paramref name="finalSize" />, unchanged.</returns>
         protected override Size ArrangeOverride(Size finalSize)
@@ -1497,7 +1497,7 @@ SelectionChangedEvent,
 
         /// <summary>
         ///     Builds the visual tree for the
-        ///     <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" /> control
+        ///     <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" /> control
         ///     when a new template is applied.
         /// </summary>
         public override void OnApplyTemplate()
@@ -1707,7 +1707,7 @@ SelectionChangedEvent,
         /// <returns>
         ///     A
         ///     <see cref="T:System.Windows.Automation.Peers.AutoCompleteBoxAutomationPeer" />
-        ///     for the <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" />
+        ///     for the <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" />
         ///     object.
         /// </returns>
         protected override AutomationPeer OnCreateAutomationPeer()
@@ -1752,12 +1752,12 @@ SelectionChangedEvent,
 
         /// <summary>
         ///     Determines whether the text box or drop-down portion of the
-        ///     <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" /> control has
+        ///     <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" /> control has
         ///     focus.
         /// </summary>
         /// <returns>
         ///     true to indicate the
-        ///     <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" /> has focus;
+        ///     <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" /> has focus;
         ///     otherwise, false.
         /// </returns>
         protected bool HasFocus()
@@ -2102,7 +2102,7 @@ SelectionChangedEvent,
         ///     <see cref="P:System.Windows.Data.Binding.Converter" /> and
         ///     <see cref="P:System.Windows.Data.Binding.ConverterCulture" /> values
         ///     of the binding object specified by the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.ValueMemberBinding" />
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.ValueMemberBinding" />
         ///     property.
         /// </summary>
         /// <param name="value">The object to format as a string.</param>
@@ -2302,8 +2302,8 @@ SelectionChangedEvent,
 
         /// <summary>
         ///     Notifies the
-        ///     <see cref="T:Genew.ModernUI.ExtendedToolkit.AutoCompleteBox" /> that the
-        ///     <see cref="Genew.ModernUI.ExtendedToolkit.AutoCompleteBox.ItemsSource" />
+        ///     <see cref="T:ModernUI.ExtendedToolkit.AutoCompleteBox" /> that the
+        ///     <see cref="ModernUI.ExtendedToolkit.AutoCompleteBox.ItemsSource" />
         ///     property has been set and the data can be filtered to provide
         ///     possible matches in the drop-down.
         /// </summary>

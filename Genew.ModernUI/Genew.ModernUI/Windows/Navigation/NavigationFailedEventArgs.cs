@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Genew.ModernUI.Windows.Controls;
+using ModernUI.Windows.Controls;
 
-namespace Genew.ModernUI.Windows.Navigation
+namespace ModernUI.Windows.Navigation
 {
     /// <summary>
     /// Provides data for the <see cref="ModernFrame.NavigationFailed"/> event.

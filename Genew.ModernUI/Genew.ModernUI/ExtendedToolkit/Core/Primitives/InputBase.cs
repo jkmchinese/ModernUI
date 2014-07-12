@@ -13,7 +13,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 
-namespace Genew.ModernUI.ExtendedToolkit.Primitives
+namespace ModernUI.ExtendedToolkit.Primitives
 {
     public abstract class InputBase : Control
     {

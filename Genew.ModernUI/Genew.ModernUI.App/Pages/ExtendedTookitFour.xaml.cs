@@ -1,6 +1,6 @@
 ﻿using System.Windows.Controls;
 
-namespace Genew.ModernUI.App.Pages
+namespace ModernUI.App.Pages
 {
     /// <summary>
     /// Interaction logic for ExtendedTookitFour.xaml

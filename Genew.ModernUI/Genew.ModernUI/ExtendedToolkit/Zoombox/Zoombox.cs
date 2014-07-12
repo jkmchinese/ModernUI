@@ -22,11 +22,11 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
-using Genew.ModernUI.ExtendedToolkit.Input;
-using Genew.ModernUI.ExtendedToolkit.Utilities;
-using Genew.ModernUI.Windows.Media;
+using ModernUI.ExtendedToolkit.Input;
+using ModernUI.ExtendedToolkit.Utilities;
+using ModernUI.Windows.Media;
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     public sealed class Zoombox : ContentControl
     {

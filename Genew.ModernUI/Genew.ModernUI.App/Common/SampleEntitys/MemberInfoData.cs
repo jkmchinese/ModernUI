@@ -13,7 +13,7 @@ using System.Reflection;
 using System.Windows.Controls;
 using System.Windows.Media;
 
-namespace Genew.ModernUI.App.Common.SampleDatas
+namespace ModernUI.App.Common.SampleDatas
 {
     /// <summary>
     ///     A wrapper type that can be used for visually displaying reflected type

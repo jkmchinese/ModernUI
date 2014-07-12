@@ -9,7 +9,7 @@
 
 using System.Windows.Controls.Samples;
 
-namespace Genew.ModernUI.App.Common.SampleDatas
+namespace ModernUI.App.Common.SampleDatas
 {
     /// <summary>
     ///     City business object used for charting samples.

@@ -7,7 +7,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 
-namespace Genew.ModernUI.Windows.Controls
+namespace ModernUI.Windows.Controls
 {
     /// <summary>
     /// Adds icon content to a standard button.

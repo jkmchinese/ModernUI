@@ -14,10 +14,10 @@ using System.Windows.Automation.Peers;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Input;
-using Genew.ModernUI.ExtendedToolkit.Interface;
-using Genew.ModernUI.UIHelper;
+using ModernUI.ExtendedToolkit.Interface;
+using ModernUI.UIHelper;
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     /// <summary>
     ///     Represents the selection adapter contained in the drop-down portion of

@@ -11,7 +11,7 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Windows.Markup;
 
-namespace Genew.ModernUI.App.Common.SampleDatas
+namespace ModernUI.App.Common.SampleDatas
 {
     /// <summary>
     ///     Represents a feature that can be installed.

@@ -10,7 +10,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Windows.Controls.Samples;
 
-namespace Genew.ModernUI.App.Common.SampleDatas
+namespace ModernUI.App.Common.SampleDatas
 {
     /// <summary>
     ///     An Airport class.

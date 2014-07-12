@@ -9,7 +9,7 @@
 
 using System.Windows.Controls.Samples;
 
-namespace Genew.ModernUI.App.Common.SampleDatas
+namespace ModernUI.App.Common.SampleDatas
 {
     /// <summary>
     ///     A collection type that makes it easy to place sample employee data into

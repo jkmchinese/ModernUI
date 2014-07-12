@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Genew.ModernUI.App.Content.ModernFrame
+namespace ModernUI.App.Content.ModernFrame
 {
     /// <summary>
     /// Interaction logic for Sample.xaml

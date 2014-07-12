@@ -12,9 +12,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Globalization;
 using System.Windows;
-using Genew.ModernUI.ExtendedToolkit.Utilities;
+using ModernUI.ExtendedToolkit.Utilities;
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     public sealed class ZoomboxViewConverter : TypeConverter
     {

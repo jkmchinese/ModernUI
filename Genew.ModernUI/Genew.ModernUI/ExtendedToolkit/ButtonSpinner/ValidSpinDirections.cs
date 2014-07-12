@@ -9,7 +9,7 @@
 
 using System;
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     /// <summary>
     ///     Represents spin directions that are valid.

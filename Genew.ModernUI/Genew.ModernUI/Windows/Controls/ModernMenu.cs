@@ -1,4 +1,4 @@
-﻿using Genew.ModernUI.Presentation;
+﻿using ModernUI.Presentation;
 using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Genew.ModernUI.Windows.Controls
+namespace ModernUI.Windows.Controls
 {
     /// <summary>
     /// Represents the menu in a Modern UI styled window.

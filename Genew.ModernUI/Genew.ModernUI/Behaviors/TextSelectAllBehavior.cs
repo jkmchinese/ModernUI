@@ -12,7 +12,7 @@ using System.Windows;
 using System.Windows.Interactivity;
 using System.Windows.Controls;
 
-namespace Genew.ModernUI.Behaviors
+namespace ModernUI.Behaviors
 {
     /// <summary>
     /// TextBox获得焦点时全选

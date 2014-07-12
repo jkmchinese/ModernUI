@@ -10,9 +10,9 @@
 using System;
 using System.Globalization;
 using System.Windows;
-using Genew.ModernUI.ExtendedToolkit.Primitives;
+using ModernUI.ExtendedToolkit.Primitives;
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     public abstract class NumericUpDown<T> : UpDownBase<T>
     {

@@ -14,7 +14,7 @@ using System.Windows;
 using System.Windows.Data;
 using System.Windows.Input;
 
-namespace Genew.ModernUI.ExtendedToolkit.Primitives
+namespace ModernUI.ExtendedToolkit.Primitives
 {
     public abstract class DateTimeUpDownBase<T> : UpDownBase<T>
     {

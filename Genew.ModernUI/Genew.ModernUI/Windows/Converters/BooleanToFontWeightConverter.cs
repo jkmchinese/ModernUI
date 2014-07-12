@@ -5,7 +5,7 @@ using System.Text;
 using System.Windows.Data;
 using System.Windows;
 
-namespace Genew.ModernUI.Windows.Converters
+namespace ModernUI.Windows.Converters
 {
     /// <summary>
     /// Converts a boolean value to a font weight (false: normal, true: bold)

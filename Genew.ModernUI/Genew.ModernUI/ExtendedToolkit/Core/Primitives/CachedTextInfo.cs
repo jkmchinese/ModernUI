@@ -10,7 +10,7 @@
 using System;
 using System.Windows.Controls;
 
-namespace Genew.ModernUI.ExtendedToolkit.Primitives
+namespace ModernUI.ExtendedToolkit.Primitives
 {
     internal class CachedTextInfo : ICloneable
     {

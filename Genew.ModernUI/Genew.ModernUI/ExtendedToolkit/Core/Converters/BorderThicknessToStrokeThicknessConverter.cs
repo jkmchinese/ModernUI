@@ -11,7 +11,7 @@ using System;
 using System.Windows;
 using System.Windows.Data;
 
-namespace Genew.ModernUI.ExtendedToolkit.Converters
+namespace ModernUI.ExtendedToolkit.Converters
 {
     public class BorderThicknessToStrokeThicknessConverter : IValueConverter
     {

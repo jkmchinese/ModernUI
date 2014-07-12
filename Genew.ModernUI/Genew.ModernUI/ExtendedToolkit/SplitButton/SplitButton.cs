@@ -10,7 +10,7 @@
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     [TemplatePart(Name = PART_ActionButton, Type = typeof(Button))]
     public class SplitButton : DropDownButton

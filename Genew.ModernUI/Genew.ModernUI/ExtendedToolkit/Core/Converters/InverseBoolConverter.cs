@@ -10,7 +10,7 @@
 using System;
 using System.Windows.Data;
 
-namespace Genew.ModernUI.ExtendedToolkit.Converters
+namespace ModernUI.ExtendedToolkit.Converters
 {
     public class InverseBoolConverter : IValueConverter
     {

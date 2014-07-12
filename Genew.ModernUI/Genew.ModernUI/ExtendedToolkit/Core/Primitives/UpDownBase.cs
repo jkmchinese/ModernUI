@@ -13,9 +13,9 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Input;
-using Genew.ModernUI.ExtendedToolkit.Input;
+using ModernUI.ExtendedToolkit.Input;
 
-namespace Genew.ModernUI.ExtendedToolkit.Primitives
+namespace ModernUI.ExtendedToolkit.Primitives
 {
     [TemplatePart(Name = PART_TextBox, Type = typeof(TextBox))]
     [TemplatePart(Name = PART_Spinner, Type = typeof(Spinner))]

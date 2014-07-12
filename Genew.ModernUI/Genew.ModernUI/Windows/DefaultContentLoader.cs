@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
-using Genew.ModernUI.Properties;
-using Genew.ModernUI.UIHelper;
+using LWLCX.ModernUI.Properties;
+using ModernUI.UIHelper;
 
-namespace Genew.ModernUI.Windows
+namespace ModernUI.Windows
 {
     /// <summary>
     /// Loads XAML files using Application.LoadComponent.

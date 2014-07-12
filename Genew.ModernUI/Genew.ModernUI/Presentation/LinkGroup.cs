@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Genew.ModernUI.Presentation
+namespace ModernUI.Presentation
 {
     /// <summary>
     /// Represents a named group of links.

@@ -7,9 +7,9 @@ using System.Windows.Documents;
 using System.Windows.Media;
 using System.Windows;
 using System.Windows.Input;
-using Genew.ModernUI.Properties;
+using LWLCX.ModernUI.Properties;
 
-namespace Genew.ModernUI.Windows.Controls.BBCode
+namespace ModernUI.Windows.Controls.BBCode
 {
     /// <summary>
     /// Represents the BBCode parser.

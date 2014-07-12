@@ -1,12 +1,12 @@
-﻿<Application x:Class="Genew.ModernUI.App.App"
+﻿<Application x:Class="ModernUI.App.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/Genew.ModernUI;component/Assets/ModernUI.xaml" />
-                <ResourceDictionary Source="/Genew.ModernUI;component/Assets/ModernUI.Light.xaml" />
+                <ResourceDictionary Source="/LWLCX.ModernUI;component/Assets/ModernUI.xaml" />
+                <ResourceDictionary Source="/LWLCX.ModernUI;component/Assets/ModernUI.Light.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

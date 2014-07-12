@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace Genew.ModernUI.Presentation
+namespace ModernUI.Presentation
 {
     /// <summary>
     /// Represents an observable collection of links.

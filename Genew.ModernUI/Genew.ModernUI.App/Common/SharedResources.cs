@@ -15,7 +15,7 @@ using System.Reflection;
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
 
-namespace Genew.ModernUI.App.Common
+namespace ModernUI.App.Common
 {
     /// <summary>
     ///     Utility to to load shared resources into another ResourceDictionary.

@@ -20,11 +20,11 @@ using System.Windows.Automation.Peers;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Input;
-using Genew.ModernUI.Automation.Peers;
-using Genew.ModernUI.ExtendedToolkit.Interface;
-using Genew.ModernUI.ExtendedToolkit.Utilities;
+using ModernUI.Automation.Peers;
+using ModernUI.ExtendedToolkit.Interface;
+using ModernUI.ExtendedToolkit.Utilities;
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     /// <summary>
     ///     Represents a collection of collapsed and expanded AccordionItem controls.

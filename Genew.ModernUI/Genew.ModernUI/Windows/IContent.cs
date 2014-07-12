@@ -1,11 +1,11 @@
-﻿using Genew.ModernUI.Windows.Navigation;
+﻿using ModernUI.Windows.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Genew.ModernUI.Windows
+namespace ModernUI.Windows
 {
     /// <summary>
     /// Defines the optional contract for content loaded in a ModernFrame.

@@ -13,9 +13,9 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Input;
-using Genew.ModernUI.ExtendedToolkit.Utilities;
+using ModernUI.ExtendedToolkit.Utilities;
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     [TemplatePart(Name = PART_DropDownButton, Type = typeof(ToggleButton))]
     [TemplatePart(Name = PART_ContentPresenter, Type = typeof(ContentPresenter))]

@@ -7,7 +7,7 @@
     <ProjectGuid>{BE476D34-0A22-4771-B38A-8914F45E8E9B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Genew.ModernUI.App</RootNamespace>
+    <RootNamespace>LWLCX.ModernUI.App</RootNamespace>
     <AssemblyName>ModernUIDemo</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -546,13 +546,13 @@
     <Resource Include="Assets\background.snowflakes.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="ModernUIDemo.ico" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Genew.ModernUI\Genew.ModernUI.csproj">
       <Project>{bc0f28d7-a920-420b-b2e7-8062f2ffd1f2}</Project>
       <Name>Genew.ModernUI</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="ModernUIDemo.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

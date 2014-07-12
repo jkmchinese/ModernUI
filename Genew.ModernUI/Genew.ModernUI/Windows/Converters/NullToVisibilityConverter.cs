@@ -6,7 +6,7 @@ using System.Windows.Data;
 using System.Globalization;
 using System.Windows;
 
-namespace Genew.ModernUI.Windows.Converters
+namespace ModernUI.Windows.Converters
 {
     /// <summary>
     /// Converts a null value to Visibility.Visible and any other value to Visibility.Collapsed

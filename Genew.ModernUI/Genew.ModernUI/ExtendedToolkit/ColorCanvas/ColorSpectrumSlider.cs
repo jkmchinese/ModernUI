@@ -13,9 +13,9 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Shapes;
-using Genew.ModernUI.ExtendedToolkit.Utilities;
+using ModernUI.ExtendedToolkit.Utilities;
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     [TemplatePart(Name = PART_SpectrumDisplay, Type = typeof(Rectangle))]
     public class ColorSpectrumSlider : Slider

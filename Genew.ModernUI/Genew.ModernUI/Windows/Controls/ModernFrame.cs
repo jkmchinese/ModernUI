@@ -1,5 +1,5 @@
-﻿using Genew.ModernUI.Windows.Media;
-using Genew.ModernUI.Windows.Navigation;
+﻿using ModernUI.Windows.Media;
+using ModernUI.Windows.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -11,7 +11,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 
-namespace Genew.ModernUI.Windows.Controls
+namespace ModernUI.Windows.Controls
 {
     /// <summary>
     /// A simple content frame implementation with navigation support.

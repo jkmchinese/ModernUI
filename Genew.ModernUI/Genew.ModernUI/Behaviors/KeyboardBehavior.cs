@@ -11,7 +11,7 @@ using System.Windows.Interactivity;
 using System.Windows;
 using System.Diagnostics;
 
-namespace Genew.ModernUI.Behaviors
+namespace ModernUI.Behaviors
 {
     /// <summary>
     /// 控件键盘行为，聚焦后弹出系统键盘

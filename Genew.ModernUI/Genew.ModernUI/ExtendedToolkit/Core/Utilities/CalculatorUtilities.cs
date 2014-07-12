@@ -13,7 +13,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 
-namespace Genew.ModernUI.ExtendedToolkit.Utilities
+namespace ModernUI.ExtendedToolkit.Utilities
 {
     /// <summary>
     /// Calculator Utilities

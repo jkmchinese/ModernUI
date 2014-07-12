@@ -1,4 +1,4 @@
-﻿using Genew.ModernUI.Presentation;
+﻿using ModernUI.Presentation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Genew.ModernUI.Windows.Controls
+namespace ModernUI.Windows.Controls
 {
     /// <summary>
     /// Represents a control that contains multiple pages that share the same space on screen.

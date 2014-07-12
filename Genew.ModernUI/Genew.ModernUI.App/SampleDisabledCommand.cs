@@ -1,11 +1,11 @@
-﻿using Genew.ModernUI.Presentation;
+﻿using ModernUI.Presentation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Genew.ModernUI.App
+namespace ModernUI.App
 {
     /// <summary>
     /// An ICommand implementation that cannot execute.

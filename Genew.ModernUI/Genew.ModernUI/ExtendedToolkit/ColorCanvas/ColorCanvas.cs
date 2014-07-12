@@ -12,10 +12,10 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
-using Genew.ModernUI.ExtendedToolkit.Primitives;
-using Genew.ModernUI.ExtendedToolkit.Utilities;
+using ModernUI.ExtendedToolkit.Primitives;
+using ModernUI.ExtendedToolkit.Utilities;
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     [TemplatePart(Name = PART_ColorShadingCanvas, Type = typeof(Canvas))]
     [TemplatePart(Name = PART_ColorShadeSelector, Type = typeof(Canvas))]

@@ -1,9 +1,9 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:controls="clr-namespace:Genew.ModernUI.Windows.Controls">
+                    xmlns:controls="clr-namespace:ModernUI.Windows.Controls">
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="/Genew.ModernUI;component/Assets/Calendar.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Assets/Calendar.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <Style TargetType="{x:Type DatePicker}">

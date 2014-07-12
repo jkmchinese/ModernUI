@@ -9,7 +9,7 @@
 
 using System.Windows;
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     public delegate void CancelRoutedEventHandler(object sender, CancelRoutedEventArgs e);
 

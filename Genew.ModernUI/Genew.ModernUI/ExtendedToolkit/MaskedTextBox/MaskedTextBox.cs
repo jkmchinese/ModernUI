@@ -21,9 +21,9 @@ using System.Windows.Automation;
 using System.Windows.Controls;
 using System.Windows.Documents;
 using System.Windows.Input;
-using Genew.ModernUI.ExtendedToolkit.Primitives;
+using ModernUI.ExtendedToolkit.Primitives;
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     /// <summary>
     /// 模板文本框

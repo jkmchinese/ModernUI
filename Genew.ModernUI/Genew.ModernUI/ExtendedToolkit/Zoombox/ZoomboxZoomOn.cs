@@ -7,7 +7,7 @@
 * 修改时间：             修改人：                修改内容：
 *******************************************************************/
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     public enum ZoomboxZoomOn
     {

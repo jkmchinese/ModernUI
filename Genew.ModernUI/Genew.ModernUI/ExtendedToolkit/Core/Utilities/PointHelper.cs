@@ -10,7 +10,7 @@
 using System;
 using System.Windows;
 
-namespace Genew.ModernUI.ExtendedToolkit.Utilities
+namespace ModernUI.ExtendedToolkit.Utilities
 {
     internal static class PointHelper
     {

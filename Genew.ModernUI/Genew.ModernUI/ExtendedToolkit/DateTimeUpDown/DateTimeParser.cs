@@ -12,7 +12,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     internal class DateTimeParser
     {

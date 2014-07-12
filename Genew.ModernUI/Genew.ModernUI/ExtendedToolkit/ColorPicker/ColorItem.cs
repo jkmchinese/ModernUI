@@ -9,7 +9,7 @@
 
 using System.Windows.Media;
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     public class ColorItem
     {

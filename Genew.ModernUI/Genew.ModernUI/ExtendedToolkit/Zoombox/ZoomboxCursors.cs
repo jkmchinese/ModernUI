@@ -11,9 +11,9 @@ using System.Reflection;
 using System.Security;
 using System.Security.Permissions;
 using System.Windows.Input;
-using Genew.ModernUI.ExtendedToolkit.Utilities;
+using ModernUI.ExtendedToolkit.Utilities;
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     public class ZoomboxCursors
     {

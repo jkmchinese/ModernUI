@@ -1,4 +1,4 @@
-﻿using Genew.ModernUI.Presentation;
+﻿using ModernUI.Presentation;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -16,7 +16,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Genew.ModernUI.App.Content
+namespace ModernUI.App.Content
 {
     /// <summary>
     /// Interaction logic for ControlsModernMenu.xaml

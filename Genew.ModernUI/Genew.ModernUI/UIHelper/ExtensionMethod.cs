@@ -14,7 +14,7 @@ using System.Windows;
 using System.Windows.Controls.Primitives;
 using System.Windows.Media;
 
-namespace Genew.ModernUI.UIHelper
+namespace ModernUI.UIHelper
 {
     /// <summary>
     /// UI扩展方法

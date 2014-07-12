@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Genew.ModernUI.Presentation
+namespace ModernUI.Presentation
 {
     /// <summary>
     /// The base implementation of the INotifyPropertyChanged contract.

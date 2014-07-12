@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Genew.ModernUI.App.Pages
+namespace ModernUI.App.Pages
 {
     /// <summary>
     /// Interaction logic for Settings.xaml

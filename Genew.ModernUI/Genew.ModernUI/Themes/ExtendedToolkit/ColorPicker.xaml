@@ -1,11 +1,11 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:converters="clr-namespace:Genew.ModernUI.ExtendedToolkit.Converters"
-                    xmlns:extendedToolkit="clr-namespace:Genew.ModernUI.ExtendedToolkit">
+                    xmlns:converters="clr-namespace:ModernUI.ExtendedToolkit.Converters"
+                    xmlns:extendedToolkit="clr-namespace:ModernUI.ExtendedToolkit">
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/Common/ColorPickerToggleButton.xaml" />
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/Common/TransparentBrush.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/ExtendedToolkit/Common/ColorPickerToggleButton.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/ExtendedToolkit/Common/TransparentBrush.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <!-- =============================================================================== -->

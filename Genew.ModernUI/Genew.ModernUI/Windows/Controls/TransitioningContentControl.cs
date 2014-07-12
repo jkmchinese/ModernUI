@@ -12,9 +12,9 @@ using System.Windows.Media.Animation;
 using System.Windows.Controls;
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
-using Genew.ModernUI.Windows.Media;
+using ModernUI.Windows.Media;
 
-namespace Genew.ModernUI.Windows.Controls
+namespace ModernUI.Windows.Controls
 {
     /// <summary>
     /// Represents a control with a single piece of content and when that content 

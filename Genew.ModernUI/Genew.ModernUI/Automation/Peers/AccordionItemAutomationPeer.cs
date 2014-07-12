@@ -11,9 +11,9 @@ using System;
 using System.Windows.Automation;
 using System.Windows.Automation.Peers;
 using System.Windows.Automation.Provider;
-using Genew.ModernUI.ExtendedToolkit;
+using ModernUI.ExtendedToolkit;
 
-namespace Genew.ModernUI.Automation.Peers
+namespace ModernUI.Automation.Peers
 {
     /// <summary>
     ///     Exposes AccordionItem types to UI Automation.

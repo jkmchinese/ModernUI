@@ -9,7 +9,7 @@
 
 using System.Windows;
 
-namespace Genew.ModernUI.Behaviors
+namespace ModernUI.Behaviors
 {
     /// <summary>
     /// 修复系统的DataTrigger无法在初次加载时进行状态计算的bug

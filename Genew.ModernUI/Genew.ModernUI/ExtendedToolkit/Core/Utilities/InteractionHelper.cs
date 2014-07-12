@@ -13,9 +13,9 @@ using System.Diagnostics.CodeAnalysis;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using Genew.ModernUI.ExtendedToolkit.Interface;
+using ModernUI.ExtendedToolkit.Interface;
 
-namespace Genew.ModernUI.ExtendedToolkit.Utilities
+namespace ModernUI.ExtendedToolkit.Utilities
 {
     /// <summary>
     ///     The InteractionHelper provides controls with support for all of the

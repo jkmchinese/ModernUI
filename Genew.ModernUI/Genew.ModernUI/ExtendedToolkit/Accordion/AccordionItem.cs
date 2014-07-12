@@ -17,11 +17,11 @@ using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Input;
 using System.Windows.Media;
-using Genew.ModernUI.Automation.Peers;
-using Genew.ModernUI.ExtendedToolkit.Interface;
-using Genew.ModernUI.ExtendedToolkit.Utilities;
+using ModernUI.Automation.Peers;
+using ModernUI.ExtendedToolkit.Interface;
+using ModernUI.ExtendedToolkit.Utilities;
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     /// <summary>
     ///     Represents a control that displays a header and has a collapsible

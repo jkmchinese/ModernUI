@@ -1,4 +1,4 @@
-﻿using Genew.ModernUI.Presentation;
+﻿using ModernUI.Presentation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 
-namespace Genew.ModernUI.Windows.Controls
+namespace ModernUI.Windows.Controls
 {
     /// <summary>
     /// Represents a Modern UI styled dialog window.
@@ -94,7 +94,7 @@ namespace Genew.ModernUI.Windows.Controls
             {
                 if (this.m_okButton == null)
                 {
-                    this.m_okButton = CreateCloseDialogButton(Genew.ModernUI.Properties.Resources.Ok, true, false, MessageBoxResult.OK);
+                    this.m_okButton = CreateCloseDialogButton(LWLCX.ModernUI.Properties.Resources.Ok, true, false, MessageBoxResult.OK);
                 }
                 return this.m_okButton;
             }
@@ -109,7 +109,7 @@ namespace Genew.ModernUI.Windows.Controls
             {
                 if (this.m_cancelButton == null)
                 {
-                    this.m_cancelButton = CreateCloseDialogButton(Genew.ModernUI.Properties.Resources.Cancel, false, true, MessageBoxResult.Cancel);
+                    this.m_cancelButton = CreateCloseDialogButton(LWLCX.ModernUI.Properties.Resources.Cancel, false, true, MessageBoxResult.Cancel);
                 }
                 return this.m_cancelButton;
             }
@@ -124,7 +124,7 @@ namespace Genew.ModernUI.Windows.Controls
             {
                 if (this.m_yesButton == null)
                 {
-                    this.m_yesButton = CreateCloseDialogButton(Genew.ModernUI.Properties.Resources.Yes, true, false, MessageBoxResult.Yes);
+                    this.m_yesButton = CreateCloseDialogButton(LWLCX.ModernUI.Properties.Resources.Yes, true, false, MessageBoxResult.Yes);
                 }
                 return this.m_yesButton;
             }
@@ -139,7 +139,7 @@ namespace Genew.ModernUI.Windows.Controls
             {
                 if (this.m_noButton == null)
                 {
-                    this.m_noButton = CreateCloseDialogButton(Genew.ModernUI.Properties.Resources.No, false, true, MessageBoxResult.No);
+                    this.m_noButton = CreateCloseDialogButton(LWLCX.ModernUI.Properties.Resources.No, false, true, MessageBoxResult.No);
                 }
                 return this.m_noButton;
             }
@@ -154,7 +154,7 @@ namespace Genew.ModernUI.Windows.Controls
             {
                 if (this.m_closeButton == null)
                 {
-                    this.m_closeButton = CreateCloseDialogButton(Genew.ModernUI.Properties.Resources.Close, true, false, MessageBoxResult.None);
+                    this.m_closeButton = CreateCloseDialogButton(LWLCX.ModernUI.Properties.Resources.Close, true, false, MessageBoxResult.None);
                 }
                 return this.m_closeButton;
             }

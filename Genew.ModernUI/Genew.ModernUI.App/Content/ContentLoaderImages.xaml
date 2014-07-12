@@ -1,10 +1,10 @@
-﻿<UserControl x:Class="Genew.ModernUI.App.Content.ContentLoaderImages"
+﻿<UserControl x:Class="ModernUI.App.Content.ContentLoaderImages"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:mui="http://genew.com.cn/ModernUI"
-             xmlns:app="clr-namespace:Genew.ModernUI.App"
+             xmlns:mui="http://lwlcx.com.cn/ModernUI"
+             xmlns:app="clr-namespace:ModernUI.App"
              mc:Ignorable="d"
              d:DesignHeight="300"
              d:DesignWidth="300">

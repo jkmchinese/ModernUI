@@ -14,7 +14,7 @@ using System.Windows;
 using System.Windows.Controls.Samples;
 using System.Windows.Markup;
 
-namespace Genew.ModernUI.App.Common.SampleDatas
+namespace ModernUI.App.Common.SampleDatas
 {
     /// <summary>
     ///     Represents a department in an organization.

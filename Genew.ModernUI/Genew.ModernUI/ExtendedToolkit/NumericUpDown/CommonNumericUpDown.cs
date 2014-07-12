@@ -11,9 +11,9 @@ using System;
 using System.Globalization;
 using System.IO;
 using System.Windows;
-using Genew.ModernUI.ExtendedToolkit.Primitives;
+using ModernUI.ExtendedToolkit.Primitives;
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     public abstract class CommonNumericUpDown<T> : NumericUpDown<T?> where T : struct, IFormattable, IComparable<T>
     {

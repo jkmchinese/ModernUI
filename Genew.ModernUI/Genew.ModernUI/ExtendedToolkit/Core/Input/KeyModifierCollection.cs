@@ -13,7 +13,7 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Windows.Input;
 
-namespace Genew.ModernUI.ExtendedToolkit.Input
+namespace ModernUI.ExtendedToolkit.Input
 {
     [TypeConverter(typeof(KeyModifierCollectionConverter))]
     public class KeyModifierCollection : Collection<KeyModifier>

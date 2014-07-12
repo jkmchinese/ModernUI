@@ -2,7 +2,7 @@
 using System.Text;
 using System.Xml;
 
-namespace Genew.ModernUI.Windows.Controls.BBCode
+namespace ModernUI.Windows.Controls.BBCode
 {
     /// <summary>
     /// Provides basic parse functionality.

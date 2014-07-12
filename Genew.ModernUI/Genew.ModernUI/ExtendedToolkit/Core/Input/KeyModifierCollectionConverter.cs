@@ -14,7 +14,7 @@ using System.Globalization;
 using System.Reflection;
 using System.Security;
 
-namespace Genew.ModernUI.ExtendedToolkit.Input
+namespace ModernUI.ExtendedToolkit.Input
 {
     public sealed class KeyModifierCollectionConverter : TypeConverter
     {

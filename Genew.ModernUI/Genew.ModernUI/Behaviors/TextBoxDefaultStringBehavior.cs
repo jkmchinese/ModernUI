@@ -14,7 +14,7 @@ using System.Windows.Media;
 using System.Windows.Data;
 using System.ComponentModel;
 
-namespace Genew.ModernUI.Behaviors
+namespace ModernUI.Behaviors
 {
     /// <summary>
     /// 呈现文本框默认文本行为

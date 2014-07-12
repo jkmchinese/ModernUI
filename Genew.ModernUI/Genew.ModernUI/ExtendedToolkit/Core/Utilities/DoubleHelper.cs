@@ -11,7 +11,7 @@ using System;
 using System.Runtime.InteropServices;
 using System.Windows;
 
-namespace Genew.ModernUI.ExtendedToolkit.Utilities
+namespace ModernUI.ExtendedToolkit.Utilities
 {
     internal static class DoubleHelper
     {

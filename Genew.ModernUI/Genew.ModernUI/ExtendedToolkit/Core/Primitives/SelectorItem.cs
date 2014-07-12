@@ -10,7 +10,7 @@
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Genew.ModernUI.ExtendedToolkit.Primitives
+namespace ModernUI.ExtendedToolkit.Primitives
 {
     public class SelectorItem : ContentControl
     {

@@ -9,7 +9,7 @@
 
 using System.Windows;
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     /// <summary>
     ///     Provides data for the Spinner.Spin event.

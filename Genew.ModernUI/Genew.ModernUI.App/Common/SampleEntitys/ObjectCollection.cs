@@ -11,7 +11,7 @@ using System;
 using System.Collections;
 using System.Collections.ObjectModel;
 
-namespace Genew.ModernUI.App.Common.SampleDatas
+namespace ModernUI.App.Common.SampleDatas
 {
     public class ObjectCollection : Collection<Object>
     {

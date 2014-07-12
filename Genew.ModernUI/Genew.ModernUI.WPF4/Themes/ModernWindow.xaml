@@ -1,12 +1,12 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:controls="clr-namespace:Genew.ModernUI.Windows.Controls"
-                    xmlns:properties="clr-namespace:Genew.ModernUI.Properties"
+                    xmlns:controls="clr-namespace:ModernUI.Windows.Controls"
+                    xmlns:properties="clr-namespace:LWLCX.ModernUI.Properties"
                     xmlns:shell="http://schemas.microsoft.com/winfx/2006/xaml/presentation/shell">
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="/Genew.ModernUI;component/Assets/Button.xaml" />
-        <ResourceDictionary Source="/Genew.ModernUI;component/Assets/Converters.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Assets/Button.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Assets/Converters.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <Style TargetType="controls:ModernWindow">

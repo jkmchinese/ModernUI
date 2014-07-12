@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Data;
 
-namespace Genew.ModernUI.Windows.Converters
+namespace ModernUI.Windows.Converters
 {
     /// <summary>
     /// Converts string values to upper case.

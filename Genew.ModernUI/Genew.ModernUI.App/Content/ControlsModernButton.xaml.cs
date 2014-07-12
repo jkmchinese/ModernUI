@@ -1,4 +1,4 @@
-﻿using Genew.ModernUI.Windows.Controls;
+﻿using ModernUI.Windows.Controls;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +15,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Xml.Linq;
 
-namespace Genew.ModernUI.App.Content
+namespace ModernUI.App.Content
 {
     /// <summary>
     /// Interaction logic for ControlsModernButton.xaml
@@ -29,7 +29,7 @@ namespace Genew.ModernUI.App.Content
             // find all embedded XAML icon files
             var assembly = GetType().Assembly;
             var iconResourceNames = from name in assembly.GetManifestResourceNames()
-                                    where name.StartsWith("Genew.ModernUI.App.Assets.appbar.")
+                                    where name.StartsWith("ModernUI.App.Assets.appbar.")
                                     select name;
 
 

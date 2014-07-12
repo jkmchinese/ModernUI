@@ -1,5 +1,5 @@
-﻿using Genew.ModernUI.Windows.Controls;
-using Genew.ModernUI.Windows.Media;
+﻿using ModernUI.Windows.Controls;
+using ModernUI.Windows.Media;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Genew.ModernUI.Windows.Navigation
+namespace ModernUI.Windows.Navigation
 {
     /// <summary>
     /// Provides helper function for navigation.

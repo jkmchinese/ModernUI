@@ -12,9 +12,9 @@ using System.Diagnostics.CodeAnalysis;
 using System.Windows.Automation.Peers;
 using System.Windows.Automation.Provider;
 using System.Windows.Controls;
-using Genew.ModernUI.ExtendedToolkit;
+using ModernUI.ExtendedToolkit;
 
-namespace Genew.ModernUI.Automation.Peers
+namespace ModernUI.Automation.Peers
 {
     /// <summary>
     ///     Exposes Accordion types to UI Automation.

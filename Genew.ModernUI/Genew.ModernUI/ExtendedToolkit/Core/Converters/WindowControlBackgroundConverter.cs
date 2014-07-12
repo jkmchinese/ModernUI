@@ -12,7 +12,7 @@ using System.Globalization;
 using System.Windows.Data;
 using System.Windows.Media;
 
-namespace Genew.ModernUI.ExtendedToolkit.Converters
+namespace ModernUI.ExtendedToolkit.Converters
 {
     public class WindowControlBackgroundConverter : IMultiValueConverter
     {

@@ -11,7 +11,7 @@ using System.IO;
 using System.Reflection;
 using System.Resources;
 
-namespace Genew.ModernUI.ExtendedToolkit.Utilities
+namespace ModernUI.ExtendedToolkit.Utilities
 {
     internal class ResourceHelper
     {

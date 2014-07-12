@@ -14,7 +14,7 @@ using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Genew.ModernUI.Behaviors
+namespace ModernUI.Behaviors
 {
     /// <summary>
     /// 按钮点击行为(暂时不知道有啥用)

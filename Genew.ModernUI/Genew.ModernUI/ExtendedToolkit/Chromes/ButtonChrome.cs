@@ -11,7 +11,7 @@ using System;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     public class ButtonChrome : ContentControl
     {

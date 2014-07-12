@@ -10,7 +10,7 @@
 using System;
 using System.Windows.Data;
 
-namespace Genew.ModernUI.App.Converters
+namespace ModernUI.App.Converters
 {
     public class IntegerToTimespanConverter : IValueConverter
     {

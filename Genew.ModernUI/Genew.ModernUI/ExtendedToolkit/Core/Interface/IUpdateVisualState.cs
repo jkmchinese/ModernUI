@@ -9,7 +9,7 @@
 
 using System.Diagnostics.CodeAnalysis;
 
-namespace Genew.ModernUI.ExtendedToolkit.Interface
+namespace ModernUI.ExtendedToolkit.Interface
 {
     /// <summary>
     /// The IUpdateVisualState interface is used to provide the

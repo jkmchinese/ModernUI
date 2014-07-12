@@ -9,7 +9,7 @@
 
 using System;
 
-namespace Genew.ModernUI.ExtendedToolkit.Input
+namespace ModernUI.ExtendedToolkit.Input
 {
     public delegate void InputValidationErrorEventHandler(object sender, InputValidationErrorEventArgs e);
 

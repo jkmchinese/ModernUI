@@ -9,7 +9,7 @@
 
 using System.Windows.Input;
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     /// <summary>
     /// Calculator Commands

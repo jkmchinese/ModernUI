@@ -1,12 +1,12 @@
-﻿using Genew.ModernUI.Windows.Controls.BBCode;
-using Genew.ModernUI.Windows.Navigation;
+﻿using ModernUI.Windows.Controls.BBCode;
+using ModernUI.Windows.Navigation;
 using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Documents;
 using System.Windows.Navigation;
 
-namespace Genew.ModernUI.Windows.Controls
+namespace ModernUI.Windows.Controls
 {
     /// <summary>
     /// A lighweight control for displaying small amounts of rich formatted BBCode content.
@@ -106,7 +106,7 @@ namespace Genew.ModernUI.Windows.Controls
             catch (Exception error)
             {
                 // display navigation failures
-                ModernDialog.ShowMessage(error.Message, Genew.ModernUI.Properties.Resources.NavigationFailed, MessageBoxButton.OK);
+                ModernDialog.ShowMessage(error.Message, LWLCX.ModernUI.Properties.Resources.NavigationFailed, MessageBoxButton.OK);
             }
         }
 

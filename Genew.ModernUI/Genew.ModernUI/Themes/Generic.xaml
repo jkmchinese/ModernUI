@@ -1,44 +1,44 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:controls="clr-namespace:Genew.ModernUI.Windows.Controls"
+                    xmlns:controls="clr-namespace:ModernUI.Windows.Controls"
                     xmlns:shell="http://schemas.microsoft.com/winfx/2006/xaml/presentation/shell">
 
     <ResourceDictionary.MergedDictionaries>
         <!--ModernUI-->
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/BBCodeBlock.xaml" />
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ModernButton.xaml" />
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ModernDialog.xaml" />
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ModernFrame.xaml" />
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ModernMenu.xaml" />
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ModernTab.xaml" />
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ModernWindow.xaml" />
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/TransitioningContentControl.xaml" />
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ModernProgressRing.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/BBCodeBlock.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/ModernButton.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/ModernDialog.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/ModernFrame.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/ModernMenu.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/ModernTab.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/ModernWindow.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/TransitioningContentControl.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/ModernProgressRing.xaml" />
 
         <!--ExtendedToolkit-->
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/Common/SelectorItem.xaml" />
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/ButtonChrome.xaml" />
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/BusyIndicator.xaml" />
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/ButtonSpinner.xaml" />
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/DateTimePicker.xaml" />
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/DateTimeUpDown.xaml" />
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/NumericUpDown.xaml" />
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/TimePicker.xaml" />
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/WatermarkTextBox.xaml" />
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/ColorCanvas.xaml" />
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/ColorPicker.xaml" />
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/DropDownButton.xaml" />
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/SplitButton.xaml" />
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/AutoSelectTextBox.xaml" />
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/MaskedTextBox.xaml" />
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/MultiLineTextEditor.xaml" />
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/CheckListBox.xaml" />
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/CheckComboBox.xaml" />
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/Calculator.xaml" />
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/Wizard.xaml" />
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/CalculatorUpDown.xaml" />
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/AutoCompleteBox.xaml" />
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/Zoombox.xaml" />
-        <ResourceDictionary Source="/Genew.ModernUI;component/Themes/ExtendedToolkit/Accrodion.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/ExtendedToolkit/Common/SelectorItem.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/ExtendedToolkit/ButtonChrome.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/ExtendedToolkit/BusyIndicator.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/ExtendedToolkit/ButtonSpinner.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/ExtendedToolkit/DateTimePicker.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/ExtendedToolkit/DateTimeUpDown.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/ExtendedToolkit/NumericUpDown.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/ExtendedToolkit/TimePicker.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/ExtendedToolkit/WatermarkTextBox.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/ExtendedToolkit/ColorCanvas.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/ExtendedToolkit/ColorPicker.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/ExtendedToolkit/DropDownButton.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/ExtendedToolkit/SplitButton.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/ExtendedToolkit/AutoSelectTextBox.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/ExtendedToolkit/MaskedTextBox.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/ExtendedToolkit/MultiLineTextEditor.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/ExtendedToolkit/CheckListBox.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/ExtendedToolkit/CheckComboBox.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/ExtendedToolkit/Calculator.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/ExtendedToolkit/Wizard.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/ExtendedToolkit/CalculatorUpDown.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/ExtendedToolkit/AutoCompleteBox.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/ExtendedToolkit/Zoombox.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Themes/ExtendedToolkit/Accrodion.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

@@ -13,10 +13,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Genew.ModernUI.App.Common.SampleDatas;
-using Genew.ModernUI.ExtendedToolkit;
+using ModernUI.App.Common.SampleDatas;
+using ModernUI.ExtendedToolkit;
 
-namespace Genew.ModernUI.App.ExtendedToolkitContent.AutoCompletion
+namespace ModernUI.App.ExtendedToolkitContent.AutoCompletion
 {
     /// <summary>
     /// Interaction logic for AutoCompleteLambda.xaml

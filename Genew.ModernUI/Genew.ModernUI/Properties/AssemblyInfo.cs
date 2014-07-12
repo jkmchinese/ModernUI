@@ -10,16 +10,16 @@ using System;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Genew.ModernUI")]
+[assembly: AssemblyTitle("ModernUI")]
 #if NET4
-[assembly: AssemblyDescription("Genew Modern UI for WPF 4")]
+[assembly: AssemblyDescription("ModernUI4")]
 #else
-[assembly: AssemblyDescription("Genew Modern UI for WPF 4.5")]
+[assembly: AssemblyDescription("ModernUI4.5")]
 #endif
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Genew")]
-[assembly: AssemblyProduct("Genew.ModernUI")]
-[assembly: AssemblyCopyright("Copyright © Genew 2013")]
+//[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ModernUI")]
+//[assembly: AssemblyCopyright("Copyright © 2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -47,14 +47,14 @@ using System;
     // app, or any theme specific resource dictionaries)
 )]
 
-[assembly: XmlnsDefinition("http://genew.com.cn/ModernUI", "Genew.ModernUI.Presentation")]
-[assembly: XmlnsDefinition("http://genew.com.cn/ModernUI", "Genew.ModernUI.Windows")]
-[assembly: XmlnsDefinition("http://genew.com.cn/ModernUI", "Genew.ModernUI.Windows.Controls")]
-[assembly: XmlnsDefinition("http://genew.com.cn/ModernUI", "Genew.ModernUI.ExtendedToolkit")]
-[assembly: XmlnsDefinition("http://genew.com.cn/ModernUI", "Genew.ModernUI.Windows.Converters")]
-[assembly: XmlnsDefinition("http://genew.com.cn/ModernUI", "Genew.ModernUI.Windows.Navigation")]
-[assembly: XmlnsDefinition("http://genew.com.cn/ModernUI", "Genew.ModernUI.Behaviors")]
-[assembly: XmlnsPrefix("http://genew.com.cn/ModernUI", "mui")]
+[assembly: XmlnsDefinition("http://lwlcx.com.cn/ModernUI", "ModernUI.Presentation")]
+[assembly: XmlnsDefinition("http://lwlcx.com.cn/ModernUI", "ModernUI.Windows")]
+[assembly: XmlnsDefinition("http://lwlcx.com.cn/ModernUI", "ModernUI.Windows.Controls")]
+[assembly: XmlnsDefinition("http://lwlcx.com.cn/ModernUI", "ModernUI.ExtendedToolkit")]
+[assembly: XmlnsDefinition("http://lwlcx.com.cn/ModernUI", "ModernUI.Windows.Converters")]
+[assembly: XmlnsDefinition("http://lwlcx.com.cn/ModernUI", "ModernUI.Windows.Navigation")]
+[assembly: XmlnsDefinition("http://lwlcx.com.cn/ModernUI", "ModernUI.Behaviors")]
+[assembly: XmlnsPrefix("http://lwlcx.com.cn/ModernUI", "mui")]
 
 // Version information for an assembly consists of the following four values:
 //

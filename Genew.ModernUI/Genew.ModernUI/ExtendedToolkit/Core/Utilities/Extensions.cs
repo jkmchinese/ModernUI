@@ -10,7 +10,7 @@
 using System;
 using System.Windows.Media;
 
-namespace Genew.ModernUI.ExtendedToolkit.Utilities
+namespace ModernUI.ExtendedToolkit.Utilities
 {
     /// <summary>
     ///     This set of internal extension methods provide general solutions and

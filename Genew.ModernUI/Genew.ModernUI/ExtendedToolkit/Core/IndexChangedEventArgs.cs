@@ -10,7 +10,7 @@
 using System;
 using System.Windows;
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     public class IndexChangedEventArgs : PropertyChangedEventArgs<int>
     {

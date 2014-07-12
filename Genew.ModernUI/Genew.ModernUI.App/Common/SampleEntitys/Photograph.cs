@@ -9,7 +9,7 @@
 
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
-using Genew.ModernUI.App.Common;
+using ModernUI.App.Common;
 
 namespace System.Windows.Controls.Samples
 {

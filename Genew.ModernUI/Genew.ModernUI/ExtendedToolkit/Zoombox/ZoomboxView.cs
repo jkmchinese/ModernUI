@@ -10,9 +10,9 @@
 using System;
 using System.ComponentModel;
 using System.Windows;
-using Genew.ModernUI.ExtendedToolkit.Utilities;
+using ModernUI.ExtendedToolkit.Utilities;
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     [TypeConverter(typeof(ZoomboxViewConverter))]
     public class ZoomboxView

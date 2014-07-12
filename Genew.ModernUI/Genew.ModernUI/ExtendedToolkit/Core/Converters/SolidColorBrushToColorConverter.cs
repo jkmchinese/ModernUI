@@ -11,7 +11,7 @@ using System;
 using System.Windows.Data;
 using System.Windows.Media;
 
-namespace Genew.ModernUI.ExtendedToolkit.Converters
+namespace ModernUI.ExtendedToolkit.Converters
 {
     public class SolidColorBrushToColorConverter : IValueConverter
     {

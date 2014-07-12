@@ -7,7 +7,7 @@
 * 修改时间：             修改人：                修改内容：
 *******************************************************************/
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     /// <summary>
     ///     Determines the order in which visual states are set.

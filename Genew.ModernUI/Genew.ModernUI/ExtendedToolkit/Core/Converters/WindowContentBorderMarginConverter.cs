@@ -12,7 +12,7 @@ using System.Globalization;
 using System.Windows;
 using System.Windows.Data;
 
-namespace Genew.ModernUI.ExtendedToolkit.Converters
+namespace ModernUI.ExtendedToolkit.Converters
 {
     /// <summary>
     ///     Sets the margin for the thumb grip, the top buttons, or for the content border in the WindowControl.

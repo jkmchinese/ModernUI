@@ -10,7 +10,7 @@
 using System.Windows;
 using System.Windows.Data;
 
-namespace Genew.ModernUI.ExtendedToolkit.Utilities
+namespace ModernUI.ExtendedToolkit.Utilities
 {
     /// <summary>
     ///     A framework element that permits a binding to be evaluated in a new data

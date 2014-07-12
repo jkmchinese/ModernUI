@@ -11,7 +11,7 @@ using System;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     /// <summary>
     ///     微调控件基类(Base class for controls that represents controls that can spin.)

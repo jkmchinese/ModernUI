@@ -1,12 +1,12 @@
-﻿using Genew.ModernUI.App.Content;
-using Genew.ModernUI.Windows;
+﻿using ModernUI.App.Content;
+using ModernUI.Windows;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Genew.ModernUI.App
+namespace ModernUI.App
 {
     /// <summary>
     /// Loads lorem ipsum content regardless the given uri.

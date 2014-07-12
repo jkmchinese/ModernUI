@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Windows;
 
-namespace Genew.ModernUI.UIHelper
+namespace ModernUI.UIHelper
 {
     /// <summary>
     /// Provides various common helper methods.

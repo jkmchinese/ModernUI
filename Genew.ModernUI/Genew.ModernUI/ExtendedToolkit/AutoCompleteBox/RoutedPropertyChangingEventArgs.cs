@@ -10,7 +10,7 @@
 using System;
 using System.Windows;
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     /// <summary>
     ///     Provides event data for various routed events that track property values

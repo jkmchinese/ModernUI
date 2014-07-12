@@ -8,9 +8,9 @@
 *******************************************************************/
 
 using System.Windows.Automation.Peers;
-using Genew.ModernUI.ExtendedToolkit;
+using ModernUI.ExtendedToolkit;
 
-namespace Genew.ModernUI.Automation.Peers
+namespace ModernUI.Automation.Peers
 {
     /// <summary>
     ///     Wraps an <see cref="T:System.Windows.Controls.AccordionItem" />.

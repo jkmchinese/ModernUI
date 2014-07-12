@@ -9,7 +9,7 @@
 
 using System;
 
-namespace Genew.ModernUI.ExtendedToolkit
+namespace ModernUI.ExtendedToolkit
 {
     internal class SByteUpDown : CommonNumericUpDown<sbyte>
     {

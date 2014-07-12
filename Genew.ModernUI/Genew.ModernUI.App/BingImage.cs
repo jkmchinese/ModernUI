@@ -12,7 +12,7 @@ using System.Windows.Media.Imaging;
 using System.Xml.Linq;
 using System.Xml.XPath;
 
-namespace Genew.ModernUI.App
+namespace ModernUI.App
 {
     /// <summary>
     /// Provides an attached property determining the current Bing image and assigning it to an image or imagebrush.
