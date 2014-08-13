@@ -14,7 +14,7 @@ namespace ModernUI.Windows.Controls
     /// Represents a Modern UI styled dialog window.
     /// </summary>
     public class ModernDialog
-        : Window
+        : DpiAwareWindow
     {
         /// <summary>
         /// Identifies the BackgroundContent dependency property.
@@ -33,7 +33,7 @@ namespace ModernUI.Windows.Controls
         private Button m_noButton;
         private Button m_closeButton;
 
-        private MessageBoxResult m_dialogResult = MessageBoxResult.None;
+        private MessageBoxResult m_messageBoxResult = MessageBoxResult.None;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ModernDialog"/> class.
@@ -48,7 +48,21 @@ namespace ModernUI.Windows.Controls
                 var result = o as MessageBoxResult?;
                 if (result.HasValue)
                 {
-                    this.m_dialogResult = result.Value;
+                    this.m_messageBoxResult = result.Value;
+
+                    // sets the Window.DialogResult as well
+                    if (result.Value == MessageBoxResult.OK || result.Value == MessageBoxResult.Yes)
+                    {
+                        this.DialogResult = true;
+                    }
+                    else if (result.Value == MessageBoxResult.Cancel || result.Value == MessageBoxResult.No)
+                    {
+                        this.DialogResult = false;
+                    }
+                    else
+                    {
+                        this.DialogResult = null;
+                    }
                 }
                 Close();
             });
@@ -179,13 +193,25 @@ namespace ModernUI.Windows.Controls
         }
 
         /// <summary>
+        /// Gets the message box result.
+        /// </summary>
+        /// <value>
+        /// The message box result.
+        /// </value>
+        public MessageBoxResult MessageBoxResult
+        {
+            get { return this.m_messageBoxResult; }
+        }
+
+        /// <summary>
         /// Displays a messagebox.
         /// </summary>
         /// <param name="text">The text.</param>
         /// <param name="title">The title.</param>
         /// <param name="button">The button.</param>
+        /// <param name="owner">The window owning the messagebox. The messagebox will be located at the center of the owner.</param>
         /// <returns></returns>
-        public static MessageBoxResult ShowMessage(string text, string title, MessageBoxButton button)
+        public static MessageBoxResult ShowMessage(string text, string title, MessageBoxButton button, Window owner = null)
         {
             var dlg = new ModernDialog
             {
@@ -196,10 +222,14 @@ namespace ModernUI.Windows.Controls
                 MaxHeight = 480,
                 MaxWidth = 640,
             };
+            if (owner != null)
+            {
+                dlg.Owner = owner;
+            }
 
             dlg.Buttons = GetButtons(dlg, button);
             dlg.ShowDialog();
-            return dlg.m_dialogResult;
+            return dlg.m_messageBoxResult;
         }
 
         private static IEnumerable<Button> GetButtons(ModernDialog owner, MessageBoxButton button)

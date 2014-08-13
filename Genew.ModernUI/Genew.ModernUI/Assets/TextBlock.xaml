@@ -69,8 +69,10 @@
            TargetType="TextBlock">
         <Setter Property="FontFamily"
                 Value="{DynamicResource DefaultFontFamily}" />
-        <Setter Property="FontSize"
-                Value="9" />
+        <Setter Property="TextWrapping"
+                Value="NoWrap" />
+        <Setter Property="TextTrimming"
+                Value="CharacterEllipsis" />
         <Setter Property="FontWeight"
                 Value="Bold" />
         <Setter Property="TextOptions.TextFormattingMode"

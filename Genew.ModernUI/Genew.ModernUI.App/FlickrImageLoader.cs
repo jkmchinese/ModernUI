@@ -35,9 +35,10 @@ namespace ModernUI.App
             }
 
             const int count = 50;       // limit the number of images to 50
-            var listUri = string.Format(CultureInfo.InvariantCulture, "http://api.flickr.com/services/rest/?method=flickr.interestingness.getList&api_key={0}&per_page={1}", apiKey, count);
+            var listUri = string.Format(CultureInfo.InvariantCulture, "https://api.flickr.com/services/rest/?method=flickr.interestingness.getList&api_key={0}&per_page={1}", apiKey, count);
             var client = new HttpClient();
             var result = await client.GetAsync(listUri);
+            result.EnsureSuccessStatusCode();
             using (var stream = await result.Content.ReadAsStreamAsync())
             {
                 var doc = XDocument.Load(stream);

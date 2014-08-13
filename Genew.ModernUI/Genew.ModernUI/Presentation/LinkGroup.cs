@@ -12,23 +12,26 @@ namespace ModernUI.Presentation
     public class LinkGroup
         : Displayable
     {
-        private string m_groupName;
+        private string m_groupKey;
         private Link m_selectedLink;
-        private readonly LinkCollection m_links = new LinkCollection();
+        private LinkCollection m_links = new LinkCollection();
 
         /// <summary>
-        /// Gets or sets the name of the group.
+        /// Gets or sets the key of the group.
         /// </summary>
-        /// <value>The name of the group.</value>
-        public string GroupName
+        /// <value>The key of the group.</value>
+        /// <remarks>
+        /// The group key is used to group link groups in a <see cref="ModernUI.Windows.Controls.ModernMenu"/>.
+        /// </remarks>
+        public string GroupKey
         {
-            get { return this.m_groupName; }
+            get { return this.m_groupKey; }
             set
             {
-                if (this.m_groupName != value)
+                if (this.m_groupKey != value)
                 {
-                    this.m_groupName = value;
-                    OnPropertyChanged("GroupName");
+                    this.m_groupKey = value;
+                    OnPropertyChanged("GroupKey");
                 }
             }
         }

@@ -14,6 +14,8 @@
     <mui:ModernWindow.TitleLinks>
         <mui:Link DisplayName="Settings"
                   Source="/Pages/Settings.xaml" />
+        <mui:Link DisplayName="Help"
+                  Source="http://mui.codeplex.com" />
     </mui:ModernWindow.TitleLinks>
 
     <mui:ModernWindow.MenuLinkGroups>
@@ -55,6 +57,8 @@
         </mui:LinkGroup>
         <mui:LinkGroup DisplayName="Advanced">
             <mui:LinkGroup.Links>
+                <mui:Link DisplayName="DPI awereness"
+                          Source="/Pages/DpiAwareness.xaml" />
                 <mui:Link DisplayName="Navigation"
                           Source="/Pages/Navigation.xaml" />
                 <mui:Link DisplayName="Content Loader"
@@ -62,7 +66,7 @@
             </mui:LinkGroup.Links>
         </mui:LinkGroup>
         <mui:LinkGroup DisplayName="Settings"
-                       GroupName="settings">
+                       GroupKey="settings">
             <mui:LinkGroup.Links>
                 <mui:Link DisplayName="Software"
                           Source="/Pages/Settings.xaml" />

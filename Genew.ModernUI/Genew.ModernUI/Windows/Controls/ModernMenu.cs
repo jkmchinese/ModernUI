@@ -44,7 +44,7 @@ namespace ModernUI.Windows.Controls
         /// </summary>
         public event EventHandler<SourceEventArgs> SelectedSourceChanged;
 
-        private Dictionary<string, ReadOnlyLinkGroupCollection> groupMap = new Dictionary<string, ReadOnlyLinkGroupCollection>();     // stores LinkGroupCollections by GroupName
+        private Dictionary<string, ReadOnlyLinkGroupCollection> groupMap = new Dictionary<string, ReadOnlyLinkGroupCollection>();     // stores LinkGroupCollections by GroupKey
         private bool m_isSelecting;
 
         /// <summary>
@@ -198,14 +198,14 @@ namespace ModernUI.Windows.Controls
         }
 
         /// <summary>
-        /// Gets a non-null name for given group.
+        /// Gets a non-null key for given group.
         /// </summary>
         /// <param name="group"></param>
         /// <returns></returns>
-        private static string GetGroupName(LinkGroup group)
+        private static string GetGroupKey(LinkGroup group)
         {
-            // use special key for GroupName <null>
-            return group.GroupName ?? "<null>";
+            // use special key for GroupKey <null>
+            return group.GroupKey ?? "<null>";
         }
 
         private void RebuildMenu(LinkGroupCollection groups)
@@ -213,17 +213,17 @@ namespace ModernUI.Windows.Controls
             this.groupMap.Clear();
             if (groups != null)
             {
-                // fill the group map based on group name
+                // fill the group map based on group key
                 foreach (var group in groups)
                 {
-                    var groupName = GetGroupName(group);
+                    var groupKey = GetGroupKey(group);
 
                     ReadOnlyLinkGroupCollection groupCollection;
-                    if (!this.groupMap.TryGetValue(groupName, out groupCollection))
+                    if (!this.groupMap.TryGetValue(groupKey, out groupCollection))
                     {
-                        // create a new collection for this group name
+                        // create a new collection for this group key
                         groupCollection = new ReadOnlyLinkGroupCollection(new LinkGroupCollection());
-                        this.groupMap.Add(groupName, groupCollection);
+                        this.groupMap.Add(groupKey, groupCollection);
                     }
 
                     // add the group
@@ -277,8 +277,8 @@ namespace ModernUI.Windows.Controls
                 selectedGroup.SelectedLink = selectedLink;
 
                 // find the collection this group belongs to
-                var groupName = GetGroupName(selectedGroup);
-                this.groupMap.TryGetValue(groupName, out groups);
+                var groupKey = GetGroupKey(selectedGroup);
+                this.groupMap.TryGetValue(groupKey, out groups);
             }
 
             this.m_isSelecting = true;

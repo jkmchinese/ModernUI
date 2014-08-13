@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Back" xml:space="preserve">
+    <value>返回</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>取消</value>
   </data>
@@ -134,6 +137,9 @@
   </data>
   <data name="Minimize" xml:space="preserve">
     <value>最小化</value>
+  </data>
+  <data name="NavigateLink" xml:space="preserve">
+    <value>Navigate link</value>
   </data>
   <data name="NavigationFailed" xml:space="preserve">
     <value>Navigation failed</value>
@@ -158,6 +164,9 @@
   </data>
   <data name="UnexpectedToken" xml:space="preserve">
     <value>Unexpected token</value>
+  </data>
+  <data name="UnknownOS" xml:space="preserve">
+    <value>Unknown operating system</value>
   </data>
   <data name="UnknownTokenType" xml:space="preserve">
     <value>Unknown token type</value>

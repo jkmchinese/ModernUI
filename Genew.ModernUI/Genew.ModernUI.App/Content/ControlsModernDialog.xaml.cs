@@ -29,10 +29,16 @@ namespace ModernUI.App.Content
 
         private void CommonDialog_Click(object sender, RoutedEventArgs e)
         {
-            new ModernDialog {
+            var dlg = new ModernDialog
+            {
                 Title = "Common dialog",
                 Content = new LoremIpsum()
-            }.ShowDialog();
+            };
+            dlg.Buttons = new Button[] { dlg.OkButton, dlg.CancelButton };
+            dlg.ShowDialog();
+
+            this.dialogResult.Text = dlg.DialogResult.HasValue ? dlg.DialogResult.ToString() : "<null>";
+            this.dialogMessageBoxResult.Text = dlg.MessageBoxResult.ToString();
         }
 
         private void MessageDialog_Click(object sender, RoutedEventArgs e)
@@ -45,7 +51,7 @@ namespace ModernUI.App.Content
 
             var result = ModernDialog.ShowMessage("This is a simple Modern UI styled message dialog. Do you like it?", "Message Dialog", btn);
 
-            this.runResult.Text = result.ToString();
+            this.msgboxResult.Text = result.ToString();
         }
     }
 }

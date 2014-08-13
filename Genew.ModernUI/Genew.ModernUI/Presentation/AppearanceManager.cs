@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media;
+using ModernUI.Windows.Navigation;
 
 namespace ModernUI.Presentation
 {
@@ -53,21 +54,10 @@ namespace ModernUI.Presentation
             LightThemeCommand = new RelayCommand(o => ThemeSource = LightThemeSource, o => !LightThemeSource.Equals(ThemeSource));
             SetThemeCommand = new RelayCommand(o =>
             {
-                if (o is Uri)
+                var uri = NavigationHelper.ToUri(o);
+                if (uri != null)
                 {
-                    ThemeSource = (Uri)o;
-                }
-                else
-                {
-                    var str = o as string;
-                    if (str != null)
-                    {
-                        Uri source;
-                        if (Uri.TryCreate(str, UriKind.RelativeOrAbsolute, out source))
-                        {
-                            ThemeSource = source;
-                        }
-                    }
+                    ThemeSource = uri;
                 }
             }, o => o is Uri || o is string);
             LargeFontSizeCommand = new RelayCommand(o => FontSize = FontSize.Large);

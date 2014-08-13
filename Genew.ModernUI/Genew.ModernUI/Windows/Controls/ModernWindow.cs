@@ -10,6 +10,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
+using ModernUI.Windows.Navigation;
 
 namespace ModernUI.Windows.Controls
 {
@@ -17,7 +18,7 @@ namespace ModernUI.Windows.Controls
     /// Represents a Modern UI styled window.
     /// </summary>
     public class ModernWindow
-        : Window
+        : DpiAwareWindow
     {
         /// <summary>
         /// Identifies the BackgroundContent dependency property.
@@ -47,6 +48,10 @@ namespace ModernUI.Windows.Controls
         /// Identifies the ContentLoader dependency property.
         /// </summary>
         public static readonly DependencyProperty ContentLoaderProperty = DependencyProperty.Register("ContentLoader", typeof(IContentLoader), typeof(ModernWindow), new PropertyMetadata(new DefaultContentLoader()));
+        /// <summary>
+        /// Identifies the LinkNavigator dependency property.
+        /// </summary>
+        public static DependencyProperty LinkNavigatorProperty = DependencyProperty.Register("LinkNavigator", typeof(ILinkNavigator), typeof(ModernWindow), new PropertyMetadata(new DefaultLinkNavigator()));
 
         private Storyboard m_backgroundAnimation;
 
@@ -73,6 +78,9 @@ namespace ModernUI.Windows.Controls
             this.CommandBindings.Add(new CommandBinding(SystemCommands.MinimizeWindowCommand, OnMinimizeWindow, OnCanMinimizeWindow));
             this.CommandBindings.Add(new CommandBinding(SystemCommands.RestoreWindowCommand, OnRestoreWindow, OnCanResizeWindow));
 #endif
+            // associate navigate link command with this instance
+            this.CommandBindings.Add(new CommandBinding(LinkCommands.NavigateLink, OnNavigateLink, OnCanNavigateLink));
+
             // listen for theme changes
             AppearanceManager.Current.PropertyChanged += OnAppearanceManagerPropertyChanged;
         }
@@ -115,6 +123,45 @@ namespace ModernUI.Windows.Controls
             if (e.PropertyName == "ThemeSource" && this.m_backgroundAnimation != null)
             {
                 this.m_backgroundAnimation.Begin();
+            }
+        }
+
+        private void OnCanNavigateLink(object sender, CanExecuteRoutedEventArgs e)
+        {
+            // true by default
+            e.CanExecute = true;
+
+            if (this.LinkNavigator != null && this.LinkNavigator.Commands != null)
+            {
+                // in case of command uri, check if ICommand.CanExecute is true
+                Uri uri;
+                string parameter;
+                string targetName;
+
+                // TODO: CanNavigate is invoked a lot, which means a lot of parsing. need improvements??
+                if (NavigationHelper.TryParseUriWithParameters(e.Parameter, out uri, out parameter, out targetName))
+                {
+                    ICommand command;
+                    if (this.LinkNavigator.Commands.TryGetValue(uri, out command))
+                    {
+                        e.CanExecute = command.CanExecute(parameter);
+                    }
+                }
+            }
+        }
+
+        private void OnNavigateLink(object sender, ExecutedRoutedEventArgs e)
+        {
+            if (this.LinkNavigator != null)
+            {
+                Uri uri;
+                string parameter;
+                string targetName;
+
+                if (NavigationHelper.TryParseUriWithParameters(e.Parameter, out uri, out parameter, out targetName))
+                {
+                    this.LinkNavigator.Navigate(uri, e.Source as FrameworkElement, parameter);
+                }
             }
         }
 
@@ -225,6 +272,16 @@ namespace ModernUI.Windows.Controls
         {
             get { return (IContentLoader)GetValue(ContentLoaderProperty); }
             set { SetValue(ContentLoaderProperty, value); }
+        }
+
+        /// <summary>
+        /// Gets or sets the link navigator.
+        /// </summary>
+        /// <value>The link navigator.</value>
+        public ILinkNavigator LinkNavigator
+        {
+            get { return (ILinkNavigator)GetValue(LinkNavigatorProperty); }
+            set { SetValue(LinkNavigatorProperty, value); }
         }
     }
 }

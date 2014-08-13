@@ -24,6 +24,10 @@ namespace ModernUI.Windows.Controls
         /// </summary>
         public static readonly DependencyProperty LayoutProperty = DependencyProperty.Register("Layout", typeof(TabLayout), typeof(ModernTab), new PropertyMetadata(TabLayout.Tab));
         /// <summary>
+        /// Identifies the ListWidth dependency property.
+        /// </summary>
+        public static readonly DependencyProperty ListWidthProperty = DependencyProperty.Register("ListWidth", typeof(GridLength), typeof(ModernTab), new PropertyMetadata(new GridLength(170)));
+        /// <summary>
         /// Identifies the Links dependency property.
         /// </summary>
         public static readonly DependencyProperty LinksProperty = DependencyProperty.Register("Links", typeof(LinkCollection), typeof(ModernTab), new PropertyMetadata(OnLinksChanged));
@@ -138,6 +142,18 @@ namespace ModernUI.Windows.Controls
         {
             get { return (LinkCollection)GetValue(LinksProperty); }
             set { SetValue(LinksProperty, value); }
+        }
+
+        /// <summary>
+        /// Gets or sets the width of the list when Layout is set to List.
+        /// </summary>
+        /// <value>
+        /// The width of the list.
+        /// </value>
+        public GridLength ListWidth
+        {
+            get { return (GridLength)GetValue(ListWidthProperty); }
+            set { SetValue(ListWidthProperty, value); }
         }
 
         /// <summary>

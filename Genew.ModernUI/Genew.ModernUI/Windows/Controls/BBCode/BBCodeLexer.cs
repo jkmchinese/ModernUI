@@ -126,7 +126,7 @@ namespace ModernUI.Windows.Controls.BBCode
             else
             {
                 Mark();
-                while (!IsInRange(WhitespaceChars) && LA(1) != ']')
+                while (!IsInRange(WhitespaceChars) && LA(1) != ']' && LA(1) != char.MaxValue)
                 {
                     Consume();
                 }

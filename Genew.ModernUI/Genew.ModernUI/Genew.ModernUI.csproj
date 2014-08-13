@@ -216,6 +216,7 @@
     <Compile Include="ExtendedToolkit\Zoombox\ZoomboxViewStackMode.cs" />
     <Compile Include="ExtendedToolkit\Zoombox\ZoomboxZoomOn.cs" />
     <Compile Include="Presentation\FixPopup.cs" />
+    <Compile Include="UIHelper\ProcessDpiAwareness.cs" />
     <Compile Include="UIHelper\ExtensionMethod.cs" />
     <Compile Include="UIHelper\ModernUIHelper.cs" />
     <Compile Include="Presentation\AppearanceManager.cs" />
@@ -242,6 +243,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Win32\MonitorDpiType.cs" />
+    <Compile Include="Win32\NativeMethods.cs" />
+    <Compile Include="Win32\OSVersionHelper.cs" />
+    <Compile Include="Win32\RECT.cs" />
     <Compile Include="Windows\CommandDictionary.cs" />
     <Compile Include="Windows\Controls\BBCodeBlock.cs" />
     <Compile Include="Windows\Controls\BBCode\BBCodeLexer.cs" />
@@ -255,6 +260,8 @@
     <Compile Include="Windows\Controls\DataGridCheckBoxColumn.cs" />
     <Compile Include="Windows\Controls\DataGridComboBoxColumn.cs" />
     <Compile Include="Windows\Controls\DataGridTextColumn.cs" />
+    <Compile Include="Windows\Controls\DpiAwareWindow.cs" />
+    <Compile Include="Windows\Controls\DpiInformation.cs" />
     <Compile Include="Windows\Controls\ModernButton.cs" />
     <Compile Include="Windows\Controls\ModernDialog.cs" />
     <Compile Include="Windows\Controls\ModernFrame.cs" />
@@ -279,6 +286,7 @@
     <Compile Include="Windows\Navigation\DefaultLinkNavigator.cs" />
     <Compile Include="Windows\Navigation\FragmentNavigationEventArgs.cs" />
     <Compile Include="Windows\Navigation\ILinkNavigator.cs" />
+    <Compile Include="Windows\Navigation\LinkCommands.cs" />
     <Compile Include="Windows\Navigation\NavigatingCancelEventArgs.cs" />
     <Compile Include="Windows\Navigation\NavigationBaseEventArgs.cs" />
     <Compile Include="Windows\Navigation\NavigationEventArgs.cs" />
