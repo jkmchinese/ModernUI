@@ -62,6 +62,15 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\Genew.ModernUI\Automation\Peers\AccordionAutomationPeer.cs">
+      <Link>Automation\Peers\AccordionAutomationPeer.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Automation\Peers\AccordionItemAutomationPeer.cs">
+      <Link>Automation\Peers\AccordionItemAutomationPeer.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\Automation\Peers\AccordionItemWrapperAutomationPeer.cs">
+      <Link>Automation\Peers\AccordionItemWrapperAutomationPeer.cs</Link>
+    </Compile>
     <Compile Include="..\Genew.ModernUI\Automation\Peers\AutoCompleteBoxAutomationPeer.cs">
       <Link>Automation\Peers\AutoCompleteBoxAutomationPeer.cs</Link>
     </Compile>
@@ -94,6 +103,27 @@
     </Compile>
     <Compile Include="..\Genew.ModernUI\Behaviors\TextSelectAllBehavior.cs">
       <Link>Behaviors\TextSelectAllBehavior.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Accordion\Accordion.cs">
+      <Link>ExtendedToolkit\Accordion\Accordion.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Accordion\AccordionAction.cs">
+      <Link>ExtendedToolkit\Accordion\AccordionAction.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Accordion\AccordionButton.cs">
+      <Link>ExtendedToolkit\Accordion\AccordionButton.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Accordion\AccordionItem.cs">
+      <Link>ExtendedToolkit\Accordion\AccordionItem.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Accordion\AccordionSelectionMode.cs">
+      <Link>ExtendedToolkit\Accordion\AccordionSelectionMode.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Accordion\ExpandableContentControl.cs">
+      <Link>ExtendedToolkit\Accordion\ExpandableContentControl.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Accordion\SelectionSequence.cs">
+      <Link>ExtendedToolkit\Accordion\SelectionSequence.cs</Link>
     </Compile>
     <Compile Include="..\Genew.ModernUI\ExtendedToolkit\AutoCompleteBox\AutoCompleteBox.cs">
       <Link>ExtendedToolkit\AutoCompleteBox\AutoCompleteBox.cs</Link>
@@ -331,6 +361,9 @@
     </Compile>
     <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Utilities\InteractionHelper.cs">
       <Link>ExtendedToolkit\Core\Utilities\InteractionHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Utilities\ItemsControlHelper.cs">
+      <Link>ExtendedToolkit\Core\Utilities\ItemsControlHelper.cs</Link>
     </Compile>
     <Compile Include="..\Genew.ModernUI\ExtendedToolkit\Core\Utilities\KeyboardUtilities.cs">
       <Link>ExtendedToolkit\Core\Utilities\KeyboardUtilities.cs</Link>
@@ -850,6 +883,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="..\Genew.ModernUI\Assets\TabControl.xaml">
+      <Link>Assets\TabControl.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="..\Genew.ModernUI\Assets\TextBlock.xaml">
       <Link>Assets\TextBlock.xaml</Link>
       <Generator>MSBuild:Compile</Generator>
@@ -872,6 +910,16 @@
     </Page>
     <Page Include="..\Genew.ModernUI\Themes\BBCodeBlock.xaml">
       <Link>Themes\BBCodeBlock.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\ExtendedToolkit\Accrodion.xaml">
+      <Link>Themes\ExtendedToolkit\Accrodion.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\ExtendedToolkit\AutoCompleteBox.xaml">
+      <Link>Themes\ExtendedToolkit\AutoCompleteBox.xaml</Link>
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -992,6 +1040,11 @@
     </Page>
     <Page Include="..\Genew.ModernUI\Themes\ExtendedToolkit\Wizard.xaml">
       <Link>Themes\ExtendedToolkit\Wizard.xaml</Link>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="..\Genew.ModernUI\Themes\ExtendedToolkit\Zoombox.xaml">
+      <Link>Themes\ExtendedToolkit\Zoombox.xaml</Link>
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

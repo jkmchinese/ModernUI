@@ -1138,7 +1138,7 @@ SelectionChangedEvent,
         /// <summary>
         ///     Gets or sets the Text template part.
         /// </summary>
-        internal TextBox TextBox
+        public TextBox TextBox
         {
             get { return _text; }
             set

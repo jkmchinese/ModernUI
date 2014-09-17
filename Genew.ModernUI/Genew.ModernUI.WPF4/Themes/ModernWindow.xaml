@@ -6,7 +6,7 @@
                     xmlns:navigation="clr-namespace:ModernUI.Windows.Navigation">
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="/LWLCX.ModernUI.ModernUI;component/Assets/Button.xaml" />
+        <ResourceDictionary Source="/LWLCX.ModernUI;component/Assets/Button.xaml" />
         <ResourceDictionary Source="/LWLCX.ModernUI;component/Assets/Converters.xaml" />
         <ResourceDictionary Source="/LWLCX.ModernUI;component/Assets/TextBlock.xaml" />
     </ResourceDictionary.MergedDictionaries>

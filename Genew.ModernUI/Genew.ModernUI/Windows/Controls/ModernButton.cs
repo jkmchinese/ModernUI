@@ -35,6 +35,10 @@ namespace ModernUI.Windows.Controls
         /// Identifies the IconWidth property.
         /// </summary>
         public static readonly DependencyProperty IconWidthProperty = DependencyProperty.Register("IconWidth", typeof(double), typeof(ModernButton), new PropertyMetadata(12D));
+        /// <summary>
+        /// Identifies the Layout dependency property.
+        /// </summary>
+        public static readonly DependencyProperty LayoutProperty = DependencyProperty.Register("Layout", typeof(ModernButtonLayout), typeof(ModernButton), new PropertyMetadata(ModernButtonLayout.Horizontal));
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ModernButton"/> class.
@@ -97,5 +101,29 @@ namespace ModernUI.Windows.Controls
             get { return (double)GetValue(IconWidthProperty); }
             set { SetValue(IconWidthProperty, value); }
         }
+
+        /// <summary>
+        /// Gets or sets a value indicating how the tab should be rendered.
+        /// </summary>
+        public ModernButtonLayout Layout
+        {
+            get { return (ModernButtonLayout)GetValue(LayoutProperty); }
+            set { SetValue(LayoutProperty, value); }
+        }
+    }
+
+    /// <summary>
+    /// Define the available ModernButton layouts.
+    /// </summary>
+    public enum ModernButtonLayout
+    {
+        /// <summary>
+        /// Horizontal layout.
+        /// </summary>
+        Horizontal,
+        /// <summary>
+        /// Vertical layout.
+        /// </summary>
+        Vertical
     }
 }

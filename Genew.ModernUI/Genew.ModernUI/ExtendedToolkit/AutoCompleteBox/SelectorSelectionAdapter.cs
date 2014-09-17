@@ -221,6 +221,13 @@ namespace ModernUI.ExtendedToolkit
                 SelectorControl.SelectedIndex = SelectorControl.SelectedIndex + 1 >= SelectorControl.Items.Count
                     ? -1
                     : SelectorControl.SelectedIndex + 1;
+                //Created by chenzhifen at 2014-09-09 11:06:22
+                //解决没有滚动到选中项的问题
+                var item = SelectorControl.ItemContainerGenerator.ContainerFromItem(SelectorControl.SelectedItem) as ListBoxItem;
+                if (item != null)
+                {
+                    item.BringIntoView();
+                }
             }
         }
 
@@ -243,6 +250,13 @@ namespace ModernUI.ExtendedToolkit
                 else if (index == -1)
                 {
                     SelectorControl.SelectedIndex = SelectorControl.Items.Count - 1;
+                }
+                //Created by chenzhifen at 2014-09-09 11:06:22
+                //解决没有滚动到选中项的问题
+                var item = SelectorControl.ItemContainerGenerator.ContainerFromItem(SelectorControl.SelectedItem) as ListBoxItem;
+                if (item != null)
+                {
+                    item.BringIntoView();
                 }
             }
         }
