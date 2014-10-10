@@ -97,6 +97,9 @@
     <Compile Include="ExtendedToolkitContent\SampleFour.xaml.cs">
       <DependentUpon>SampleFour.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ExtendedToolkitContent\SampleEight.xaml.cs">
+      <DependentUpon>SampleEight.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ExtendedToolkitContent\SampleThree.xaml.cs">
       <DependentUpon>SampleThree.xaml</DependentUpon>
     </Compile>
@@ -110,6 +113,9 @@
       <DependentUpon>DpiAwareness.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\DpiAwarenessViewModel.cs" />
+    <Compile Include="Pages\ExtendedTookitFive.xaml.cs">
+      <DependentUpon>ExtendedTookitFive.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ExtendedTookitFour.xaml.cs">
       <DependentUpon>ExtendedTookitFour.xaml</DependentUpon>
     </Compile>
@@ -326,6 +332,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="ExtendedToolkitContent\SampleEight.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="ExtendedToolkitContent\SampleThree.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -436,6 +446,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Pages\DpiAwareness.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\ExtendedTookitFive.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

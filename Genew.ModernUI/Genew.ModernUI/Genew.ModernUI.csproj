@@ -216,6 +216,11 @@
     <Compile Include="ExtendedToolkit\Zoombox\ZoomboxViewStackMode.cs" />
     <Compile Include="ExtendedToolkit\Zoombox\ZoomboxZoomOn.cs" />
     <Compile Include="Presentation\FixPopup.cs" />
+    <Compile Include="Telerik\VirtualizingWrapPanel\ArgumentVerificationExtensions.cs" />
+    <Compile Include="Telerik\VirtualizingWrapPanel\IPanelHelper.cs" />
+    <Compile Include="Telerik\VirtualizingWrapPanel\IPanelKeyboardHelper.cs" />
+    <Compile Include="Telerik\VirtualizingWrapPanel\ParentOfTypeExtensions.cs" />
+    <Compile Include="Telerik\VirtualizingWrapPanel\VirtualizingWrapPanel.cs" />
     <Compile Include="UIHelper\ProcessDpiAwareness.cs" />
     <Compile Include="UIHelper\ExtensionMethod.cs" />
     <Compile Include="UIHelper\ModernUIHelper.cs" />
